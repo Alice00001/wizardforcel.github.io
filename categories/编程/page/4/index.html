@@ -83,6 +83,113 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Javascript中四种函数调用方式" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/Javascript中四种函数调用方式/" class="article-date">
+  <time datetime="2014-10-05T13:01:53.000Z" itemprop="datePublished">10月 5 2014</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/编程/">编程</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/Javascript中四种函数调用方式/">Javascript中四种函数调用方式</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>为了解释方便，先创建一个函数：</p>
+<pre>
+function showmsg()
+{
+  console.log(this);
+}
+</pre>
+
+<p>它的作用是打印this这个对象，也方便我们了解它到底指代什么。</p>
+<p>一、直接调用</p>
+<pre>
+showmsg();
+</pre>
+
+<p>结果：</p>
+<pre>
+Window {top: Window, window: Window, location: Location, external: Object, chrome: Object…} 
+</pre>
+
+<p>可知，直接调用时，其中的this就是顶层对象window。</p>
+<p>二、作为构造函数调用</p>
+<pre>
+var obj = new showmsg();
+</pre>
+
+<p>结果：</p>
+<pre>
+showmsg {} 
+</pre>
+
+<p>调用之后，创建了一个类型和函数同名的对象。this指代这个对象。</p>
+<p>三、作为方法调用</p>
+<pre>
+var obj = {showmsg: showmsg};
+obj.showmsg();
+</pre>
+
+<p>结果：</p>
+<pre>
+Object {showmsg: function}
+</pre>
+
+<p>其中this就是那个被绑定的对象。</p>
+<p>四、function.call</p>
+<pre>
+showmsg.call({});
+</pre>
+
+<p>结果：</p>
+<pre>
+Object {} 
+</pre>
+
+<p>call的第一个参数是什么，里面的this就是什么。如果需要传参数的话，附在后面即可。而且这种可以只调用不绑定。</p>
+<p>此外，直接调用相当于：</p>
+<pre>
+showmsg.call(null);
+</pre>
+
+<p>如果第一个参数是null，那么里面的this则是顶层对象window。</p>
+<p>作为构造函数调用相当于：</p>
+<pre>
+var obj = {};
+obj.__proto__ = showmsg;
+showmsg.call(obj);
+</pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.flygon.net/Javascript中四种函数调用方式/" data-id="cikcnesrn00b1i4g6suh1cljn" class="article-share-link bdsharebuttonbox" data-cmd="more">分享</a> <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+      
+        <a href="/Javascript中四种函数调用方式/#comments" class="article-comment-link">留言</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-php-utf-8-编码-正则匹配中文" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/php-utf-8-编码-正则匹配中文/" class="article-date">
@@ -521,57 +628,6 @@ var checked = document.getElementById('chk').checked;</pre>
 
 
   
-    <article id="post-c#-取三种时间" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/c#-取三种时间/" class="article-date">
-  <time datetime="2013-09-30T08:08:38.000Z" itemprop="datePublished">9月 30 2013</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/编程/">编程</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/c#-取三种时间/">c#取三种时间</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1.标准时间</p>
-<p>标准时间是指1970年1月1日到现在所过去的秒数 又叫时间戳 常用于网站的验证</p>
-<p>TimeSpan ts = DateTime.Now - new DateTime(1970, 1, 1, 8, 0, 0);<br>string stamp = Convert.ToInt32(ts.TotalSeconds).ToString();<br>
-        
-          <p class="article-more-link">
-            <a href="/c#-取三种时间/#more">更多内容</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.flygon.net/c#-取三种时间/" data-id="cikcnesr700aai4g6rf7ob43v" class="article-share-link bdsharebuttonbox" data-cmd="more">分享</a> <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-      
-        <a href="/c#-取三种时间/#comments" class="article-comment-link">留言</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/csharp/">csharp</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/categories/编程/page/3/">&laquo; Prev</a><a class="page-number" href="/categories/编程/">1</a><a class="page-number" href="/categories/编程/page/2/">2</a><a class="page-number" href="/categories/编程/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/categories/编程/page/5/">5</a><a class="page-number" href="/categories/编程/page/6/">6</a><a class="extend next" rel="next" href="/categories/编程/page/5/">Next &raquo;</a>
@@ -614,6 +670,10 @@ var checked = document.getElementById('chk').checked;</pre>
       <ul>
         
           <li>
+            <a href="/Cpp参考的翻译或校对/">C++参考的翻译或校对</a>
+          </li>
+        
+          <li>
             <a href="/LocalStorage-的一个漏洞/">LocalStorage 的一个漏洞</a>
           </li>
         
@@ -629,10 +689,6 @@ var checked = document.getElementById('chk').checked;</pre>
             <a href="/使用sync-request和cheerio写爬虫/">使用sync-request和cheerio写爬虫</a>
           </li>
         
-          <li>
-            <a href="/为什么C语言不简单/">为什么C语言不简单</a>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -642,7 +698,7 @@ var checked = document.getElementById('chk').checked;</pre>
   <div class="widget-wrap">
     <h3 class="widget-title">文章归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">16</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">16</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/02/">二月 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01/">一月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">十二月 2013</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">十一月 2013</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">十月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">16</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">16</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/02/">二月 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01/">一月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">十二月 2013</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">十一月 2013</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">十月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -651,7 +707,7 @@ var checked = document.getElementById('chk').checked;</pre>
   <div class="widget-wrap">
     <h3 class="widget-title">分类目录</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/wordpress/">wordpress</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/公告/">公告</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/安全/">安全</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/应用/">应用</a><span class="category-list-count">21</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂记/">杂记</a><span class="category-list-count">38</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a><span class="category-list-count">54</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/网站/">网站</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/贴吧/">贴吧</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/资源/">资源</a><span class="category-list-count">6</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/wordpress/">wordpress</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/公告/">公告</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/安全/">安全</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/应用/">应用</a><span class="category-list-count">21</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂记/">杂记</a><span class="category-list-count">38</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a><span class="category-list-count">55</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/网站/">网站</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/贴吧/">贴吧</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/资源/">资源</a><span class="category-list-count">6</span></li></ul>
     </div>
   </div>
 

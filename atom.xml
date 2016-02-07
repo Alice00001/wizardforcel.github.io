@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.flygon.net/"/>
-  <updated>2016-02-07T13:14:09.479Z</updated>
+  <updated>2016-02-07T14:37:18.632Z</updated>
   <id>http://www.flygon.net/</id>
   
   <author>
@@ -14,6 +14,111 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C++参考的翻译或校对</title>
+    <link href="http://www.flygon.net/Cpp%E5%8F%82%E8%80%83%E7%9A%84%E7%BF%BB%E8%AF%91%E6%88%96%E6%A0%A1%E5%AF%B9/"/>
+    <id>http://www.flygon.net/Cpp参考的翻译或校对/</id>
+    <published>2016-02-07T14:03:41.000Z</published>
+    <updated>2016-02-07T14:37:18.632Z</updated>
+    
+    <content type="html">&lt;p&gt;做新年规划的时候，我说过要翻译C++常用类的参考。C++的参考，其实别人已经翻译完了，只是部分内容需要校对。由于网站结构中大量使用了模板，同一个函数只需要翻译一个地方，所以四天就弄完了。而且我没有翻译函数层级的页面，所以比较快。&lt;/p&gt;
+&lt;p&gt;C++的参考其实最需要翻译。因为C++为了填C继承过来的坑，标准库增加了很多用于替代的设施。而国内的教程更新缓慢，这份参考如果不翻译，我估计到了2020年也不会完全普及。&lt;/p&gt;
+&lt;p&gt;以下是校对完成的类，希望大家继续参与：&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/memory&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;&amp;lt;memory&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/memory/unique_ptr&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;unique_ptr&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/memory/shared_ptr&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;shared_ptr&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/memory/weak_ptr&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;weak_ptr&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/chrono&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;&amp;lt;chrono&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/chrono/duration&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;duration&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/utility/functional&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;&amp;lt;functional&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/utility/functional/function&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;function&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;utility&amp;gt;&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/utility/pair&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;pair&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/utility/tuple&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;tuple&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;字符串&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/string/basic_string&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;basic_string&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/string/byte&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Null结尾的单字节字符串&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/string/multibyte&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Null结尾的多字节字符串&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/string/wide&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Null结尾的宽字符串&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;容器&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/container/array&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;array&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/container/vector&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;vector&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/container/deque&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;deque&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/container/list&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;list&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/container/forward_list&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;forward_list&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/container/set&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;set&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/container/multiset&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;multiset&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/container/map&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;map&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/container/multimap&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;multimap&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/container/unordered_set&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;unordered_set&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/container/unordered_multiset&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;unordered_multiset&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/container/unordered_map&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;unordered_map&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/container/unordered_multimap&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;unordered_multimap&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/container/stack&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;stack&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/container/queue&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;queue&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/container/priority_queue&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;priority_queue&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/utility/bitset&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;bitset&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;I/O&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/io/ios_base&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;ios_base&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/io/basic_ios&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;basic_ios&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/io/basic_istream&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;basic_istream&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/io/basic_ostream&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;basic_ostream&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/io/basic_iostream&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;basic_iostream&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/io/basic_ifstream&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;basic_ifstream&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/io/basic_ofstream&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;basic_ofstream&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/io/basic_fstream&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;basic_fstream&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/io/basic_istringstream&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;basic_istringstream&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/io/basic_ostringstream&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;basic_ostringstream&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/io/basic_stringstream&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;basic_stringstream&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/regex&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;&amp;lt;regex&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/regex/basic_regex&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;basic_regex&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/regex/match_results&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;match_results&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/atomic&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;&amp;lt;atomic&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/numeric&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;数值库&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/numeric/ratio/ratio&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;ratio&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/numeric/math&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;&amp;lt;cmath&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/numeric/complex&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;complex&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/numeric/valarray&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;valarray&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/iterator&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;迭代器库&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/w/cpp/algorithm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;算法库&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;http://zh.cppreference.com/w/Special:%E7%94%A8%E6%88%B7%E8%B4%A1%E7%8C%AE/Wizardforcel&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;我的贡献列表&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;做新年规划的时候，我说过要翻译C++常用类的参考。C++的参考，其实别人已经翻译完了，只是部分内容需要校对。由于网站结构中大量使用了模板，同一个函数只需要翻译一个地方，所以四天就弄完了。而且我没有翻译函数层级的页面，所以比较快。&lt;/p&gt;
+&lt;p&gt;C++的参考其实最需要翻译。因为C++为了填C继承过来的坑，标准库增加了很多用于替代的设施。而国内的教程更新缓慢，这份参考如果不翻译，我估计到了2020年也不会完全普及。&lt;/p&gt;
+&lt;p&gt;以下是校对完成的类，希望大家继续参与：
+    
+    </summary>
+    
+      <category term="编程" scheme="http://www.flygon.net/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="cpp" scheme="http://www.flygon.net/tags/cpp/"/>
+    
+  </entry>
   
   <entry>
     <title>LocalStorage 的一个漏洞</title>
@@ -202,7 +307,7 @@
 &lt;p&gt;根据您的申请，我们会停用您的帐号。感谢您一直以来对知乎的支持。&lt;/p&gt;
 &lt;p&gt;感谢您的来信。&lt;/p&gt;
 &lt;p&gt;知乎团队&lt;/p&gt;
-&lt;p&gt;在 2016年1月9日 下午11:24，龙 &lt;a href=&quot;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#111;&amp;#x3a;&amp;#x35;&amp;#54;&amp;#x32;&amp;#x38;&amp;#x32;&amp;#x36;&amp;#x31;&amp;#x37;&amp;#57;&amp;#x40;&amp;#113;&amp;#x71;&amp;#x2e;&amp;#x63;&amp;#x6f;&amp;#109;&quot;&gt;&amp;#x35;&amp;#54;&amp;#x32;&amp;#x38;&amp;#x32;&amp;#x36;&amp;#x31;&amp;#x37;&amp;#57;&amp;#x40;&amp;#113;&amp;#x71;&amp;#x2e;&amp;#x63;&amp;#x6f;&amp;#109;&lt;/a&gt; 写道：&lt;/p&gt;
+&lt;p&gt;在 2016年1月9日 下午11:24，龙 &lt;a href=&quot;&amp;#109;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#x6f;&amp;#x3a;&amp;#x35;&amp;#54;&amp;#x32;&amp;#x38;&amp;#50;&amp;#54;&amp;#x31;&amp;#55;&amp;#x39;&amp;#x40;&amp;#113;&amp;#x71;&amp;#x2e;&amp;#99;&amp;#111;&amp;#109;&quot;&gt;&amp;#x35;&amp;#54;&amp;#x32;&amp;#x38;&amp;#50;&amp;#54;&amp;#x31;&amp;#55;&amp;#x39;&amp;#x40;&amp;#113;&amp;#x71;&amp;#x2e;&amp;#99;&amp;#111;&amp;#109;&lt;/a&gt; 写道：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;申请停用知乎账号&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -677,31 +782,6 @@
     </summary>
     
       <category term="杂记" scheme="http://www.flygon.net/categories/%E6%9D%82%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>《超级机器人大战OG 原创世纪合集 完全事典》动漫游工作室 pdf格式</title>
-    <link href="http://www.flygon.net/%E3%80%8A%E8%B6%85%E7%BA%A7%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98OG-%E5%8E%9F%E5%88%9B%E4%B8%96%E7%BA%AA%E5%90%88%E9%9B%86-%E5%AE%8C%E5%85%A8%E4%BA%8B%E5%85%B8%E3%80%8B%E5%8A%A8%E6%BC%AB%E6%B8%B8%E5%B7%A5%E4%BD%9C%E5%AE%A4-pdf%E6%A0%BC%E5%BC%8F/"/>
-    <id>http://www.flygon.net/《超级机器人大战OG-原创世纪合集-完全事典》动漫游工作室-pdf格式/</id>
-    <published>2015-07-14T11:17:13.000Z</published>
-    <updated>2016-02-07T11:18:05.754Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;img src=&quot;http://shopimg.kongfz.com.cn/20130408/1982459/1982459jLTYT0_b.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;下载：&lt;/p&gt;
-&lt;p&gt;百度云：&lt;a href=&quot;http://pan.baidu.com/s/1dDDCh13&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1dDDCh13&lt;/a&gt;&lt;br&gt;微盘：&lt;a href=&quot;http://vdisk.weibo.com/s/qpqjdwWR08rZQ&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://vdisk.weibo.com/s/qpqjdwWR08rZQ&lt;/a&gt;&lt;br&gt;千易：&lt;a href=&quot;http://1000eb.com/1f6jo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://1000eb.com/1f6jo&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://shopimg.kongfz.com.cn/20130408/1982459/1982459jLTYT0_b.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;下载：&lt;/p&gt;
-&lt;p&gt;百度云：&lt;a href=&quot;http://pan.baidu.com/
-    
-    </summary>
-    
-      <category term="资源" scheme="http://www.flygon.net/categories/%E8%B5%84%E6%BA%90/"/>
     
     
   </entry>

@@ -115,7 +115,7 @@ mi5将走高端路线，高通810处理器，3GB RAM，2K级别屏幕。价格�
             
             <a href="/关于米5的各种消息/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/关于米5的各种消息/" data-id="ciknam3sj004sucg6i1va1isj" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/关于米5的各种消息/" data-id="cikncvmsi004s1wg6b8u7wmws" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -389,14 +389,14 @@ mi5将走高端路线，高通810处理器，3GB RAM，2K级别屏幕。价格�
     (function(){
         var ua = navigator.userAgent;
         var res = /Windows NT (\d+\.\d+)/.exec(ua);
-        var xpOrLower = res && Number.parseFloat(res[1]) < 6;
+        var xpOrLower = res && JSON.parse(res[1]) < 6;
         res = /MSIE (\d+\.\d+)/.exec(ua);
-        var ie8OrLower = res && Number.parseFloat(res[1]) < 9;
+        var ie8OrLower = res && JSON.parse(res[1]) < 9;
         // var fromBaiduSE = /^https?:\/\/www.baidu.com/.test(document.referrer);
         if(xpOrLower || ie8OrLower /* || fromBaiduSE */)
         {
             alert('请不要用XP及之前的Windows系统，和IE8及之前的IE浏览器访问本站！');
-            window.close();
+            location.href = "about:blank"
         }
     })();
 </script>

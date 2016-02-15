@@ -97,7 +97,7 @@
             
             <a href="/回忆录-4/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/回忆录-4/" data-id="ciknam3ro0044ucg6mxwctr9s" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/回忆录-4/" data-id="cikncvms200441wg6mwomzk2h" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -152,7 +152,7 @@
             
             <a href="/《超级机器人大战OG-原创世纪合集-完全事典》动漫游工作室-pdf格式/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/《超级机器人大战OG-原创世纪合集-完全事典》动漫游工作室-pdf格式/" data-id="ciknam3te0064ucg6f77jrjjx" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/《超级机器人大战OG-原创世纪合集-完全事典》动漫游工作室-pdf格式/" data-id="cikncvmtt00641wg61v1cgha9" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -204,7 +204,7 @@
             
             <a href="/visual-studio-历史一览/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/visual-studio-历史一览/" data-id="ciknam3te006sucg6jattj4xo" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/visual-studio-历史一览/" data-id="cikncvmtt006s1wg6rn5bi1b2" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -415,14 +415,14 @@
     (function(){
         var ua = navigator.userAgent;
         var res = /Windows NT (\d+\.\d+)/.exec(ua);
-        var xpOrLower = res && Number.parseFloat(res[1]) < 6;
+        var xpOrLower = res && JSON.parse(res[1]) < 6;
         res = /MSIE (\d+\.\d+)/.exec(ua);
-        var ie8OrLower = res && Number.parseFloat(res[1]) < 9;
+        var ie8OrLower = res && JSON.parse(res[1]) < 9;
         // var fromBaiduSE = /^https?:\/\/www.baidu.com/.test(document.referrer);
         if(xpOrLower || ie8OrLower /* || fromBaiduSE */)
         {
             alert('请不要用XP及之前的Windows系统，和IE8及之前的IE浏览器访问本站！');
-            window.close();
+            location.href = "about:blank"
         }
     })();
 </script>

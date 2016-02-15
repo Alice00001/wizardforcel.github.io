@@ -97,7 +97,7 @@
             
             <a href="/sec-awvs-9x-破解补丁/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/sec-awvs-9x-破解补丁/" data-id="ciknam3ua007yucg6xen579dh" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/sec-awvs-9x-破解补丁/" data-id="cikncvmuo007y1wg60bjclubc" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -316,14 +316,14 @@
     (function(){
         var ua = navigator.userAgent;
         var res = /Windows NT (\d+\.\d+)/.exec(ua);
-        var xpOrLower = res && Number.parseFloat(res[1]) < 6;
+        var xpOrLower = res && JSON.parse(res[1]) < 6;
         res = /MSIE (\d+\.\d+)/.exec(ua);
-        var ie8OrLower = res && Number.parseFloat(res[1]) < 9;
+        var ie8OrLower = res && JSON.parse(res[1]) < 9;
         // var fromBaiduSE = /^https?:\/\/www.baidu.com/.test(document.referrer);
         if(xpOrLower || ie8OrLower /* || fromBaiduSE */)
         {
             alert('请不要用XP及之前的Windows系统，和IE8及之前的IE浏览器访问本站！');
-            window.close();
+            location.href = "about:blank"
         }
     })();
 </script>

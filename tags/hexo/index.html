@@ -97,7 +97,7 @@
             
             <a href="/hexo-tutor-7/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-7/" data-id="ciknam3up008uucg6el86vv6k" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-7/" data-id="cikncvmv4008u1wg6rowdx9dm" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -171,7 +171,7 @@
             
             <a href="/hexo-tutor-6/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-6/" data-id="ciknam3up008yucg65rgya3v3" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-6/" data-id="cikncvmv4008y1wg6395tvdg4" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -238,7 +238,7 @@
             
             <a href="/hexo-tutor-5/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-5/" data-id="ciknam3up0091ucg684uo3qt0" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-5/" data-id="cikncvmv400911wg6iw8mlifg" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -300,7 +300,7 @@
             
             <a href="/hexo-tutor-4/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-4/" data-id="ciknam3v50094ucg6fbr75n7g" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-4/" data-id="cikncvmv400941wg6wiivd7ry" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -362,7 +362,7 @@
             
             <a href="/hexo-tutor-3/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-3/" data-id="ciknam3v50097ucg6o3ny568e" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-3/" data-id="cikncvmv400971wg6wbpafcc9" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -490,7 +490,7 @@
             
             <a href="/hexo-tutor-2/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-2/" data-id="ciknam3v5009aucg6dz4iebvb" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-2/" data-id="cikncvmv4009a1wg6e8sfwlnj" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -569,7 +569,7 @@
             
             <a href="/hexo-tutor-1/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-1/" data-id="ciknam3v5009ducg6e46u13t2" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-1/" data-id="cikncvmv4009d1wg6qyubalo2" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -815,14 +815,14 @@
     (function(){
         var ua = navigator.userAgent;
         var res = /Windows NT (\d+\.\d+)/.exec(ua);
-        var xpOrLower = res && Number.parseFloat(res[1]) < 6;
+        var xpOrLower = res && JSON.parse(res[1]) < 6;
         res = /MSIE (\d+\.\d+)/.exec(ua);
-        var ie8OrLower = res && Number.parseFloat(res[1]) < 9;
+        var ie8OrLower = res && JSON.parse(res[1]) < 9;
         // var fromBaiduSE = /^https?:\/\/www.baidu.com/.test(document.referrer);
         if(xpOrLower || ie8OrLower /* || fromBaiduSE */)
         {
             alert('请不要用XP及之前的Windows系统，和IE8及之前的IE浏览器访问本站！');
-            window.close();
+            location.href = "about:blank"
         }
     })();
 </script>

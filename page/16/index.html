@@ -97,7 +97,7 @@
             
             <a href="/易语言-贴吧工具源码/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/易语言-贴吧工具源码/" data-id="ciknam3r8002zucg6bb5mkjee" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/易语言-贴吧工具源码/" data-id="cikncvmrn002z1wg6mdl89d8o" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -155,7 +155,7 @@
             
             <a href="/小议-innerTextHTML-以及-outerTextHTML/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/小议-innerTextHTML-以及-outerTextHTML/" data-id="ciknam3r8003nucg68v570qvk" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/小议-innerTextHTML-以及-outerTextHTML/" data-id="cikncvmrn003n1wg6jkxdy816" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -212,7 +212,7 @@
             
             <a href="/每一个地方-都是战场-绝望的人们-所向无敌/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/每一个地方-都是战场-绝望的人们-所向无敌/" data-id="ciknam3qd0027ucg6cubnprd0" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/每一个地方-都是战场-绝望的人们-所向无敌/" data-id="cikncvmqr00271wg6bsu5cj6k" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -262,7 +262,7 @@
             
             <a href="/杂记-2/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/杂记-2/" data-id="ciknam3qt002fucg6xgu4q4ct" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/杂记-2/" data-id="cikncvmr7002f1wg6w7fy7zq9" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -479,14 +479,14 @@
     (function(){
         var ua = navigator.userAgent;
         var res = /Windows NT (\d+\.\d+)/.exec(ua);
-        var xpOrLower = res && Number.parseFloat(res[1]) < 6;
+        var xpOrLower = res && JSON.parse(res[1]) < 6;
         res = /MSIE (\d+\.\d+)/.exec(ua);
-        var ie8OrLower = res && Number.parseFloat(res[1]) < 9;
+        var ie8OrLower = res && JSON.parse(res[1]) < 9;
         // var fromBaiduSE = /^https?:\/\/www.baidu.com/.test(document.referrer);
         if(xpOrLower || ie8OrLower /* || fromBaiduSE */)
         {
             alert('请不要用XP及之前的Windows系统，和IE8及之前的IE浏览器访问本站！');
-            window.close();
+            location.href = "about:blank"
         }
     })();
 </script>

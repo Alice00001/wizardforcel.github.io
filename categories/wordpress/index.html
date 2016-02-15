@@ -97,7 +97,7 @@
             
             <a href="/来来来-接着吐槽/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/来来来-接着吐槽/" data-id="ciknam3qt002ducg6bxv0fufp" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/来来来-接着吐槽/" data-id="cikncvmr7002d1wg6ajy6ws0l" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -156,7 +156,7 @@
             
             <a href="/Google被墙之后打开页面缓慢的解决方案/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/Google被墙之后打开页面缓慢的解决方案/" data-id="ciknam3wg00b5ucg6yt44esz5" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/Google被墙之后打开页面缓慢的解决方案/" data-id="cikncvmwf00b51wg6jh04bo37" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -215,7 +215,7 @@ add_action( 'init', 'remove_open_sans' );</pre>
             
             <a href="/百度官方-WordPress-结构化数据插件/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/百度官方-WordPress-结构化数据插件/" data-id="ciknam3qd0020ucg6iaglj6hc" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/百度官方-WordPress-结构化数据插件/" data-id="cikncvmqr00201wg63c46a2x1" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -269,7 +269,7 @@ add_action( 'init', 'remove_open_sans' );</pre>
             
             <a href="/吐槽一下wp2014的新模版/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/吐槽一下wp2014的新模版/" data-id="ciknam3s4004cucg6ewzjkd76" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/吐槽一下wp2014的新模版/" data-id="cikncvmsi004c1wg69x8q01bn" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -322,7 +322,7 @@ add_action( 'init', 'remove_open_sans' );</pre>
             
             <a href="/TwentyTwelve透明主题二次美化版/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/TwentyTwelve透明主题二次美化版/" data-id="ciknam3w000ahucg6znxq7xef" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/TwentyTwelve透明主题二次美化版/" data-id="cikncvmvz00ah1wg66m0484o2" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -377,7 +377,7 @@ add_action( 'init', 'remove_open_sans' );</pre>
             
             <a href="/TwentyEleven暗色系主题实现透明/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/TwentyEleven暗色系主题实现透明/" data-id="ciknam3w000ajucg6715cz2zk" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/TwentyEleven暗色系主题实现透明/" data-id="cikncvmvz00aj1wg617t7kfa2" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -593,14 +593,14 @@ add_action( 'init', 'remove_open_sans' );</pre>
     (function(){
         var ua = navigator.userAgent;
         var res = /Windows NT (\d+\.\d+)/.exec(ua);
-        var xpOrLower = res && Number.parseFloat(res[1]) < 6;
+        var xpOrLower = res && JSON.parse(res[1]) < 6;
         res = /MSIE (\d+\.\d+)/.exec(ua);
-        var ie8OrLower = res && Number.parseFloat(res[1]) < 9;
+        var ie8OrLower = res && JSON.parse(res[1]) < 9;
         // var fromBaiduSE = /^https?:\/\/www.baidu.com/.test(document.referrer);
         if(xpOrLower || ie8OrLower /* || fromBaiduSE */)
         {
             alert('请不要用XP及之前的Windows系统，和IE8及之前的IE浏览器访问本站！');
-            window.close();
+            location.href = "about:blank"
         }
     })();
 </script>

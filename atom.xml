@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.flygon.net/"/>
-  <updated>2016-02-13T10:35:22.237Z</updated>
+  <updated>2016-02-28T04:47:23.173Z</updated>
   <id>http://www.flygon.net/</id>
   
   <author>
@@ -14,6 +14,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2016.2.28</title>
+    <link href="http://www.flygon.net/2016-2-28/"/>
+    <id>http://www.flygon.net/2016-2-28/</id>
+    <published>2016-02-28T04:47:58.000Z</published>
+    <updated>2016-02-28T04:47:23.173Z</updated>
+    
+    <content type="html">&lt;p&gt;停止所有C++的开发项目，以后如有类似需求改用Go来开发。&lt;/p&gt;
+&lt;p&gt;没办法，既然你没胆量抛弃raw pointer，那我只能抛弃你了呀。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;停止所有C++的开发项目，以后如有类似需求改用Go来开发。&lt;/p&gt;
+&lt;p&gt;没办法，既然你没胆量抛弃raw pointer，那我只能抛弃你了呀。&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="编程" scheme="http://www.flygon.net/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>本站即日起拒绝XP及之前的Windows系统，和IE8及之前的IE浏览器的访问。</title>
@@ -186,32 +210,6 @@
   </entry>
   
   <entry>
-    <title>本人的“深入理解c++”系列规划</title>
-    <link href="http://www.flygon.net/%E6%9C%AC%E4%BA%BA%E7%9A%84%E2%80%9C%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3c++%E2%80%9D%E7%B3%BB%E5%88%97%E8%A7%84%E5%88%92/"/>
-    <id>http://www.flygon.net/本人的“深入理解c++”系列规划/</id>
-    <published>2016-01-30T11:40:58.000Z</published>
-    <updated>2016-02-11T12:16:25.666Z</updated>
-    
-    <content type="html">&lt;p&gt;第一部分是标准库的新增设施，主要是结合tr1、tr2的设施，讲解如何快速高效的开发C++应用。在这一部分我会用C++的新增设施去翻写posix api或者Java的一些代码来讲解。&lt;/p&gt;
-&lt;p&gt;第二部分是底层和黑魔法。主要是底层操作、宏操作（实现属性、实现meta）、hook、dll和com互操作等。可以说互操作是C++的优势之一，其它语言的组件只能做进程级别的调用，但是C++写出来的动态库可以做模块级别的调用。&lt;/p&gt;
-&lt;p&gt;第三部分是应用，注重标准库没有的东西，比如调用webkit编写跨平台的ui，基于web框架的web开发（模板、orm、json、db、wsgi）。&lt;/p&gt;
-&lt;p&gt;由于第一部分和第三部分需要等到boost.asio完全加入标准库，还需要等个几年吧。所以近期大家就不要有太大期望了。&lt;/p&gt;
-&lt;p&gt;注意：本教程仅仅是计划中的。如果C#Native在17年之前登陆PC，或者Swift迁移到了Windows平台，则该计划作废。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;第一部分是标准库的新增设施，主要是结合tr1、tr2的设施，讲解如何快速高效的开发C++应用。在这一部分我会用C++的新增设施去翻写posix api或者Java的一些代码来讲解。&lt;/p&gt;
-&lt;p&gt;第二部分是底层和黑魔法。主要是底层操作、宏操作（实现属性、实现meta）、ho
-    
-    </summary>
-    
-      <category term="编程" scheme="http://www.flygon.net/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>【好东西】简书助手</title>
     <link href="http://www.flygon.net/%E5%A5%BD%E4%B8%9C%E8%A5%BF-%E7%AE%80%E4%B9%A6%E5%8A%A9%E6%89%8B/"/>
     <id>http://www.flygon.net/好东西-简书助手/</id>
@@ -329,7 +327,7 @@
 &lt;p&gt;根据您的申请，我们会停用您的帐号。感谢您一直以来对知乎的支持。&lt;/p&gt;
 &lt;p&gt;感谢您的来信。&lt;/p&gt;
 &lt;p&gt;知乎团队&lt;/p&gt;
-&lt;p&gt;在 2016年1月9日 下午11:24，龙 &lt;a href=&quot;&amp;#x6d;&amp;#97;&amp;#105;&amp;#x6c;&amp;#116;&amp;#111;&amp;#58;&amp;#53;&amp;#x36;&amp;#50;&amp;#x38;&amp;#50;&amp;#54;&amp;#49;&amp;#x37;&amp;#x39;&amp;#64;&amp;#113;&amp;#x71;&amp;#x2e;&amp;#99;&amp;#111;&amp;#109;&quot;&gt;&amp;#53;&amp;#x36;&amp;#50;&amp;#x38;&amp;#50;&amp;#54;&amp;#49;&amp;#x37;&amp;#x39;&amp;#64;&amp;#113;&amp;#x71;&amp;#x2e;&amp;#99;&amp;#111;&amp;#109;&lt;/a&gt; 写道：&lt;/p&gt;
+&lt;p&gt;在 2016年1月9日 下午11:24，龙 &lt;a href=&quot;&amp;#x6d;&amp;#x61;&amp;#x69;&amp;#x6c;&amp;#x74;&amp;#111;&amp;#58;&amp;#x35;&amp;#x36;&amp;#x32;&amp;#x38;&amp;#x32;&amp;#x36;&amp;#x31;&amp;#55;&amp;#x39;&amp;#64;&amp;#x71;&amp;#x71;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#x6d;&quot;&gt;&amp;#x35;&amp;#x36;&amp;#x32;&amp;#x38;&amp;#x32;&amp;#x36;&amp;#x31;&amp;#55;&amp;#x39;&amp;#64;&amp;#x71;&amp;#x71;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#x6d;&lt;/a&gt; 写道：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;申请停用知乎账号&lt;/p&gt;
 &lt;/blockquote&gt;

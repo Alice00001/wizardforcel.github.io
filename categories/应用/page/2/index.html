@@ -65,6 +65,8 @@
                 
                     <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://wizardforcel.github.io/resume/">简历</a></li>
                 
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/todo">待填坑</a></li>
+                
                     <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://www.258ch.com/">苍海国际</a></li>
                 
                     <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about">留言板</a></li>
@@ -97,7 +99,7 @@
             
             <a href="/关于Google在华遭屏蔽的临时解决方案/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/关于Google在华遭屏蔽的临时解决方案/" data-id="ciksb20rj0050jog601qi0ryy" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/关于Google在华遭屏蔽的临时解决方案/" data-id="cil8s8q4h004te0g6wzcgg8ml" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -133,563 +135,6 @@
 
 
   
-    <article id="post-hexo-tutor-7" class="post-hexo-tutor-7 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/hexo-tutor-7/">Hexo 入门指南（七） - 评论 &amp; 分享</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/hexo-tutor-7/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-7/" data-id="ciksb20tj008ujog6mytess86" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <h2 id="u8BC4_u8BBA"><a href="#u8BC4_u8BBA" class="headerlink" title="评论"></a>评论</h2><p>hexo默认集成了disqus，但是在天朝明显多说更受欢迎一点。</p>
-<p>首先到多说官网去注册一个账号。然后点击进入添加站点页面，填写所有信息。注意，多说域名的前缀就是站点的短网址，下面要用到，这里假设为short_name。</p>
-<p>在_config.yml中添加多说的配置：</p>
-<p><br>duoshuo_shortname: short_name<br></p>
-<p>修改themes\<theme_name>\layout_partial\article.ejs，把第38行到41行的如下代码：</theme_name></p>
-<p><br>&lt;% if (!index &amp;&amp; post.comments &amp;&amp; config.disqus_shortname){ %&gt;</p>
-<p><section id="comments"><br>  <div id="disqus_thread"><br>    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><br>  </div><br></section><br>&lt;% } %&gt;<br></p>
-<p>替换成：</p>
-<p><br>&lt;% if (!index &amp;&amp; post.comments &amp;&amp; config.duoshuo_shortname){ %&gt;</p>
-<p><section id="comments"><br>  <!-- 多说评论框 start --><br>  <div class="ds-thread" data-thread-key="<%= post.layout %>-<%= post.slug %>" data-title="<%= post.title %>" data-url="<%= page.permalink %>"></div><br>  <!-- 多说评论框 end --><br>  <!-- 多说公共JS代码 start (一个网页只需插入一次) --><br>  <script type="text/javascript"><br>  var duoshuoQuery = {short_name:’&lt;%= config.duoshuo_shortname %&gt;’};<br>    (function() {<br>      var ds = document.createElement(‘script’);<br>      ds.type = ‘text/javascript’;ds.async = true;<br>      ds.src = (document.location.protocol == ‘https:’ ? ‘https:’ : ‘http:’) + ‘//static.duoshuo.com/embed.js’;<br>      ds.charset = ‘UTF-8’;<br>      (document.getElementsByTagName(‘head’)[0]<br>       || document.getElementsByTagName(‘body’)[0]).appendChild(ds);<br>    })();<br>  </script><br>  <!-- 多说公共JS代码 end --><br></section><br>&lt;% } %&gt;<br></p>
-<p>之后，找到第27到29行：</p>
-<p><br>&lt;% if (post.comments &amp;&amp; config.disqus_shortname){ %&gt;<br>  <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a><br>&lt;% } %&gt;<br></p>
-<p>替换成：</p>
-<p><br>&lt;% if (post.comments &amp;&amp; config.duoshuo_shortname){ %&gt;<br>  <a href="<%- url_for(post.path) %>#comments" class="article-comment-link">留言</a><br>&lt;% } %&gt;<br></p>
-<h2 id="u5206_u4EAB"><a href="#u5206_u4EAB" class="headerlink" title="分享"></a>分享</h2><p>hexo默认提供的那四个在国内也被墙了。这里替换成百度一键分享。</p>
-<p>找到themes\landscape\layout_partialarticle.ejs26行：</p>
-<p><br><a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">分享</a><br></p>
-<p>替换成：</p>
-<p><br><a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link bdsharebuttonbox" data-cmd="more">分享</a></p>
-<p><script>window._bd_share_config={“common”:{“bdSnsKey”:{},”bdText”:””,”bdMini”:”1”,”bdMiniList”:false,”bdPic”:””,”bdStyle”:”2”,”bdSize”:”16”},”share”:{}};with(document)0[(getElementsByTagName(‘head’)[0]||body).appendChild(createElement(‘script’)).src=’<a href="http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=&#39;+~(-new">http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=&#39;+~(-new</a> Date()/36e5)];</script><br></p>
-<p>之后打开themes\landscape\source\js\script.js，35~86行全部注释掉。</p>
-<h2 id="u540E_u8BB0"><a href="#u540E_u8BB0" class="headerlink" title="后记"></a>后记</h2><p>仅以此教程，悼念Aaron Swartz，RSS和Markdown的联合创始人。没有他，开源博客界就不会有今天。</p>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/hexo-tutor-7/">
-    <time datetime="2014-11-02T03:41:08.000Z" class="entry-date">
-        11月 2 2014
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/应用/">应用</a>
-  </div>
-
-    
-  <span class="article-delim">&#8226;</span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-
-    </footer>
-</article>
-
-
-
-
-
-
-  
-    <article id="post-hexo-tutor-6" class="post-hexo-tutor-6 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/hexo-tutor-6/">Hexo 入门指南（六） - sitemap、rss 和部署</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/hexo-tutor-6/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-6/" data-id="ciksb20tk008yjog6ytk6c431" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <h2 id="sitemap__26amp_3B_rss"><a href="#sitemap__26amp_3B_rss" class="headerlink" title="sitemap &amp; rss"></a>sitemap &amp; rss</h2><p>切换到blog根目录下，输入：</p>
-<p><br>$ npm install hexo-generator-feed<br>$ npm install hexo-generator-sitemap<br></p>
-<p>之后重启博客，访问/atom.xml和/sitemap.xml，会发现已经生成了。可以把sitemap提交到搜索引擎的站长平台来增加收录。</p>
-<h2 id="u90E8_u7F72"><a href="#u90E8_u7F72" class="headerlink" title="部署"></a>部署</h2><p>首先按照前面教程（一）的gitcafe部分建立好代码仓库，这里假设你的用户名是your_name。由于ssh配置比较麻烦，这里采用https方式提交。</p>
-<p>找到配置文件中# Deployment一节，修改：</p>
-<p><br>type: github<br>repository: <a href="https://gitcafe.com/your_name/your_name.git" target="_blank" rel="external">https://gitcafe.com/your_name/your_name.git</a><br>branch: gitcafe-pages<br></p>
-<p>之后输入：</p>
-<p><br>hexo deploy –generate<br></p>
-<p>或者</p>
-<p><br>$ hexo generate –deploy<br></p>
-<p>hexo会自动生成并部署。</p>
-<p>如果之前已经生成过了，直接输入：</p>
-<p><br>$ hexo deploy<br></p>
-<p>部署即可。</p>
-<p>当然，这个命令还有一些bug，比如windows下不能用cmd而是用gitshell。我自己一般会手动敲git代码覆盖提交。</p>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/hexo-tutor-6/">
-    <time datetime="2014-11-02T01:53:54.000Z" class="entry-date">
-        11月 2 2014
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/应用/">应用</a>
-  </div>
-
-    
-  <span class="article-delim">&#8226;</span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-
-    </footer>
-</article>
-
-
-
-
-
-
-  
-    <article id="post-hexo-tutor-5" class="post-hexo-tutor-5 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/hexo-tutor-5/">Hexo 入门指南（五） - 搬家 &amp; 备份</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/hexo-tutor-5/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-5/" data-id="ciksb20tm0091jog68q0srzbq" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <h2 id="u642C_u5165hexo"><a href="#u642C_u5165hexo" class="headerlink" title="搬入hexo"></a>搬入hexo</h2><p>首先，需要拿到原博客数据的xml文件。</p>
-<p>wordpress的话，后台“工具-&gt;导出”就可以生成。点点和lofter也支持类似操作。如果遇到不支持导出xml的博客，先用<a href="http://www.diandian.com/transfer/" target="_blank" rel="external">http://www.diandian.com/transfer/</a>转到点点，再用<a href="http://www.diandian.com/backup" target="_blank" rel="external">http://www.diandian.com/backup</a>导出XML文件。</p>
-<p>之后，安装hexo-migrator-wordpress这个插件</p>
-<p><br>npm install hexo-migrator-wordpress –save<br></p>
-<p>运行</p>
-<p><br>hexo migrate wordpress wordpress.xml<br></p>
-<p>xml中的数据就导入到source中了。最后的工作是修复链接什么的。</p>
-<h2 id="u642C_u51FAhexo"><a href="#u642C_u51FAhexo" class="headerlink" title="搬出hexo"></a>搬出hexo</h2><p>没有什么好的办法。可以写个脚本遍历public文件夹，之后post到指定目录或者制作成xml文件。</p>
-<h2 id="u5907_u4EFD"><a href="#u5907_u4EFD" class="headerlink" title="备份"></a>备份</h2><p>有句话说得好，数据恢复的最佳方案永远是“备份备份再备份”。</p>
-<p>个人建议，分别备份站点配置和文章。站点配置包括blog根目录除了source和public文件夹的所有内容，文章就是source文件夹的全部内容。站点配置不经常变的话可以不用经常备份。</p>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/hexo-tutor-5/">
-    <time datetime="2014-11-01T13:17:24.000Z" class="entry-date">
-        11月 1 2014
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/应用/">应用</a>
-  </div>
-
-    
-  <span class="article-delim">&#8226;</span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-
-    </footer>
-</article>
-
-
-
-
-
-
-  
-    <article id="post-hexo-tutor-4" class="post-hexo-tutor-4 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/hexo-tutor-4/">Hexo 入门指南（四） - 页面、导航、边栏、底栏</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/hexo-tutor-4/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-4/" data-id="ciksb20tq0094jog65m7tb3s5" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <h2 id="u9875_u9762"><a href="#u9875_u9762" class="headerlink" title="页面"></a>页面</h2><p>命令行键入：</p>
-<p><br>$ hexo new page about<br></p>
-<p>会在source/about中生成index.html。这个就叫做页面，不在文章列表显示，可以通过<a href="http://localhost/about" target="_blank" rel="external">http://localhost/about</a>浏览。</p>
-<p>页面支持文章的大部分属性，除了分类和标签。</p>
-<h2 id="u5BFC_u822A"><a href="#u5BFC_u822A" class="headerlink" title="导航"></a>导航</h2><p>打开主题中的设置文件，即themes\<theme_name>_config.yml（其中<theme_name>是当前主题的名字，默认为landscape，下同），找到menu:，在列表的末端添加About: 关于。刷新页面，导航栏上就出现了关于链接。</theme_name></theme_name></p>
-<h2 id="u8FB9_u680F"><a href="#u8FB9_u680F" class="headerlink" title="边栏"></a>边栏</h2><p>进入themes\<theme_name>\layout_widget目录中，创建about.ejs文件，模仿其他文件中的模版，输入以下内容：</theme_name></p>
-<p><br>&lt;% if (site.tags.length){ %&gt;<br>  <div class="widget-wrap"><br>    <h3 class="widget-title">About</h3><br>    <div class="widget"><br>      邮箱：xxx@xxx.com<br><br>      微博：@xxxxx<br>    </div><br>  </div><br>&lt;% } %&gt;<br></p>
-<p>打开themes\<theme_name>_config.yml，找到#Sidebar，在最后面添加- about。刷新页面。</theme_name></p>
-<h2 id="u5E95_u680F"><a href="#u5E95_u680F" class="headerlink" title="底栏"></a>底栏</h2><p>打开themes\<theme_name>\layout_partial\footer.ejs修改。</theme_name></p>
-<h2 id="banner"><a href="#banner" class="headerlink" title="-banner-"></a>-banner-</h2><p>打开themes\<theme_name>\source\css\images，把banner.jpg换掉。</theme_name></p>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/hexo-tutor-4/">
-    <time datetime="2014-11-01T13:05:29.000Z" class="entry-date">
-        11月 1 2014
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/应用/">应用</a>
-  </div>
-
-    
-  <span class="article-delim">&#8226;</span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-
-    </footer>
-</article>
-
-
-
-
-
-
-  
-    <article id="post-hexo-tutor-3" class="post-hexo-tutor-3 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/hexo-tutor-3/">Hexo 入门指南（三） - 文章 &amp; 草稿</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/hexo-tutor-3/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-3/" data-id="ciksb20ts0097jog6wraagurk" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <h2 id="u6587_u7AE0"><a href="#u6587_u7AE0" class="headerlink" title="文章"></a>文章</h2><p>命令行中输入：</p>
-<p></pre><br>$ hexo new “new article”<br></pre></p>
-<p>之后在source/_posts目录下面，多了一个new-article.md的文件。</p>
-<p>打开之后我们会看到：</p>
-<p></pre><br>title: new article<br>date: 2014-11-01 20:10:33</p>
-<h2 id="tags_3A"><a href="#tags_3A" class="headerlink" title="tags:"></a>tags:</h2><p></pre></p>
-<p>文件的开头是属性，采用统一的yaml格式，用三条短横线分隔。下面是文章正文。</p>
-<p>文章的正文支持markdown格式，建议你先学习一下它的语法。markdown不像html似的一大堆标签，很简单，只有几个符号。</p>
-<p>新建、删除或修改文章后，不需要重启hexo server，刷新一下即可预览。</p>
-<h3 id="u5C5E_u6027"><a href="#u5C5E_u6027" class="headerlink" title="属性"></a>属性</h3><p>文章可以拥有如下属性：</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Setting</td>
-<td>Description</td>
-<td>Default</td>
-</tr>
-<tr>
-<td>layout</td>
-<td>Layout</td>
-<td>post或page</td>
-</tr>
-<tr>
-<td>title</td>
-<td>文章的标题</td>
-</tr>
-<tr>
-<td>date</td>
-<td>创建日期</td>
-<td>文件的创建日期</td>
-</tr>
-<tr>
-<td>updated</td>
-<td>修改日期</td>
-<td>文件的修改日期</td>
-</tr>
-<tr>
-<td>comments</td>
-<td>是否开启评论</td>
-<td>true</td>
-</tr>
-<tr>
-<td>tags</td>
-<td>标签</td>
-</tr>
-<tr>
-<td>categories</td>
-<td>分类</td>
-</tr>
-<tr>
-<td>permalink</td>
-<td>url中的名字</td>
-<td>文件名</td>
-</tr>
-</tbody>
-</table>
-<p>动态博客中通过发布文章页面设置的各种属性，在hexo里要这样设置。</p>
-<h2 id="u5206_u7C7B_u548C_u6807_u7B7E"><a href="#u5206_u7C7B_u548C_u6807_u7B7E" class="headerlink" title="分类和标签"></a>分类和标签</h2><p>例如：</p>
-<p></pre><br>categories:</p>
-<ul>
-<li>日记<br>tags:</li>
-<li>Hexo</li>
-<li>node.js<br></pre></li>
-</ul>
-<h2 id="u6458_u8981"><a href="#u6458_u8981" class="headerlink" title="摘要"></a>摘要</h2><p>同wordpress一样，
-        
-          <p class="article-more-link">
-            <a href="/hexo-tutor-3/#more" class="more-link">更多内容 <span class="meta-nav">→</span></a>
-          </p>
-        
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/hexo-tutor-3/">
-    <time datetime="2014-11-01T12:43:24.000Z" class="entry-date">
-        11月 1 2014
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/应用/">应用</a>
-  </div>
-
-    
-  <span class="article-delim">&#8226;</span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-
-    </footer>
-</article>
-
-
-
-
-
-
-  
-    <article id="post-hexo-tutor-2" class="post-hexo-tutor-2 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/hexo-tutor-2/">Hexo 入门指南（二） - 安装、初始化和配置</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/hexo-tutor-2/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-2/" data-id="ciksb20tt009ajog6l5uw2pte" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <h2 id="u5B89_u88C5_u548C_u521D_u59CB_u5316"><a href="#u5B89_u88C5_u548C_u521D_u59CB_u5316" class="headerlink" title="安装和初始化"></a>安装和初始化</h2><p>linux下打开bash，win下面打开cmd，输入：</p>
-<p><br>$ npm install hexo -g<br>$ hexo init blog<br>$ cd blog<br>$ npm install<br>$ hexo server<br></p>
-<p>访问<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>，会看到生成好的博客。</p>
-<p>同时，在blog文件夹中，文件如下：</p>
-<p><br>2014/11/01  19:45    <dir>          .<br>2014/11/01  19:45    <dir>          ..<br>2014/11/01  11:16                68 .gitignore<br>2014/11/01  17:33            13,767 db.json<br>2014/11/01  11:16    <dir>          node_modules<br>2014/11/01  11:17               186 package.json<br>2014/11/01  11:23    <dir>          public<br>2014/11/01  11:16    <dir>          scaffolds<br>2014/11/01  17:31    <dir>          source<br>2014/11/01  11:16    <dir>          themes<br>2014/11/01  11:38             1,844 _config.yml<br></dir></dir></dir></dir></dir></dir></dir></p>
-<h2 id="u914D_u7F6E"><a href="#u914D_u7F6E" class="headerlink" title="配置"></a>配置</h2><p>站点的配置文件是_config.yml，如果你不小心改花了，这里提供了一份默认的：</p>
-<p></p>
-<h1 id="Hexo_Configuration"><a href="#Hexo_Configuration" class="headerlink" title="Hexo Configuration"></a>Hexo Configuration</h1><h2 id="Docs_3A_http_3A//hexo-io/docs/configuration-html"><a href="#Docs_3A_http_3A//hexo-io/docs/configuration-html" class="headerlink" title="Docs: http://hexo.io/docs/configuration.html"></a>Docs: <a href="http://hexo.io/docs/configuration.html" target="_blank" rel="external">http://hexo.io/docs/configuration.html</a></h2><h2 id="Source_3A_https_3A//github-com/hexojs/hexo/"><a href="#Source_3A_https_3A//github-com/hexojs/hexo/" class="headerlink" title="Source: https://github.com/hexojs/hexo/"></a>Source: <a href="https://github.com/hexojs/hexo/" target="_blank" rel="external">https://github.com/hexojs/hexo/</a></h2><h1 id="Site"><a href="#Site" class="headerlink" title="Site"></a>Site</h1><p>title: Hexo<br>subtitle:<br>description:<br>author: John Doe<br>email:<br>language:</p>
-<h1 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h1><h2 id="If_your_site_is_put_in_a_subdirectory_2C_set_url_as__u2018http_3A//yoursite-com/child_u2018_and_root_as__u2018/child/_u2018"><a href="#If_your_site_is_put_in_a_subdirectory_2C_set_url_as__u2018http_3A//yoursite-com/child_u2018_and_root_as__u2018/child/_u2018" class="headerlink" title="If your site is put in a subdirectory, set url as ‘http://yoursite.com/child‘ and root as ‘/child/‘"></a>If your site is put in a subdirectory, set url as ‘<a href="http://yoursite.com/child" target="_blank" rel="external">http://yoursite.com/child</a>‘ and root as ‘/child/‘</h2><p>url: <a href="http://yoursite.com" target="_blank" rel="external">http://yoursite.com</a><br>root: /<br>permalink: :year/:month/:day/:title/<br>tag_dir: tags<br>archive_dir: archives<br>category_dir: categories<br>code_dir: downloads/code<br>permalink_defaults:</p>
-<h1 id="Directory"><a href="#Directory" class="headerlink" title="Directory"></a>Directory</h1><p>source_dir: source<br>public_dir: public</p>
-<h1 id="Writing"><a href="#Writing" class="headerlink" title="Writing"></a>Writing</h1><p>new_post_name: :title.md # File name of new posts<br>default_layout: post<br>titlecase: false # Transform title into titlecase<br>external_link: true # Open external links in new tab<br>filename_case: 0<br>render_drafts: false<br>post_asset_folder: false<br>relative_link: false<br>highlight:<br>  enable: true<br>  line_number: true<br>  tab_replace:</p>
-<h1 id="Category__26amp_3B_Tag"><a href="#Category__26amp_3B_Tag" class="headerlink" title="Category &amp; Tag"></a>Category &amp; Tag</h1><p>default_category: uncategorized<br>category_map:<br>tag_map:</p>
-<h1 id="Archives"><a href="#Archives" class="headerlink" title="Archives"></a>Archives</h1><h2 id="2_3A_Enable_pagination"><a href="#2_3A_Enable_pagination" class="headerlink" title="2: Enable pagination"></a>2: Enable pagination</h2><h2 id="1_3A_Disable_pagination"><a href="#1_3A_Disable_pagination" class="headerlink" title="1: Disable pagination"></a>1: Disable pagination</h2><h2 id="0_3A_Fully_Disable"><a href="#0_3A_Fully_Disable" class="headerlink" title="0: Fully Disable"></a>0: Fully Disable</h2><p>archive: 2<br>category: 2<br>tag: 2</p>
-<h1 id="Server"><a href="#Server" class="headerlink" title="Server"></a>Server</h1><h2 id="Hexo_uses_Connect_as_a_server"><a href="#Hexo_uses_Connect_as_a_server" class="headerlink" title="Hexo uses Connect as a server"></a>Hexo uses Connect as a server</h2><h2 id="You_can_customize_the_logger_format_as_defined_in"><a href="#You_can_customize_the_logger_format_as_defined_in" class="headerlink" title="You can customize the logger format as defined in"></a>You can customize the logger format as defined in</h2><h2 id="http_3A//www-senchalabs-org/connect/logger-html"><a href="#http_3A//www-senchalabs-org/connect/logger-html" class="headerlink" title="http://www.senchalabs.org/connect/logger.html"></a><a href="http://www.senchalabs.org/connect/logger.html" target="_blank" rel="external">http://www.senchalabs.org/connect/logger.html</a></h2><p>port: 4000<br>server_ip: localhost<br>logger: false<br>logger_format: dev</p>
-<h1 id="Date_/_Time_format"><a href="#Date_/_Time_format" class="headerlink" title="Date / Time format"></a>Date / Time format</h1><h2 id="Hexo_uses_Moment-js_to_parse_and_display_date"><a href="#Hexo_uses_Moment-js_to_parse_and_display_date" class="headerlink" title="Hexo uses Moment.js to parse and display date"></a>Hexo uses Moment.js to parse and display date</h2><h2 id="You_can_customize_the_date_format_as_defined_in"><a href="#You_can_customize_the_date_format_as_defined_in" class="headerlink" title="You can customize the date format as defined in"></a>You can customize the date format as defined in</h2><h2 id="http_3A//momentjs-com/docs/_23/displaying/format/"><a href="#http_3A//momentjs-com/docs/_23/displaying/format/" class="headerlink" title="http://momentjs.com/docs/#/displaying/format/"></a><a href="http://momentjs.com/docs/#/displaying/format/" target="_blank" rel="external">http://momentjs.com/docs/#/displaying/format/</a></h2><p>date_format: MMM D YYYY<br>time_format: H:mm:ss</p>
-<h1 id="Pagination"><a href="#Pagination" class="headerlink" title="Pagination"></a>Pagination</h1><h2 id="Set_per_page_to_0_to_disable_pagination"><a href="#Set_per_page_to_0_to_disable_pagination" class="headerlink" title="Set per_page to 0 to disable pagination"></a>Set per_page to 0 to disable pagination</h2><p>per_page: 10<br>pagination_dir: page</p>
-<h1 id="Disqus"><a href="#Disqus" class="headerlink" title="Disqus"></a>Disqus</h1><p>disqus_shortname:</p>
-<h1 id="Extensions"><a href="#Extensions" class="headerlink" title="Extensions"></a>Extensions</h1><h2 id="Plugins_3A_https_3A//github-com/hexojs/hexo/wiki/Plugins"><a href="#Plugins_3A_https_3A//github-com/hexojs/hexo/wiki/Plugins" class="headerlink" title="Plugins: https://github.com/hexojs/hexo/wiki/Plugins"></a>Plugins: <a href="https://github.com/hexojs/hexo/wiki/Plugins" target="_blank" rel="external">https://github.com/hexojs/hexo/wiki/Plugins</a></h2><h2 id="Themes_3A_https_3A//github-com/hexojs/hexo/wiki/Themes"><a href="#Themes_3A_https_3A//github-com/hexojs/hexo/wiki/Themes" class="headerlink" title="Themes: https://github.com/hexojs/hexo/wiki/Themes"></a>Themes: <a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">https://github.com/hexojs/hexo/wiki/Themes</a></h2><p>theme: landscape<br>exclude_generator:</p>
-<h1 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h1><h2 id="Docs_3A_http_3A//hexo-io/docs/deployment-html"><a href="#Docs_3A_http_3A//hexo-io/docs/deployment-html" class="headerlink" title="Docs: http://hexo.io/docs/deployment.html"></a>Docs: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">http://hexo.io/docs/deployment.html</a></h2><p>deploy:<br>  type:<br></p>
-<p><a href="http://hexo.io/docs/configuration.html" target="_blank" rel="external">官方的页面</a>上也提供了每一项详细的解释。</p>
-<p>我们需要修改的只有Site部分，以及URL部分的url。Site部分每一项依次是标题、副标题、描述、作者、邮箱和语言（天朝大陆填zh-CN）。url改成网站的网址，如果你的网站放在某个子目录下，比如<a href="http://yoursite.com/child，root改成/child。" target="_blank" rel="external">http://yoursite.com/child，root改成/child。</a></p>
-<p>Server部分，如果之前你的服务器没有运行起来，则可能是端口被占了。把port改成别的数字，或者强行关掉占着端口的进程。</p>
-<p>其它设置项先不用管，将会在接下来的文章中解释。</p>
-<h2 id="u6CE8_u610F"><a href="#u6CE8_u610F" class="headerlink" title="注意"></a>注意</h2><p><strong>如果页面中出现中文，应以UTF-8无BOM编码格式，所以不要用win自带的记事本，而是用notepad++这种支持编码转换的编辑器。</strong></p>
-<p>由于google在天朝大陆被墙，进入themes\landscape\layout_partial，打开head.ejs，删掉第31行fonts.googleapis.com的链接。</p>
-<p>下载下来jquery-2.0.3.min.js，放到themes\landscape\source\js文件夹中。之后进入themes\landscape\layout_partial，打开after-footer.ejs，将第17行的路径替换为/js/jquery-2.0.3.min.js。</p>
-<p>至此大功告成。</p>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/hexo-tutor-2/">
-    <time datetime="2014-11-01T12:00:00.000Z" class="entry-date">
-        11月 1 2014
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/应用/">应用</a>
-  </div>
-
-    
-  <span class="article-delim">&#8226;</span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-
-    </footer>
-</article>
-
-
-
-
-
-
-  
-    <article id="post-hexo-tutor-1" class="post-hexo-tutor-1 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/hexo-tutor-1/">Hexo 入门指南（一） - 简介 &amp; 准备</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/hexo-tutor-1/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-1/" data-id="ciksb20tu009djog60vk2v9zc" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <p>Hexo是一个开源的静态博客生成器，用node.js开发，作者是台湾大学生tommy351。</p>
-<h2 id="u4E3A_u4EC0_u4E48_u662F_u535A_u5BA2"><a href="#u4E3A_u4EC0_u4E48_u662F_u535A_u5BA2" class="headerlink" title="为什么是博客"></a>为什么是博客</h2><p>对于个人网站来说，没有比博客更合适的形式了。在博客中，文章才是最主要的，一切都显得主次分明，干净利落。相比之下，论坛中主题和回复鱼龙混杂，阅读体验非常差。同时，博客比论坛的数据库小很多，便于维护。</p>
-<h2 id="u4E3A_u4EC0_u4E48_u662F_u9759_u6001_u535A_u5BA2"><a href="#u4E3A_u4EC0_u4E48_u662F_u9759_u6001_u535A_u5BA2" class="headerlink" title="为什么是静态博客"></a>为什么是静态博客</h2><p>很多人选择在虚拟主机或vps上面搭建动态博客。但是这些主机商通常“免费的不稳定，稳定的不免费”。前一段时间，我观察了我的个人博客友链上面的几个站点，一部分在十几天之后就销声匿迹了。独立博客如此麻烦的维护工作，能不能减轻一些呢？正如阮一峰前辈所说，blogger分为三个阶段。最开始，是门户博客。之后，是独立博客。最后，觉得独立博客自己管理起来费劲，便找个别人来管的空间，自己负责写就好。如果我们能够找到这样的空间，在自己保留最大控制权前提下，由别人托管，会省去不少事情。</p>
-<p>静态博客编译之后是纯html页面，优点就是支持它的环境十分好找，例如github、gitcafe、七牛云存储等站点都支持静态页面托管，自然是我们的首选了。由于github page在国内访问较慢，这篇文章用gitcafe做示范。gitcafe是天朝本地化的github，同样提供展示页和域名绑定功能，不需要备案，就是爽。</p>
-<p>但是静态博客并非没有缺点。动态博客更新文章时，脚本是不变的，只需要更新数据库。静态博客要频繁改动文件，不支持增量式上传的东西，比如ftp，就难于管理。此外，还要十分熟悉git各种命令，才能部署页面。</p>
-<h2 id="u51C6_u5907_u5DE5_u4F5C"><a href="#u51C6_u5907_u5DE5_u4F5C" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
-<li>git</li>
-<li>node.js</li>
-<li>markdown编辑器</li>
-<li>gitcafe</li>
-<li>域名</li>
-</ul>
-<p>markdown编辑器是非必须的，只要你熟悉语法，随便一个编辑器来写都不是问题。</p>
-<p>域名也是非必须的，gitcafe pages服务提供免费的二级域名。注册域名的教程这里就不写了。</p>
-<h2 id="u5B89_u88C5_git"><a href="#u5B89_u88C5_git" class="headerlink" title="安装 git"></a>安装 git</h2><p>git的客户端，本人推荐git-scm。</p>
-<p>linux下面，在bash中键入：</p>
-<p>(Ubuntu, Debian)</p>
-<p><br>$ sudo apt-get install git<br></p>
-<p>(Fedora, Red Hat, CentOS)</p>
-<p><br>$ sudo yum install git<br></p>
-<p>windows或mac下，直接到<a href="http://git-scm.com/" target="_blank" rel="external">git-scm官网</a>下载安装。</p>
-<h2 id="u5B89_u88C5_node-js"><a href="#u5B89_u88C5_node-js" class="headerlink" title="安装 node.js"></a>安装 node.js</h2><p>linux下：</p>
-<p><br>$ sudo apt-get install nodejs<br>$ sudo apt-get install npm<br></p>
-<p>yum同理。</p>
-<p>windows或者mac下，直接到<a href="http://nodejs.org/download/" target="_blank" rel="external">node.js官网</a>下载安装。<br>windows还要设置环境变量，把node.js安装路径写进path里面，用半角分号分隔。</p>
-<h2 id="markdown__u7F16_u8F91_u5668"><a href="#markdown__u7F16_u8F91_u5668" class="headerlink" title="markdown 编辑器"></a>markdown 编辑器</h2><p>windows下推荐<a href="http://markdownpad.com/" target="_blank" rel="external">markdown pad</a>。</p>
-<p>mac下推荐<a href="http://25.io/mou/" target="_blank" rel="external">mou</a>。</p>
-<h2 id="gitcafe"><a href="#gitcafe" class="headerlink" title="gitcafe"></a>gitcafe</h2><p>首先注册一个账号，之后点击查看<a href="https://gitcafe.com/GitCafe/Help/wiki/Pages-%E7%9B%B8%E5%85%B3%E5%B8%AE%E5%8A%A9" target="_blank" rel="external">如何使用pages服务</a>。</p>
-<h2 id="u76F8_u5173_u7F51_u9875"><a href="#u76F8_u5173_u7F51_u9875" class="headerlink" title="相关网页"></a>相关网页</h2><ul>
-<li><a href="http://blog.csdn.net/wizardforcel/article/details/hexo.io" target="_blank" rel="external">Hexo主页</a></li>
-<li><a href="https://github.com/hexojs/hexo" target="_blank" rel="external">Hexo github 地址</a></li>
-<li><a href="http://git-scm.com/book/zh/v1" target="_blank" rel="external">git book</a></li>
-</ul>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/hexo-tutor-1/">
-    <time datetime="2014-11-01T10:28:38.000Z" class="entry-date">
-        11月 1 2014
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/应用/">应用</a>
-  </div>
-
-    
-  <span class="article-delim">&#8226;</span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-
-    </footer>
-</article>
-
-
-
-
-
-
-  
     <article id="post-miui-for-nexus7-一代" class="post-miui-for-nexus7-一代 post type-post status-publish format-standard hentry">
     <!---->
 
@@ -707,7 +152,7 @@
             
             <a href="/miui-for-nexus7-一代/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/miui-for-nexus7-一代/" data-id="ciksb20tc008ijog6uyi9666g" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/miui-for-nexus7-一代/" data-id="cil8s8q68007ye0g6g0hw845t" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -764,7 +209,7 @@
             
             <a href="/神器-无需注册的临时邮箱/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/神器-无需注册的临时邮箱/" data-id="ciksb20pb001wjog6o3wda2sf" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/神器-无需注册的临时邮箱/" data-id="cil8s8q2b001xe0g6bi3hykf8" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -802,7 +247,7 @@
   
     <nav id="pagination">
       <nav id="page-nav">
-        <a class="extend prev" rel="prev" href="/categories/应用/">&laquo; 上一页</a><a class="page-number" href="/categories/应用/">1</a><span class="page-number current">2</span><a class="page-number" href="/categories/应用/page/3/">3</a><a class="extend next" rel="next" href="/categories/应用/page/3/">下一页 &raquo;</a>
+        <a class="extend prev" rel="prev" href="/categories/应用/">&laquo; 上一页</a><a class="page-number" href="/categories/应用/">1</a><span class="page-number current">2</span>
       </nav>
     </nav>
   
@@ -873,7 +318,7 @@
   <aside class="widget">
     <h3 class="widget-title">Archives</h3>
     <div class="widget-content">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">16</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">16</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/02/">二月 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01/">一月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">十二月 2013</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">十一月 2013</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">十月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/02/">二月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01/">一月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">十二月 2013</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">十一月 2013</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">十月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">17</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </aside>
 
@@ -882,7 +327,7 @@
   <aside class="widget">
     <h3 class="widget-title">Categories</h3>
     <div class="widget-content">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/wordpress/">wordpress</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/公告/">公告</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/安全/">安全</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/应用/">应用</a><span class="category-list-count">21</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂记/">杂记</a><span class="category-list-count">38</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a><span class="category-list-count">55</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/网站/">网站</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/贴吧/">贴吧</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/资源/">资源</a><span class="category-list-count">6</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wordpress/">wordpress</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/公告/">公告</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/安全/">安全</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/应用/">应用</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂记/">杂记</a><span class="category-list-count">36</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a><span class="category-list-count">51</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/网站/">网站</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/贴吧/">贴吧</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/资源/">资源</a><span class="category-list-count">6</span></li></ul>
     </div>
   </aside>
 
@@ -891,7 +336,7 @@
   <aside class="widget">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget-content tagcloud">
-      <a href="/tags/Invoke/" style="font-size: 10px;">Invoke</a> <a href="/tags/asp/" style="font-size: 10px;">asp</a> <a href="/tags/awvs/" style="font-size: 10px;">awvs</a> <a href="/tags/calculus/" style="font-size: 10px;">calculus</a> <a href="/tags/cpp/" style="font-size: 17.5px;">cpp</a> <a href="/tags/csharp/" style="font-size: 15px;">csharp</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/html5/" style="font-size: 10px;">html5</a> <a href="/tags/javascript/" style="font-size: 12.5px;">javascript</a> <a href="/tags/pdf/" style="font-size: 10px;">pdf</a> <a href="/tags/php/" style="font-size: 10px;">php</a> <a href="/tags/safe3/" style="font-size: 10px;">safe3</a> <a href="/tags/skinsharp/" style="font-size: 10px;">skinsharp</a> <a href="/tags/sql/" style="font-size: 10px;">sql</a> <a href="/tags/sqlmap/" style="font-size: 12.5px;">sqlmap</a> <a href="/tags/sql注入/" style="font-size: 12.5px;">sql注入</a> <a href="/tags/stewart/" style="font-size: 10px;">stewart</a> <a href="/tags/xss/" style="font-size: 10px;">xss</a> <a href="/tags/一键签到/" style="font-size: 10px;">一键签到</a> <a href="/tags/世界树II/" style="font-size: 10px;">世界树II</a> <a href="/tags/刷会员/" style="font-size: 10px;">刷会员</a> <a href="/tags/刷签到/" style="font-size: 10px;">刷签到</a> <a href="/tags/刷粉/" style="font-size: 10px;">刷粉</a> <a href="/tags/北狗の撸/" style="font-size: 10px;">北狗の撸</a> <a href="/tags/去重复/" style="font-size: 10px;">去重复</a> <a href="/tags/各种查/" style="font-size: 10px;">各种查</a> <a href="/tags/多线程/" style="font-size: 12.5px;">多线程</a> <a href="/tags/密码/" style="font-size: 10px;">密码</a> <a href="/tags/教程/" style="font-size: 10px;">教程</a> <a href="/tags/易语言/" style="font-size: 12.5px;">易语言</a> <a href="/tags/梅嘉斯之门/" style="font-size: 10px;">梅嘉斯之门</a> <a href="/tags/皮肤/" style="font-size: 10px;">皮肤</a> <a href="/tags/盖楼机/" style="font-size: 10px;">盖楼机</a> <a href="/tags/神意/" style="font-size: 10px;">神意</a> <a href="/tags/编程/" style="font-size: 12.5px;">编程</a> <a href="/tags/苍海/" style="font-size: 10px;">苍海</a> <a href="/tags/苍海国际/" style="font-size: 10px;">苍海国际</a> <a href="/tags/萨菲尔斯/" style="font-size: 10px;">萨菲尔斯</a> <a href="/tags/贴吧/" style="font-size: 12.5px;">贴吧</a> <a href="/tags/贴吧工具/" style="font-size: 10px;">贴吧工具</a> <a href="/tags/贴吧辅助/" style="font-size: 10px;">贴吧辅助</a> <a href="/tags/马甲/" style="font-size: 10px;">马甲</a>
+      <a href="/tags/Invoke/" style="font-size: 10px;">Invoke</a> <a href="/tags/awvs/" style="font-size: 10px;">awvs</a> <a href="/tags/calculus/" style="font-size: 10px;">calculus</a> <a href="/tags/cpp/" style="font-size: 20px;">cpp</a> <a href="/tags/csharp/" style="font-size: 16.67px;">csharp</a> <a href="/tags/html5/" style="font-size: 10px;">html5</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/pdf/" style="font-size: 10px;">pdf</a> <a href="/tags/safe3/" style="font-size: 10px;">safe3</a> <a href="/tags/skinsharp/" style="font-size: 10px;">skinsharp</a> <a href="/tags/sqlmap/" style="font-size: 13.33px;">sqlmap</a> <a href="/tags/sql注入/" style="font-size: 13.33px;">sql注入</a> <a href="/tags/stewart/" style="font-size: 10px;">stewart</a> <a href="/tags/xss/" style="font-size: 10px;">xss</a> <a href="/tags/一键签到/" style="font-size: 10px;">一键签到</a> <a href="/tags/世界树II/" style="font-size: 10px;">世界树II</a> <a href="/tags/刷会员/" style="font-size: 10px;">刷会员</a> <a href="/tags/刷签到/" style="font-size: 10px;">刷签到</a> <a href="/tags/刷粉/" style="font-size: 10px;">刷粉</a> <a href="/tags/北狗の撸/" style="font-size: 10px;">北狗の撸</a> <a href="/tags/去重复/" style="font-size: 10px;">去重复</a> <a href="/tags/各种查/" style="font-size: 10px;">各种查</a> <a href="/tags/多线程/" style="font-size: 13.33px;">多线程</a> <a href="/tags/密码/" style="font-size: 10px;">密码</a> <a href="/tags/教程/" style="font-size: 10px;">教程</a> <a href="/tags/易语言/" style="font-size: 13.33px;">易语言</a> <a href="/tags/梅嘉斯之门/" style="font-size: 10px;">梅嘉斯之门</a> <a href="/tags/皮肤/" style="font-size: 10px;">皮肤</a> <a href="/tags/盖楼机/" style="font-size: 10px;">盖楼机</a> <a href="/tags/神意/" style="font-size: 10px;">神意</a> <a href="/tags/编程/" style="font-size: 13.33px;">编程</a> <a href="/tags/苍海/" style="font-size: 10px;">苍海</a> <a href="/tags/苍海国际/" style="font-size: 10px;">苍海国际</a> <a href="/tags/萨菲尔斯/" style="font-size: 10px;">萨菲尔斯</a> <a href="/tags/贴吧/" style="font-size: 13.33px;">贴吧</a> <a href="/tags/贴吧工具/" style="font-size: 10px;">贴吧工具</a> <a href="/tags/贴吧辅助/" style="font-size: 10px;">贴吧辅助</a> <a href="/tags/马甲/" style="font-size: 10px;">马甲</a>
     </div>
   </aside>
 

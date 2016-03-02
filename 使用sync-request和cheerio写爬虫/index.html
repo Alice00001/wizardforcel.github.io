@@ -42,7 +42,7 @@
   
     <link rel="icon" href="http://7u2hdm.com1.z0.glb.clouddn.com/favicon.ico">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
   
 
   
@@ -83,7 +83,7 @@
                 
                     <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/atom.xml">RSS</a></li>
                 
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://gitcafe.com/wizardforcel/blog">fork me on gitcafe</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://coding.net/u/wizardforcel/p/blog/git">fork me on coding</a></li>
                 
                 </ul>
             </div>
@@ -117,13 +117,13 @@
 <p>首先，安装sync-request包：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install sync-request</span><br></pre></td></tr></table></figure>
 <p>它的使用方法是：<a id="more"></a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var request = require(&#39;sync-request&#39;);&#10;var html = request(method, url, options).getBody().toString();</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var request = require(&apos;sync-request&apos;);</span><br><span class="line">var html = request(method, url, options).getBody().toString();</span><br></pre></td></tr></table></figure>
 <p>然后我们需要一个解析html树的工具。jsdom可以用，但是它实在是太大，我们可以用cheerio，它提供了类似jquery的api，更加便捷。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install cheerio</span><br></pre></td></tr></table></figure>
 <p>之后：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var cheerio = require(&#39;cheerio&#39;);&#10;var $ = cheerio.load(html);</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var cheerio = require(&apos;cheerio&apos;);</span><br><span class="line">var $ = cheerio.load(html);</span><br></pre></td></tr></table></figure>
 <p>下面是抓取菜鸟教程（runoob.com）单部教程的一个例子：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var cheerio = require(&#39;cheerio&#39;);&#10;var request = require(&#39;sync-request&#39;);&#10;var fs = require(&#39;fs&#39;);&#10;&#10;var ofile = fs.openSync(&#39;out.html&#39;, &#39;w&#39;);&#10;&#10;var url = &#39;http://www.runoob.com/html/html-tutorial.html&#39;;&#10;var html = request(&#39;GET&#39;, url).getBody().toString();&#10;&#10;var toc = getToc(html);&#10;for(var i in toc) &#123;&#10;&#9;var url = toc[i];&#10;&#9;console.log(&#39;page: &#39; + url);&#10;&#9;html = request(&#39;GET&#39;, url).getBody().toString();&#10;&#9;var content = getContent(html);&#10;&#9;fs.writeSync(ofile, content, null, &#39;utf-8&#39;);&#10;&#125;&#10;&#10;fs.closeSync(ofile);&#10;console.log(&#39;Done..&#39;);&#10;&#10;function getToc(html)  &#123;&#10;&#10;&#9;var $ = cheerio.load(html);&#10;&#10;&#9;var $list = $(&#39;#leftcolumn&#39;).find(&#39;a&#39;);&#10;&#9;var res = [];&#10;&#9;for(var i = 0; i &#60; $list.length; i++)&#10;&#9;&#123;&#10;&#9;&#9;var url = $list.eq(i).attr(&#39;href&#39;);&#10;&#9;&#9;res.push(&#39;http://www.runoob.com/&#39; + url);&#10;&#9;&#125;&#10;&#9;return res;&#10;&#125;&#10;&#10;function getContent(html) &#123;&#10;&#9;var $ = cheerio.load(html);&#10;&#9;var content = $(&#39;#content&#39;).html();&#10;&#9;return content;&#10;&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">var cheerio = require(&apos;cheerio&apos;);</span><br><span class="line">var request = require(&apos;sync-request&apos;);</span><br><span class="line">var fs = require(&apos;fs&apos;);</span><br><span class="line"></span><br><span class="line">var ofile = fs.openSync(&apos;out.html&apos;, &apos;w&apos;);</span><br><span class="line"></span><br><span class="line">var url = &apos;http://www.runoob.com/html/html-tutorial.html&apos;;</span><br><span class="line">var html = request(&apos;GET&apos;, url).getBody().toString();</span><br><span class="line"></span><br><span class="line">var toc = getToc(html);</span><br><span class="line">for(var i in toc) &#123;</span><br><span class="line">	var url = toc[i];</span><br><span class="line">	console.log(&apos;page: &apos; + url);</span><br><span class="line">	html = request(&apos;GET&apos;, url).getBody().toString();</span><br><span class="line">	var content = getContent(html);</span><br><span class="line">	fs.writeSync(ofile, content, null, &apos;utf-8&apos;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">fs.closeSync(ofile);</span><br><span class="line">console.log(&apos;Done..&apos;);</span><br><span class="line"></span><br><span class="line">function getToc(html)  &#123;</span><br><span class="line"></span><br><span class="line">	var $ = cheerio.load(html);</span><br><span class="line"></span><br><span class="line">	var $list = $(&apos;#leftcolumn&apos;).find(&apos;a&apos;);</span><br><span class="line">	var res = [];</span><br><span class="line">	for(var i = 0; i &lt; $list.length; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		var url = $list.eq(i).attr(&apos;href&apos;);</span><br><span class="line">		res.push(&apos;http://www.runoob.com/&apos; + url);</span><br><span class="line">	&#125;</span><br><span class="line">	return res;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function getContent(html) &#123;</span><br><span class="line">	var $ = cheerio.load(html);</span><br><span class="line">	var content = $(&apos;#content&apos;).html();</span><br><span class="line">	return content;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div><!-- .entry-content -->
 
@@ -343,11 +343,11 @@
 <script src="/js/jquery-2.0.3.min.js"></script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
-  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/js/script.js" type="text/javascript"></script>
+<script src="/js/script.js"></script>
 
 <script src="/js/navigation.js"></script>
 

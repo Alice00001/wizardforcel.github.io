@@ -33,7 +33,7 @@
   
     <link rel="icon" href="http://7u2hdm.com1.z0.glb.clouddn.com/favicon.ico">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
   
 
   
@@ -74,7 +74,7 @@
                 
                     <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/atom.xml">RSS</a></li>
                 
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://gitcafe.com/wizardforcel/blog">fork me on gitcafe</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://coding.net/u/wizardforcel/p/blog/git">fork me on coding</a></li>
                 
                 </ul>
             </div>
@@ -120,15 +120,15 @@ SELECT col(s) FROM
 [WHERE condition]
 </pre>
 
-<h3 id="SELECT_DISTINCT"><a href="#SELECT_DISTINCT" class="headerlink" title="SELECT DISTINCT"></a>SELECT DISTINCT</h3><pre>
+<h3 id="SELECT-DISTINCT"><a href="#SELECT-DISTINCT" class="headerlink" title="SELECT DISTINCT"></a>SELECT DISTINCT</h3><pre>
 SELECT DISTINCT col(s) FROM table [WHERE condition]
 </pre>
 
-<h3 id="WHERE__u2026_AND_/_OR"><a href="#WHERE__u2026_AND_/_OR" class="headerlink" title="WHERE … AND / OR"></a>WHERE … AND / OR</h3><pre>
+<h3 id="WHERE-…-AND-OR"><a href="#WHERE-…-AND-OR" class="headerlink" title="WHERE … AND / OR"></a>WHERE … AND / OR</h3><pre>
 SELECT DISTINCT col(s) FROM table WHERE condition1 AND/OR condition2 [...]
 </pre>
 
-<h3 id="WHERE__u2026_IN"><a href="#WHERE__u2026_IN" class="headerlink" title="WHERE … IN"></a>WHERE … IN</h3><pre>
+<h3 id="WHERE-…-IN"><a href="#WHERE-…-IN" class="headerlink" title="WHERE … IN"></a>WHERE … IN</h3><pre>
 SELECT col(s) FROM table WHERE col IN (val1, val2, ...)
 </pre>
 
@@ -137,15 +137,15 @@ SELECT col(s) FROM table WHERE col IN
     (SELECT col FROM new_table WHERE condition) AS alias
 </pre>
 
-<h3 id="WHERE__u2026_LIKE"><a href="#WHERE__u2026_LIKE" class="headerlink" title="WHERE … LIKE"></a>WHERE … LIKE</h3><pre>
+<h3 id="WHERE-…-LIKE"><a href="#WHERE-…-LIKE" class="headerlink" title="WHERE … LIKE"></a>WHERE … LIKE</h3><pre>
 SELECT col(s) FROM table WHERE col LIKE pattern
 </pre>
 
-<h3 id="WHERE__u2026_REGEXP"><a href="#WHERE__u2026_REGEXP" class="headerlink" title="WHERE … REGEXP"></a>WHERE … REGEXP</h3><pre>
+<h3 id="WHERE-…-REGEXP"><a href="#WHERE-…-REGEXP" class="headerlink" title="WHERE … REGEXP"></a>WHERE … REGEXP</h3><pre>
 SELECT col(s) FROM table WHERE col REGEXP pattern
 </pre>
 
-<h3 id="WHERE__u2026_BETWEEN"><a href="#WHERE__u2026_BETWEEN" class="headerlink" title="WHERE … BETWEEN"></a>WHERE … BETWEEN</h3><pre>
+<h3 id="WHERE-…-BETWEEN"><a href="#WHERE-…-BETWEEN" class="headerlink" title="WHERE … BETWEEN"></a>WHERE … BETWEEN</h3><pre>
 SELECT col(s) FROM table WHERE col BETWEEN val AND val2
 </pre>
 
@@ -167,23 +167,23 @@ SELECT
 FROM table WHERE condition
 </pre>
 
-<h2 id="ORDER_BY"><a href="#ORDER_BY" class="headerlink" title="ORDER BY"></a>ORDER BY</h2><pre>
+<h2 id="ORDER-BY"><a href="#ORDER-BY" class="headerlink" title="ORDER BY"></a>ORDER BY</h2><pre>
 SELECT col(s) FROM table WHERE condition ORDER BY col [ASC | DESC]
 </pre>
 
-<h2 id="avg_2C_max_2C_min_2C_sum"><a href="#avg_2C_max_2C_min_2C_sum" class="headerlink" title="avg, max, min, sum"></a>avg, max, min, sum</h2><pre>
+<h2 id="avg-max-min-sum"><a href="#avg-max-min-sum" class="headerlink" title="avg, max, min, sum"></a>avg, max, min, sum</h2><pre>
 SELECT func(col), col(s) FROM table
 </pre>
 
-<h3 id="GROUP_BY"><a href="#GROUP_BY" class="headerlink" title="GROUP BY"></a>GROUP BY</h3><pre>
+<h3 id="GROUP-BY"><a href="#GROUP-BY" class="headerlink" title="GROUP BY"></a>GROUP BY</h3><pre>
 SELECT func(col), col(s) FROM table GROUP BY col
 </pre>
 
-<h3 id="GROUP_BY_HAVING"><a href="#GROUP_BY_HAVING" class="headerlink" title="GROUP BY HAVING"></a>GROUP BY HAVING</h3><pre>
+<h3 id="GROUP-BY-HAVING"><a href="#GROUP-BY-HAVING" class="headerlink" title="GROUP BY HAVING"></a>GROUP BY HAVING</h3><pre>
 SELECT func(col), col(s) FROM table GROUP BY col HAVING func(col) op val
 </pre>
 
-<h2 id="INSERT_INTO"><a href="#INSERT_INTO" class="headerlink" title="INSERT INTO"></a>INSERT INTO</h2><pre>
+<h2 id="INSERT-INTO"><a href="#INSERT-INTO" class="headerlink" title="INSERT INTO"></a>INSERT INTO</h2><pre>
 INSERT INTO table[(col1, col2, ...)] VALUES (val1, val2, ...) [, ...]
 </pre>
 
@@ -192,20 +192,20 @@ INSERT INTO table[(col1, col2, ...)] VALUES
     (SELECT col(s) FROM table WHERE condition) AS alias
 </pre>
 
-<h3 id="INSERT_IGNORE_INTO"><a href="#INSERT_IGNORE_INTO" class="headerlink" title="INSERT IGNORE INTO"></a>INSERT IGNORE INTO</h3><pre>
+<h3 id="INSERT-IGNORE-INTO"><a href="#INSERT-IGNORE-INTO" class="headerlink" title="INSERT IGNORE INTO"></a>INSERT IGNORE INTO</h3><pre>
 INSERT IGNORE INTO table[(col1, col2, ...)] VALUES (val1, val2, ...) [, ...]
 </pre>
 
-<h3 id="REPLACE_INTO"><a href="#REPLACE_INTO" class="headerlink" title="REPLACE INTO"></a>REPLACE INTO</h3><pre>
+<h3 id="REPLACE-INTO"><a href="#REPLACE-INTO" class="headerlink" title="REPLACE INTO"></a>REPLACE INTO</h3><pre>
 REPLACE INTO table[(col1, col2, ...)] VALUES (val1, val2, ...) [, ...]
 </pre>
 
-<h3 id="INSERT_u2026ON_DUPLICATE_KEY_UPDATE"><a href="#INSERT_u2026ON_DUPLICATE_KEY_UPDATE" class="headerlink" title="INSERT…ON DUPLICATE KEY UPDATE"></a>INSERT…ON DUPLICATE KEY UPDATE</h3><pre>
+<h3 id="INSERT…ON-DUPLICATE-KEY-UPDATE"><a href="#INSERT…ON-DUPLICATE-KEY-UPDATE" class="headerlink" title="INSERT…ON DUPLICATE KEY UPDATE"></a>INSERT…ON DUPLICATE KEY UPDATE</h3><pre>
 INSERT INTO table[(col1, col2, ...)] VALUES (val1, val2, ...) [, ...]
 ON DUPLICATE KEY UPDATE col1=val1 [, col2=val2, ...]
 </pre>
 
-<h3 id="SELECT_INTO"><a href="#SELECT_INTO" class="headerlink" title="SELECT INTO"></a>SELECT INTO</h3><pre>
+<h3 id="SELECT-INTO"><a href="#SELECT-INTO" class="headerlink" title="SELECT INTO"></a>SELECT INTO</h3><pre>
 SELECT col(s) INTO new_table FROM table WHERE condition
 </pre>
 
@@ -217,11 +217,11 @@ UPDATE table SET col1=val1 [, col2=val2, ...] WHERE condition
 DELETE FROM table [WHERE condition]
 </pre>
 
-<h2 id="CREATE_DATABASE"><a href="#CREATE_DATABASE" class="headerlink" title="CREATE DATABASE"></a>CREATE DATABASE</h2><pre>
+<h2 id="CREATE-DATABASE"><a href="#CREATE-DATABASE" class="headerlink" title="CREATE DATABASE"></a>CREATE DATABASE</h2><pre>
 CREATE DATABASE database
 </pre>
 
-<h2 id="CREATE_TABLE"><a href="#CREATE_TABLE" class="headerlink" title="CREATE TABLE"></a>CREATE TABLE</h2><pre>
+<h2 id="CREATE-TABLE"><a href="#CREATE-TABLE" class="headerlink" title="CREATE TABLE"></a>CREATE TABLE</h2><pre>
 CREATE TABLE table
 (
     type1 col1 [constrait1]
@@ -231,20 +231,20 @@ CREATE TABLE table
 )
 </pre>
 
-<h2 id="CREATE_VIEW"><a href="#CREATE_VIEW" class="headerlink" title="CREATE VIEW"></a>CREATE VIEW</h2><pre>
+<h2 id="CREATE-VIEW"><a href="#CREATE-VIEW" class="headerlink" title="CREATE VIEW"></a>CREATE VIEW</h2><pre>
 CREATE VIEW view AS
     SELECT col(s) FROM table WHERE condition
 </pre>
 
-<h2 id="DROP_DATABASE"><a href="#DROP_DATABASE" class="headerlink" title="DROP DATABASE"></a>DROP DATABASE</h2><pre>
+<h2 id="DROP-DATABASE"><a href="#DROP-DATABASE" class="headerlink" title="DROP DATABASE"></a>DROP DATABASE</h2><pre>
 DROP DATABASE database
 </pre>
 
-<h2 id="DROP_TABLE"><a href="#DROP_TABLE" class="headerlink" title="DROP TABLE"></a>DROP TABLE</h2><pre>
+<h2 id="DROP-TABLE"><a href="#DROP-TABLE" class="headerlink" title="DROP TABLE"></a>DROP TABLE</h2><pre>
 DROP TABLE table
 </pre>
 
-<h2 id="ALTER_TABLE__u2026_ADD"><a href="#ALTER_TABLE__u2026_ADD" class="headerlink" title="ALTER TABLE … ADD"></a>ALTER TABLE … ADD</h2><pre>
+<h2 id="ALTER-TABLE-…-ADD"><a href="#ALTER-TABLE-…-ADD" class="headerlink" title="ALTER TABLE … ADD"></a>ALTER TABLE … ADD</h2><pre>
 ALTER TABLE table
 ADD col type [constrait]
 </pre>
@@ -254,7 +254,7 @@ ALTER TABLE table
 ADD constrait
 </pre>
 
-<h2 id="ALTER_TABLE__u2026_DROP"><a href="#ALTER_TABLE__u2026_DROP" class="headerlink" title="ALTER TABLE … DROP"></a>ALTER TABLE … DROP</h2><pre>
+<h2 id="ALTER-TABLE-…-DROP"><a href="#ALTER-TABLE-…-DROP" class="headerlink" title="ALTER TABLE … DROP"></a>ALTER TABLE … DROP</h2><pre>
 ALTER TABLE table 
 DROP COLUMN col
 </pre>
@@ -264,7 +264,7 @@ ALTER TABLE table
 ADD constrait
 </pre>
 
-<h2 id="ALTER_TABLE__u2026_ALTER"><a href="#ALTER_TABLE__u2026_ALTER" class="headerlink" title="ALTER TABLE … ALTER"></a>ALTER TABLE … ALTER</h2><pre>
+<h2 id="ALTER-TABLE-…-ALTER"><a href="#ALTER-TABLE-…-ALTER" class="headerlink" title="ALTER TABLE … ALTER"></a>ALTER TABLE … ALTER</h2><pre>
 ALTER TABLE table_name
 ALTER COLUMN col type [constrait]
 </pre>
@@ -487,11 +487,11 @@ ALTER COLUMN col type [constrait]
 <script src="/js/jquery-2.0.3.min.js"></script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
-  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/js/script.js" type="text/javascript"></script>
+<script src="/js/script.js"></script>
 
 <script src="/js/navigation.js"></script>
 

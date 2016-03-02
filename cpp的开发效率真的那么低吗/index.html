@@ -19,27 +19,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="前几天看到一篇文章，对比Node.js和C++的，挺有意思。
 大家都知道Node.js开发效率高，下面是它创建server并监听的代码：
-1var http = require(&amp;#39;http&amp;#39;);&amp;#10;&amp;#10;http.createServer(function(req, res) &amp;#123;&amp;#10;  res.writeHead(200,  &amp;#123;&amp;#39;Cont">
+12345678var http = require(&amp;apos;http&amp;apos;);http.createServer(function(req, res) &amp;#123;  res.writeHead(200,  &amp;#123;&amp;apos;Content-T">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C++的开发效率真的那么低吗">
 <meta property="og:url" content="http://www.flygon.net/cpp的开发效率真的那么低吗/index.html">
 <meta property="og:site_name" content="龙哥盟">
 <meta property="og:description" content="前几天看到一篇文章，对比Node.js和C++的，挺有意思。
 大家都知道Node.js开发效率高，下面是它创建server并监听的代码：
-1var http = require(&amp;#39;http&amp;#39;);&amp;#10;&amp;#10;http.createServer(function(req, res) &amp;#123;&amp;#10;  res.writeHead(200,  &amp;#123;&amp;#39;Cont">
+12345678var http = require(&amp;apos;http&amp;apos;);http.createServer(function(req, res) &amp;#123;  res.writeHead(200,  &amp;#123;&amp;apos;Content-T">
 <meta property="og:updated_time" content="2016-02-07T11:33:47.099Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++的开发效率真的那么低吗">
 <meta name="twitter:description" content="前几天看到一篇文章，对比Node.js和C++的，挺有意思。
 大家都知道Node.js开发效率高，下面是它创建server并监听的代码：
-1var http = require(&amp;#39;http&amp;#39;);&amp;#10;&amp;#10;http.createServer(function(req, res) &amp;#123;&amp;#10;  res.writeHead(200,  &amp;#123;&amp;#39;Cont">
+12345678var http = require(&amp;apos;http&amp;apos;);http.createServer(function(req, res) &amp;#123;  res.writeHead(200,  &amp;#123;&amp;apos;Content-T">
   
     <link rel="alternative" href="/atom.xml" title="龙哥盟" type="application/atom+xml">
   
   
     <link rel="icon" href="http://7u2hdm.com1.z0.glb.clouddn.com/favicon.ico">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
   
 
   
@@ -80,7 +80,7 @@
                 
                     <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/atom.xml">RSS</a></li>
                 
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://gitcafe.com/wizardforcel/blog">fork me on gitcafe</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://coding.net/u/wizardforcel/p/blog/git">fork me on coding</a></li>
                 
                 </ul>
             </div>
@@ -112,11 +112,11 @@
       
         <p>前几天看到一篇<a href="http://gladdy.github.io/c++/2015/07/26/NodeDemystified-pt1.html" target="_blank" rel="external">文章</a>，对比Node.js和C++的，挺有意思。</p>
 <p>大家都知道Node.js开发效率高，下面是它创建server并监听的代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var http = require(&#39;http&#39;);&#10;&#10;http.createServer(function(req, res) &#123;&#10;  res.writeHead(200,  &#123;&#39;Content-Type&#39;:  &#39;text/plain&#39;&#125;);&#10;  res.end(&#39;Hello World\n&#39;);&#10;&#125;).listen(8888);&#10;&#10;console.log(&#39;Server running at http://127.0.0.1:8888/&#39;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var http = require(&apos;http&apos;);</span><br><span class="line"></span><br><span class="line">http.createServer(function(req, res) &#123;</span><br><span class="line">  res.writeHead(200,  &#123;&apos;Content-Type&apos;:  &apos;text/plain&apos;&#125;);</span><br><span class="line">  res.end(&apos;Hello World\n&apos;);</span><br><span class="line">&#125;).listen(8888);</span><br><span class="line"></span><br><span class="line">console.log(&apos;Server running at http://127.0.0.1:8888/&apos;);</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 <p>可以看出，Node.js原生带有处理http请求相关的库，不像php需要apache托管，并且它的路由设置更加灵活，所以深受广大开发者欢迎。</p>
 <p>上面那段代码用C++11重构一下，暂且就叫做Node++吧。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">using namespace std;&#10;using namespace http;&#10;&#10;...&#10;&#10;HttpServer server([&#38;](HttpRequest &#38;req, HttpResponce &#38;res)&#10;&#123;&#10;  map&#60;string, string&#62; resHdr;&#10;  resHdr[&#34;Content-Type&#34;] = &#34;text/plain&#34;;&#10;  res.writeHead(200, resHdr);&#10;  res.end(&#34;Hello World\n&#34;);&#10;&#125;);&#10;&#10;server.listen(8888);&#10;&#10;cout &#60;&#60; &#34;Server running at http://127.0.0.1:8888/&#34; &#60;&#60; endl;&#10;&#10;...</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">using namespace std;</span><br><span class="line">using namespace http;</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line">HttpServer server([&amp;](HttpRequest &amp;req, HttpResponce &amp;res)</span><br><span class="line">&#123;</span><br><span class="line">  map&lt;string, string&gt; resHdr;</span><br><span class="line">  resHdr[&quot;Content-Type&quot;] = &quot;text/plain&quot;;</span><br><span class="line">  res.writeHead(200, resHdr);</span><br><span class="line">  res.end(&quot;Hello World\n&quot;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">server.listen(8888);</span><br><span class="line"></span><br><span class="line">cout &lt;&lt; &quot;Server running at http://127.0.0.1:8888/&quot; &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
 <p>由于C++11加入了lambda这一高级特性，使得两段代码在复杂度和长度上是差不多的。</p>
 <p>我不知道现在还鼓吹C++难写难用的人是什么心态。如果其中的确有一部分难用的特性（比如兼容c语言而保留的一些特性），我不知道是什么业务逻辑逼迫你去使用那些东西。我承认有些东西很坑，但它不是C++的全部，你可以不在生产环境中使用啊。你非要什么特性都用一用，然后搞个大新闻，这样简直是为了黑而黑，有什么意思？然而比c++坑的语言有的是。js的原型链和作用域不知道坑了多少人，但丝毫不影响我们拿他表达我们的思想。php的特性坑更多，不照样是web开发的主力吗？</p>
 <p>c++的确为了兼容c保留了很多原始的东西，这部分坑在慢慢填。我们可以看到从最开始的vector和string，到11开始的智能指针以及std::thread、std::atomic，以及std::function和lambda，还有以后即将到来的asio，多了许多替代方案。虽然填的不完整，C++标准宕机了十年，也不是一朝一夕就能赶上的，但是起码是一点一点在改变的。obj-c有arc，我们有智能指针，更好地解放初级程序员的生产力，obj-c有at宏，我们有后缀运算符，更好地使用std::string。c++早就不是十年前的那个c++了。</p>
@@ -342,11 +342,11 @@
 <script src="/js/jquery-2.0.3.min.js"></script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
-  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/js/script.js" type="text/javascript"></script>
+<script src="/js/script.js"></script>
 
 <script src="/js/navigation.js"></script>
 

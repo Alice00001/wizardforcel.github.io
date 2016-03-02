@@ -19,27 +19,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="1.标准时间
 标准时间是指1970年1月1日到现在所过去的秒数 又叫时间戳 常用于网站的验证
-1TimeSpan ts = DateTime.Now - new DateTime(1970, 1, 1, 8, 0, 0);&amp;#10;string stamp = Convert.ToInt32(ts.TotalSeconds).ToString();">
+12TimeSpan ts = DateTime.Now - new DateTime(1970, 1, 1, 8, 0, 0);string stamp = Convert.ToInt32(ts.TotalSeconds).ToString();">
 <meta property="og:type" content="article">
 <meta property="og:title" content="c#取三种时间">
 <meta property="og:url" content="http://www.flygon.net/c#-取三种时间/index.html">
 <meta property="og:site_name" content="龙哥盟">
 <meta property="og:description" content="1.标准时间
 标准时间是指1970年1月1日到现在所过去的秒数 又叫时间戳 常用于网站的验证
-1TimeSpan ts = DateTime.Now - new DateTime(1970, 1, 1, 8, 0, 0);&amp;#10;string stamp = Convert.ToInt32(ts.TotalSeconds).ToString();">
+12TimeSpan ts = DateTime.Now - new DateTime(1970, 1, 1, 8, 0, 0);string stamp = Convert.ToInt32(ts.TotalSeconds).ToString();">
 <meta property="og:updated_time" content="2016-03-01T01:51:23.401Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="c#取三种时间">
 <meta name="twitter:description" content="1.标准时间
 标准时间是指1970年1月1日到现在所过去的秒数 又叫时间戳 常用于网站的验证
-1TimeSpan ts = DateTime.Now - new DateTime(1970, 1, 1, 8, 0, 0);&amp;#10;string stamp = Convert.ToInt32(ts.TotalSeconds).ToString();">
+12TimeSpan ts = DateTime.Now - new DateTime(1970, 1, 1, 8, 0, 0);string stamp = Convert.ToInt32(ts.TotalSeconds).ToString();">
   
     <link rel="alternative" href="/atom.xml" title="龙哥盟" type="application/atom+xml">
   
   
     <link rel="icon" href="http://7u2hdm.com1.z0.glb.clouddn.com/favicon.ico">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
   
 
   
@@ -80,7 +80,7 @@
                 
                     <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/atom.xml">RSS</a></li>
                 
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://gitcafe.com/wizardforcel/blog">fork me on gitcafe</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://coding.net/u/wizardforcel/p/blog/git">fork me on coding</a></li>
                 
                 </ul>
             </div>
@@ -112,14 +112,14 @@
       
         <p>1.标准时间</p>
 <p>标准时间是指1970年1月1日到现在所过去的秒数 又叫时间戳 常用于网站的验证</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TimeSpan ts = DateTime.Now - new DateTime(1970, 1, 1, 8, 0, 0);&#10;string stamp = Convert.ToInt32(ts.TotalSeconds).ToString();</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">TimeSpan ts = DateTime.Now - new DateTime(1970, 1, 1, 8, 0, 0);</span><br><span class="line">string stamp = Convert.ToInt32(ts.TotalSeconds).ToString();</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 <p>2. 启动时间</p>
 <p>启动时间是指开机以来所经过的毫秒数 如果超过int所能表示的范围则会归零重新计数</p>
 <p>常用于粗略计时</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int time = Environment.TickCount;</span><br></pre></td></tr></table></figure>
 <p>3.现行时间 就是表示当前时间的一个字符串 常用于信息输出 比如”[hh:mm:ss]”</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DateTime dt = DateTime.Now;&#10;string datestring = dt.ToLongDateString();&#10;string timestring = dt.ToLongTimeString();</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">DateTime dt = DateTime.Now;</span><br><span class="line">string datestring = dt.ToLongDateString();</span><br><span class="line">string timestring = dt.ToLongTimeString();</span><br></pre></td></tr></table></figure>
 
       
     </div><!-- .entry-content -->
@@ -343,11 +343,11 @@
 <script src="/js/jquery-2.0.3.min.js"></script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
-  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/js/script.js" type="text/javascript"></script>
+<script src="/js/script.js"></script>
 
 <script src="/js/navigation.js"></script>
 

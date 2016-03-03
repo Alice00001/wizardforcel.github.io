@@ -82,120 +82,6 @@
       <div id="main" class="wrapper">
         <div id="primary" class="site-content"><div id="content" role="main">
   
-    <article id="post-Javascript中四种函数调用方式" class="post-Javascript中四种函数调用方式 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/Javascript中四种函数调用方式/">Javascript中四种函数调用方式</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/Javascript中四种函数调用方式/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/Javascript中四种函数调用方式/" data-id="cil8s8q7j00a4e0g6zm5kdeyk" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <p>为了解释方便，先创建一个函数：</p>
-<pre>
-function showmsg()
-{
-  console.log(this);
-}
-</pre>
-
-<p>它的作用是打印this这个对象，也方便我们了解它到底指代什么。</p>
-<p>一、直接调用</p>
-<pre>
-showmsg();
-</pre>
-
-<p>结果：</p>
-<pre>
-Window {top: Window, window: Window, location: Location, external: Object, chrome: Object…} 
-</pre>
-
-<p>可知，直接调用时，其中的this就是顶层对象window。</p>
-<p>二、作为构造函数调用</p>
-<pre>
-var obj = new showmsg();
-</pre>
-
-<p>结果：</p>
-<pre>
-showmsg {} 
-</pre>
-
-<p>调用之后，创建了一个类型和函数同名的对象。this指代这个对象。</p>
-<p>三、作为方法调用</p>
-<pre>
-var obj = {showmsg: showmsg};
-obj.showmsg();
-</pre>
-
-<p>结果：</p>
-<pre>
-Object {showmsg: function}
-</pre>
-
-<p>其中this就是那个被绑定的对象。</p>
-<p>四、function.call</p>
-<pre>
-showmsg.call({});
-</pre>
-
-<p>结果：</p>
-<pre>
-Object {} 
-</pre>
-
-<p>call的第一个参数是什么，里面的this就是什么。如果需要传参数的话，附在后面即可。而且这种可以只调用不绑定。</p>
-<p>此外，直接调用相当于：</p>
-<pre>
-showmsg.call(null);
-</pre>
-
-<p>如果第一个参数是null，那么里面的this则是顶层对象window。</p>
-<p>作为构造函数调用相当于：</p>
-<pre>
-var obj = {};
-obj.__proto__ = showmsg;
-showmsg.call(obj);
-</pre>
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/Javascript中四种函数调用方式/">
-    <time datetime="2014-10-05T13:01:53.000Z" class="entry-date">
-        10月 5 2014
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/编程/">编程</a>
-  </div>
-
-    
-    </footer>
-</article>
-
-
-
-
-
-
-  
     <article id="post-php-utf-8-编码-正则匹配中文" class="post-php-utf-8-编码-正则匹配中文 post type-post status-publish format-standard hentry">
     <!---->
 
@@ -708,10 +594,98 @@ var checked = document.getElementById('chk').checked;</pre>
 
 
   
+    <article id="post-贴吧客户端sign的算法" class="post-贴吧客户端sign的算法 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/贴吧客户端sign的算法/">贴吧客户端sign的算法。。。</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="/贴吧客户端sign的算法/#comments" class="leave-reply">评论</a>
+            
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/贴吧客户端sign的算法/" data-id="cil8s8q1g000ye0g6bbuhqc7p" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <pre>
+static void Main(string[] args)
+{
+    Dictionary&lt;string, string&gt; map
+      = new Dictionary&lt;string, string&gt;();
+    map.Add("name1", "value1");
+    map.Add("name2", "value2");
+    //...
+    StringBuilder poststr = new StringBuilder();
+    StringBuilder tosign = new StringBuilder();
+    foreach (var elem in map)
+    {
+        poststr.Append(elem.Key).Append("=")
+               .Append(HttpUtility.UrlEncode(elem.Value, Encoding.UTF8))
+               .Append("&amp;");
+        tosign.Append(elem.Key).Append(elem.Value);
+    }
+    tosign.Append("tiebaclient!!!");
+    poststr.Append("sign=").Append(MD5Encrypt(tosign.ToString(), Encoding.UTF8));
+    Console.WriteLine(poststr.ToString());
+
+}
+
+static string MD5Encrypt(string text, Encoding enco)
+{
+    byte[] input = enco.GetBytes(text);
+    MD5CryptoServiceProvider md5
+      = new MD5CryptoServiceProvider();
+    byte[] output = md5.ComputeHash(input);
+    StringBuilder sb = new StringBuilder();
+    foreach (byte x in output)
+      sb.AppendFormat("{0:X2}", x);
+    return sb.ToString();
+}
+</pre>
+
+<p>1.提交内容所有的name-value值对 按照name的字典序升序排列（要是不知道就以抓包出来的顺序为准） 之后后面加上”tiebaclient!!!” 并去掉”&amp;”这个字符</p>
+<p>2.以UTF-8编码计算md5值 计算md5的时候应该输入一个byte[] 以UTF-8编码getbytes就好</p>
+<p>3.在原始的提交内容（不带”tiebaclient”，但是带”&amp;”）后面加上”&amp;sign=” 然后在加上刚才的md5文本</p>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/贴吧客户端sign的算法/">
+    <time datetime="2013-09-24T11:49:08.000Z" class="entry-date">
+        9月 24 2013
+    </time>
+</a>
+    
+  <span class="article-delim">&#8226;</span>
+  <div class="article-category">
+  <a class="article-category-link" href="/categories/编程/">编程</a>
+  </div>
+
+    
+    </footer>
+</article>
+
+
+
+
+
+
+  
   
     <nav id="pagination">
       <nav id="page-nav">
-        <a class="extend prev" rel="prev" href="/categories/编程/page/3/">&laquo; 上一页</a><a class="page-number" href="/categories/编程/">1</a><a class="page-number" href="/categories/编程/page/2/">2</a><a class="page-number" href="/categories/编程/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/categories/编程/page/5/">5</a><a class="page-number" href="/categories/编程/page/6/">6</a><a class="extend next" rel="next" href="/categories/编程/page/5/">下一页 &raquo;</a>
+        <a class="extend prev" rel="prev" href="/categories/编程/page/3/">&laquo; 上一页</a><a class="page-number" href="/categories/编程/">1</a><a class="page-number" href="/categories/编程/page/2/">2</a><a class="page-number" href="/categories/编程/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/categories/编程/page/5/">5</a><a class="extend next" rel="next" href="/categories/编程/page/5/">下一页 &raquo;</a>
       </nav>
     </nav>
   
@@ -791,7 +765,7 @@ var checked = document.getElementById('chk').checked;</pre>
   <aside class="widget">
     <h3 class="widget-title">Categories</h3>
     <div class="widget-content">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wordpress/">wordpress</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/公告/">公告</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/安全/">安全</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/应用/">应用</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂记/">杂记</a><span class="category-list-count">36</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a><span class="category-list-count">51</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/网站/">网站</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/贴吧/">贴吧</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/资源/">资源</a><span class="category-list-count">6</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wordpress/">wordpress</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/公告/">公告</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/安全/">安全</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/应用/">应用</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂记/">杂记</a><span class="category-list-count">36</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a><span class="category-list-count">50</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/网站/">网站</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/贴吧/">贴吧</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/资源/">资源</a><span class="category-list-count">7</span></li></ul>
     </div>
   </aside>
 

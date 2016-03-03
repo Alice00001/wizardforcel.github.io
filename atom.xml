@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.flygon.net/"/>
-  <updated>2016-02-28T04:47:23.173Z</updated>
+  <updated>2016-03-03T07:17:17.346Z</updated>
   <id>http://www.flygon.net/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://www.flygon.net/2016-2-28/"/>
     <id>http://www.flygon.net/2016-2-28/</id>
     <published>2016-02-28T04:47:58.000Z</published>
-    <updated>2016-02-28T04:47:23.173Z</updated>
+    <updated>2016-03-03T07:17:17.346Z</updated>
     
     <content type="html">&lt;p&gt;停止所有C++的开发项目，以后如有类似需求改用Go来开发。&lt;/p&gt;
 &lt;p&gt;没办法，既然你没胆量抛弃raw pointer，那我只能抛弃你了呀。&lt;/p&gt;
@@ -44,7 +44,7 @@
     <link href="http://www.flygon.net/kill-xp-and-ie8/"/>
     <id>http://www.flygon.net/kill-xp-and-ie8/</id>
     <published>2016-02-13T10:33:37.000Z</published>
-    <updated>2016-02-13T10:35:22.237Z</updated>
+    <updated>2016-03-03T07:17:17.416Z</updated>
     
     <content type="html">&lt;p&gt;以上。&lt;/p&gt;
 </content>
@@ -66,7 +66,7 @@
     <link href="http://www.flygon.net/Cpp%E5%8F%82%E8%80%83%E7%9A%84%E7%BF%BB%E8%AF%91%E6%88%96%E6%A0%A1%E5%AF%B9/"/>
     <id>http://www.flygon.net/Cpp参考的翻译或校对/</id>
     <published>2016-02-07T14:03:41.000Z</published>
-    <updated>2016-02-07T14:37:18.632Z</updated>
+    <updated>2016-03-03T07:17:17.378Z</updated>
     
     <content type="html">&lt;p&gt;做新年规划的时候，我说过要翻译C++常用类的参考。C++的参考，其实别人已经翻译完了，只是部分内容需要校对。由于网站结构中大量使用了模板，同一个函数只需要翻译一个地方，所以四天就弄完了。而且我没有翻译函数层级的页面，所以比较快。&lt;/p&gt;
 &lt;p&gt;C++的参考其实最需要翻译。因为C++为了填C继承过来的坑，标准库增加了很多用于替代的设施。而国内的教程更新缓慢，这份参考如果不翻译，我估计到了2020年也不会完全普及。&lt;/p&gt;
@@ -171,7 +171,7 @@
     <link href="http://www.flygon.net/LocalStorage-%E7%9A%84%E4%B8%80%E4%B8%AA%E6%BC%8F%E6%B4%9E/"/>
     <id>http://www.flygon.net/LocalStorage-的一个漏洞/</id>
     <published>2016-02-07T13:12:04.000Z</published>
-    <updated>2016-02-07T13:14:09.479Z</updated>
+    <updated>2016-03-03T07:17:17.427Z</updated>
     
     <content type="html">&lt;p&gt;LocalStorage 是 html5 的本地存储，其中的内容以文件的形式保存在本地磁盘中。&lt;/p&gt;
 &lt;p&gt;一个域（协议+域名+端口）的文件大小PC端为5~10M，移动端不大于2.5M。&lt;/p&gt;
@@ -214,7 +214,7 @@
     <link href="http://www.flygon.net/%E5%A5%BD%E4%B8%9C%E8%A5%BF-%E7%AE%80%E4%B9%A6%E5%8A%A9%E6%89%8B/"/>
     <id>http://www.flygon.net/好东西-简书助手/</id>
     <published>2016-01-27T11:39:47.000Z</published>
-    <updated>2016-02-07T11:40:36.516Z</updated>
+    <updated>2016-03-03T07:17:17.598Z</updated>
     
     <content type="html">&lt;p&gt;爬取简书的文章，并生成EPUB格式。&lt;/p&gt;
 &lt;h2 id=&quot;用法&quot;&gt;&lt;a href=&quot;#用法&quot; class=&quot;headerlink&quot; title=&quot;用法&quot;&gt;&lt;/a&gt;用法&lt;/h2&gt;&lt;p&gt;首先到官网下载并安装node.js。&lt;/p&gt;
@@ -252,7 +252,7 @@
     <link href="http://www.flygon.net/%E4%BD%BF%E7%94%A8sync-request%E5%92%8Ccheerio%E5%86%99%E7%88%AC%E8%99%AB/"/>
     <id>http://www.flygon.net/使用sync-request和cheerio写爬虫/</id>
     <published>2016-01-22T11:38:27.000Z</published>
-    <updated>2016-02-07T11:39:29.004Z</updated>
+    <updated>2016-03-03T07:17:17.537Z</updated>
     
     <content type="html">&lt;p&gt;node.js自带的http模块是异步获取网页内容的，不过我们可以到npm上去搜索同步的http模块。sync-request就是其中一种。&lt;/p&gt;
 &lt;p&gt;首先，安装sync-request包：&lt;/p&gt;
@@ -285,7 +285,7 @@
     <link href="http://www.flygon.net/%E4%B8%BA%E4%BB%80%E4%B9%88C%E8%AF%AD%E8%A8%80%E4%B8%8D%E7%AE%80%E5%8D%95/"/>
     <id>http://www.flygon.net/为什么C语言不简单/</id>
     <published>2016-01-15T11:37:21.000Z</published>
-    <updated>2016-02-07T11:38:02.167Z</updated>
+    <updated>2016-03-03T07:17:17.519Z</updated>
     
     <content type="html">&lt;p&gt;很多人都喜欢把C语言推荐给初学者，原因就是C语言语法简单。但是C语言若是用于开发之中，却是最复杂的语言。&lt;/p&gt;
 &lt;h2 id=&quot;底层的-好的？&quot;&gt;&lt;a href=&quot;#底层的-好的？&quot; class=&quot;headerlink&quot; title=&quot;底层的 == 好的？&quot;&gt;&lt;/a&gt;底层的 == 好的？&lt;/h2&gt;&lt;p&gt;C语言提供了对底层的操作，比如指针。但是C语言跟C++最大的不同就是，C语言避不开指针，而C++和用STL和智能指针库完全避开它。也即是说，其它语言的指针只是个类型，C语言的指针就是指针。我一向认为，初学者过早接触指针是个大忌。初学者需要的是做出各种好玩的应用，以此来产生即时反馈，而不是深入研究计算机系统，因为后者只会消磨掉他们的信心。初学者就应该专注于代码逻辑，并且屏蔽掉和底层打交道的一切事物。这么做个比喻吧，如果你刚学化学的时候，就给你讲元素周期律和VSEPR模型，你会感兴趣吗？&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -316,7 +316,7 @@
     <link href="http://www.flygon.net/%E5%85%B3%E4%BA%8E%E5%81%9C%E7%94%A8%E7%9F%A5%E4%B9%8E%E8%B4%A6%E5%8F%B7%E4%B8%80%E4%BA%8B/"/>
     <id>http://www.flygon.net/关于停用知乎账号一事/</id>
     <published>2016-01-10T11:36:31.000Z</published>
-    <updated>2016-02-07T11:37:03.216Z</updated>
+    <updated>2016-03-03T07:17:17.552Z</updated>
     
     <content type="html">&lt;p&gt;说实话，申请停用知乎账号很简单，只要给 i@zhihu.com 发一封邮件就可以了。&lt;/p&gt;
 &lt;p&gt;我最开始上知乎好像是找什么东西，然后没找到，慢慢就形成了刷知乎的习惯。&lt;/p&gt;
@@ -327,7 +327,7 @@
 &lt;p&gt;根据您的申请，我们会停用您的帐号。感谢您一直以来对知乎的支持。&lt;/p&gt;
 &lt;p&gt;感谢您的来信。&lt;/p&gt;
 &lt;p&gt;知乎团队&lt;/p&gt;
-&lt;p&gt;在 2016年1月9日 下午11:24，龙 &lt;a href=&quot;&amp;#x6d;&amp;#x61;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#111;&amp;#x3a;&amp;#x35;&amp;#54;&amp;#x32;&amp;#x38;&amp;#x32;&amp;#x36;&amp;#x31;&amp;#55;&amp;#57;&amp;#x40;&amp;#113;&amp;#113;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&quot;&gt;&amp;#x35;&amp;#54;&amp;#x32;&amp;#x38;&amp;#x32;&amp;#x36;&amp;#x31;&amp;#55;&amp;#57;&amp;#x40;&amp;#113;&amp;#113;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&lt;/a&gt; 写道：&lt;/p&gt;
+&lt;p&gt;在 2016年1月9日 下午11:24，龙 &lt;a href=&quot;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#x74;&amp;#x6f;&amp;#x3a;&amp;#53;&amp;#x36;&amp;#x32;&amp;#x38;&amp;#x32;&amp;#54;&amp;#49;&amp;#55;&amp;#57;&amp;#64;&amp;#x71;&amp;#x71;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#x6d;&quot;&gt;&amp;#53;&amp;#x36;&amp;#x32;&amp;#x38;&amp;#x32;&amp;#54;&amp;#49;&amp;#55;&amp;#57;&amp;#64;&amp;#x71;&amp;#x71;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#x6d;&lt;/a&gt; 写道：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;申请停用知乎账号&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -352,7 +352,7 @@
     <link href="http://www.flygon.net/2016-%E6%96%B0%E7%9A%84%E5%B1%95%E6%9C%9B/"/>
     <id>http://www.flygon.net/2016-新的展望/</id>
     <published>2016-01-09T11:35:34.000Z</published>
-    <updated>2016-02-07T11:36:15.938Z</updated>
+    <updated>2016-03-03T07:17:17.349Z</updated>
     
     <content type="html">&lt;ul&gt;
 &lt;li&gt;首先就是翻译几个项目的文档。目前计划是orm2，ejs，nw.js（明明是中国人写的干嘛不提供中文文档），intelij。前面这些都是短小精悍的。还有一个备选项，c++（cplusplus.com），这个的参考手册实在是太长，我就挑常用类翻译好了。其实我觉得一定有必要翻译c++文档，特别是c++11新出来的util，比如时间、复数、随机数、原子和线程、正则，因为有助于推广新的标准。现在vs2015对11的标准支持已经相当不错了，就是国内的教程上面还差点。c++已经有了并发、容器、text、io、fs（tr2）、网络（tr2），还差个进程就能召唤神龙了。&lt;/li&gt;
@@ -383,7 +383,7 @@
     <link href="http://www.flygon.net/%E7%BB%99%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%A4%A7%E4%B8%80%E6%96%B0%E7%94%9F%E7%9A%84%E5%BB%BA%E8%AE%AE%E7%BB%99%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%A4%A7%E4%B8%80%E6%96%B0%E7%94%9F%E7%9A%84%E5%BB%BA%E8%AE%AE/"/>
     <id>http://www.flygon.net/给计算机大一新生的建议给计算机大一新生的建议/</id>
     <published>2016-01-08T11:34:29.000Z</published>
-    <updated>2016-02-07T11:35:11.365Z</updated>
+    <updated>2016-03-03T07:17:17.668Z</updated>
     
     <content type="html">&lt;p&gt;1. 核心课 （数据结构算法、组原、os、编译、网络（tcp/ip、http部分））一定要弄懂。最好写相关的项目，比如写个parser或者内核什么的都是极好的。&lt;/p&gt;
 &lt;p&gt;2. 不要追新的技术，而是追业界普遍使用的技术。比如你追了c#，却发现业界不少由c#转java的；你追了xamarin，也说发现人家还是用java+as开发应用。其实业界还是喜欢久经考验的稳定技术。语言学精一个，了解多个。每种类型的框架（比如前端css，前端js，后端orm，后端mvc，模板引擎）先学一个，其他的需要了边学边用。&lt;/p&gt;
@@ -412,7 +412,7 @@
     <link href="http://www.flygon.net/cpp%E7%9A%84%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87%E7%9C%9F%E7%9A%84%E9%82%A3%E4%B9%88%E4%BD%8E%E5%90%97/"/>
     <id>http://www.flygon.net/cpp的开发效率真的那么低吗/</id>
     <published>2016-01-07T11:32:14.000Z</published>
-    <updated>2016-02-07T11:33:47.099Z</updated>
+    <updated>2016-03-03T07:17:17.380Z</updated>
     
     <content type="html">&lt;p&gt;前几天看到一篇&lt;a href=&quot;http://gladdy.github.io/c++/2015/07/26/NodeDemystified-pt1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;文章&lt;/a&gt;，对比Node.js和C++的，挺有意思。&lt;/p&gt;
 &lt;p&gt;大家都知道Node.js开发效率高，下面是它创建server并监听的代码：&lt;/p&gt;
@@ -446,7 +446,7 @@
     <link href="http://www.flygon.net/%E9%BE%99%E6%97%8F-%E5%A4%A9%E4%B9%8B%E7%82%BD-epub%E7%94%B5%E5%AD%90%E4%B9%A6%E6%B1%87%E6%80%BB/"/>
     <id>http://www.flygon.net/龙族-天之炽-epub电子书汇总/</id>
     <published>2016-01-04T11:30:57.000Z</published>
-    <updated>2016-02-07T11:32:00.790Z</updated>
+    <updated>2016-03-03T07:17:17.709Z</updated>
     
     <content type="html">&lt;h2 id=&quot;内容清单&quot;&gt;&lt;a href=&quot;#内容清单&quot; class=&quot;headerlink&quot; title=&quot;内容清单&quot;&gt;&lt;/a&gt;内容清单&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;龙族I·火之晨曦（连载版）&lt;/li&gt;
@@ -505,7 +505,7 @@
     <link href="http://www.flygon.net/%E4%B8%80%E4%BA%9B%E6%89%AF%E6%B7%A1/"/>
     <id>http://www.flygon.net/一些扯淡/</id>
     <published>2016-01-03T11:30:15.000Z</published>
-    <updated>2016-02-07T11:30:37.632Z</updated>
+    <updated>2016-03-03T07:17:17.506Z</updated>
     
     <content type="html">&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;编程思想是依赖于范式的，特性才是依赖于语言的。牛逼的人眼里没有语言只有范式，比如函数式、过程式、面向对象等等。&lt;/p&gt;
@@ -546,7 +546,7 @@
     <link href="http://www.flygon.net/%E4%BB%8E%E2%80%9C%E5%A4%A7%E4%BC%97%E5%88%9B%E4%B8%9A%E2%80%9D%E5%88%B0%E2%80%9C%E5%BA%94%E8%AF%95%E6%95%99%E8%82%B2%E2%80%9D/"/>
     <id>http://www.flygon.net/从“大众创业”到“应试教育”/</id>
     <published>2016-01-03T11:27:23.000Z</published>
-    <updated>2016-02-07T11:28:30.672Z</updated>
+    <updated>2016-03-03T07:17:17.524Z</updated>
     
     <content type="html">&lt;blockquote&gt;
 &lt;p&gt;最近也码了不少字，只是不是在博客上发布罢了。有人质疑我为什么很久没更新博客，我只好把它们转到这里。&lt;/p&gt;
@@ -580,7 +580,7 @@
     <link href="http://www.flygon.net/%E5%85%B3%E4%BA%8E%E5%9F%B9%E8%AE%AD%E7%8F%AD%E7%9A%84%E4%BA%8B%E6%83%85/"/>
     <id>http://www.flygon.net/关于培训班的事情/</id>
     <published>2016-01-03T11:26:16.000Z</published>
-    <updated>2016-02-07T11:28:50.691Z</updated>
+    <updated>2016-03-03T07:17:17.555Z</updated>
     
     <content type="html">&lt;p&gt;有句话很残酷，但它的确是真理：如果一个人不能通过自学而达到从业水平，那就不适合it行业。如果你不把它当成兴趣，只是当成赚钱的工作，那也不适合it行业。&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;我非常不看好培训班的人，除非你能向我证明你对技术的渴望和一颗geek的心。每个程序员都是魔术师，把枯燥无味的代码变成丰富多彩的软件。每个程序员，都有一个改变世界的梦想，能改变多少就改变多少，哪怕只能改变周围的一点，也好过不去改变。&lt;/p&gt;
@@ -605,7 +605,7 @@
     <link href="http://www.flygon.net/2015%E5%B9%B4%E6%80%BB%E7%BB%93%EF%BC%9A%E5%90%91%E8%BF%87%E5%8E%BB%E4%B8%80%E5%B9%B4%E4%B8%AD%E5%A4%84%E4%BA%8Ehard%E6%A8%A1%E5%BC%8F%E4%B8%8B%E7%9A%84%E8%87%AA%E5%B7%B1%E8%87%B4%E6%95%AC/"/>
     <id>http://www.flygon.net/2015年总结：向过去一年中处于hard模式下的自己致敬/</id>
     <published>2015-12-31T11:25:37.000Z</published>
-    <updated>2016-02-07T11:26:07.696Z</updated>
+    <updated>2016-03-03T07:17:17.343Z</updated>
     
     <content type="html">&lt;p&gt;2015年总结：向过去一年中处于hard模式下的自己致敬&lt;/p&gt;
 </content>
@@ -627,7 +627,7 @@
     <link href="http://www.flygon.net/%E5%85%B3%E4%BA%8E-%E9%BE%99%E5%93%A5%E7%9B%9F%C2%B7%E7%94%B5%E5%AD%90%E5%9B%BE%E4%B9%A6%E9%A6%86/"/>
     <id>http://www.flygon.net/关于-龙哥盟·电子图书馆/</id>
     <published>2015-12-30T11:24:35.000Z</published>
-    <updated>2016-02-07T11:25:22.285Z</updated>
+    <updated>2016-03-03T07:17:17.547Z</updated>
     
     <content type="html">&lt;blockquote&gt;
 &lt;p&gt;最初发布在&lt;a href=&quot;http://www.258ch.com/thread-198155-1-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;苍海国际 – 综合交流&lt;/a&gt;。&lt;/p&gt;
@@ -660,7 +660,7 @@
     <link href="http://www.flygon.net/%E2%80%9C%E7%BB%99%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%80%E5%8F%91%E7%9A%84%E5%BA%94%E5%B1%8A%E7%94%9F%E6%B3%BC%E5%86%B7%E6%B0%B4%E2%80%9D%E4%B9%8B%E6%88%91%E8%A7%81/"/>
     <id>http://www.flygon.net/“给服务器开发的应届生泼冷水”之我见/</id>
     <published>2015-11-28T11:20:17.000Z</published>
-    <updated>2016-02-07T11:29:07.405Z</updated>
+    <updated>2016-03-03T07:17:17.496Z</updated>
     
     <content type="html">&lt;p&gt;原博客：&lt;a href=&quot;http://blog.devtang.com/blog/2015/10/07/why-fresh-wants-to-do-server-dev/?url_type=39&amp;amp;object_type=webpage&amp;amp;pos=1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;写给那些傻傻的，想做服务器开发的应届生&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;1&lt;/p&gt;
@@ -736,7 +736,7 @@
     <link href="http://www.flygon.net/%E9%BE%99%E6%97%8FI%E6%BC%AB%E7%94%BB%E7%89%88-1-8%E5%8D%B7%E5%85%A8-epub%E6%A0%BC%E5%BC%8F/"/>
     <id>http://www.flygon.net/龙族I漫画版-1-8卷全-epub格式/</id>
     <published>2015-08-13T11:19:19.000Z</published>
-    <updated>2016-02-07T11:19:53.685Z</updated>
+    <updated>2016-03-03T07:17:17.713Z</updated>
     
     <content type="html">&lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;百度云：&lt;a href=&quot;http://pan.baidu.com/s/1eQo8o9s&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1eQo8o9s&lt;/a&gt;&lt;br&gt;微盘：&lt;a href=&quot;http://vdisk.weibo.com/s/p_MpxF6Zp4TxA&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://vdisk.weibo.com/s/p_MpxF6Zp4TxA&lt;/a&gt;&lt;br&gt;千易： &lt;a href=&quot;http://1000eb.com/1fdn3&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://1000eb.com/1fdn3&lt;/a&gt;&lt;/p&gt;
 </content>
@@ -757,7 +757,7 @@
     <link href="http://www.flygon.net/%E9%BE%99%E6%97%8FII%E6%BC%AB%E7%94%BB%E7%89%88-1-11%E5%8D%B7%E5%85%A8-epub%E6%A0%BC%E5%BC%8F/"/>
     <id>http://www.flygon.net/龙族II漫画版-1-11卷全-epub格式/</id>
     <published>2015-08-11T11:18:25.000Z</published>
-    <updated>2016-02-07T11:19:04.000Z</updated>
+    <updated>2016-03-03T07:17:17.711Z</updated>
     
     <content type="html">&lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;百度云：&lt;a href=&quot;http://pan.baidu.com/s/1kT8aFDd&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1kT8aFDd&lt;/a&gt;&lt;br&gt;微盘：&lt;a href=&quot;http://vdisk.weibo.com/s/p_s7SzNGo78aY&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://vdisk.weibo.com/s/p_s7SzNGo78aY&lt;/a&gt;&lt;br&gt;千易：&lt;a href=&quot;http://1000eb.com/1fbon&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://1000eb.com/1fbon&lt;/a&gt;&lt;/p&gt;
 </content>

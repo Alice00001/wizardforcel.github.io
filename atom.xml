@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.flygon.net/"/>
-  <updated>2016-03-03T07:17:17.346Z</updated>
+  <updated>2016-03-03T07:17:17.416Z</updated>
   <id>http://www.flygon.net/</id>
   
   <author>
@@ -14,30 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>2016.2.28</title>
-    <link href="http://www.flygon.net/2016-2-28/"/>
-    <id>http://www.flygon.net/2016-2-28/</id>
-    <published>2016-02-28T04:47:58.000Z</published>
-    <updated>2016-03-03T07:17:17.346Z</updated>
-    
-    <content type="html">&lt;p&gt;停止所有C++的开发项目，以后如有类似需求改用Go来开发。&lt;/p&gt;
-&lt;p&gt;没办法，既然你没胆量抛弃raw pointer，那我只能抛弃你了呀。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;停止所有C++的开发项目，以后如有类似需求改用Go来开发。&lt;/p&gt;
-&lt;p&gt;没办法，既然你没胆量抛弃raw pointer，那我只能抛弃你了呀。&lt;/p&gt;
-
-    
-    </summary>
-    
-      <category term="编程" scheme="http://www.flygon.net/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-  </entry>
   
   <entry>
     <title>本站即日起拒绝XP及之前的Windows系统，和IE8及之前的IE浏览器的访问。</title>
@@ -327,7 +303,7 @@
 &lt;p&gt;根据您的申请，我们会停用您的帐号。感谢您一直以来对知乎的支持。&lt;/p&gt;
 &lt;p&gt;感谢您的来信。&lt;/p&gt;
 &lt;p&gt;知乎团队&lt;/p&gt;
-&lt;p&gt;在 2016年1月9日 下午11:24，龙 &lt;a href=&quot;&amp;#109;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#x6f;&amp;#x3a;&amp;#53;&amp;#54;&amp;#x32;&amp;#x38;&amp;#x32;&amp;#x36;&amp;#x31;&amp;#x37;&amp;#57;&amp;#64;&amp;#113;&amp;#113;&amp;#46;&amp;#99;&amp;#x6f;&amp;#109;&quot;&gt;&amp;#53;&amp;#54;&amp;#x32;&amp;#x38;&amp;#x32;&amp;#x36;&amp;#x31;&amp;#x37;&amp;#57;&amp;#64;&amp;#113;&amp;#113;&amp;#46;&amp;#99;&amp;#x6f;&amp;#109;&lt;/a&gt; 写道：&lt;/p&gt;
+&lt;p&gt;在 2016年1月9日 下午11:24，龙 &lt;a href=&quot;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#x74;&amp;#111;&amp;#x3a;&amp;#53;&amp;#x36;&amp;#50;&amp;#x38;&amp;#x32;&amp;#54;&amp;#x31;&amp;#x37;&amp;#x39;&amp;#64;&amp;#x71;&amp;#113;&amp;#46;&amp;#99;&amp;#x6f;&amp;#x6d;&quot;&gt;&amp;#53;&amp;#x36;&amp;#50;&amp;#x38;&amp;#x32;&amp;#54;&amp;#x31;&amp;#x37;&amp;#x39;&amp;#64;&amp;#x71;&amp;#113;&amp;#46;&amp;#99;&amp;#x6f;&amp;#x6d;&lt;/a&gt; 写道：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;申请停用知乎账号&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -769,6 +745,39 @@
     </summary>
     
       <category term="资源" scheme="http://www.flygon.net/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>回忆录【四】</title>
+    <link href="http://www.flygon.net/%E5%9B%9E%E5%BF%86%E5%BD%95-4/"/>
+    <id>http://www.flygon.net/回忆录-4/</id>
+    <published>2015-07-26T11:16:06.000Z</published>
+    <updated>2016-03-03T07:17:17.593Z</updated>
+    
+    <content type="html">&lt;p&gt;后来，我才想通了，慢慢来比较快。种一棵树最好的时机是十年前，其次是现在。&lt;/p&gt;
+&lt;p&gt;大三上学期过得也不顺。本来想着课少了可以多休息休息，没想到十月份胃突然就难受了，而且是一直难受。很长一段时间，都是吃不好也睡不好。于是大三的整个一年我都没做多少私事，也就是搜索和整理资料，以及做电子书。&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;每个学期还是四门专业课，只不过都变成了专业限选课，每门3学分。我选了信息系统方向，上学期的课是信息系统工程，主要是算一些模型，比如lot sizing和闭环mrp，以及听老师讲单口相声；信息系统分析与设计，主要处理工作流，画流程图；算法，这个不用说了，最后的考试很坑，大半都是P和NP那章之后的，前面都复习了没有什么卵用。然后我还选了软件测试，就是这些。&lt;/p&gt;
+&lt;p&gt;由于这个学期回家次数比较多，寒假没有出现像大二时的特别迷糊每天睡到十点都起不来的状况。只是胃难受一些，下午更累一些。&lt;/p&gt;
+&lt;p&gt;下学期的课，感觉作业量一下子就提上来了，不过由于身体恢复很多，也能扛得住。&lt;/p&gt;
+&lt;p&gt;企业级应用架构，这门课堪称大杂烩，就是各种web的东西都讲一点。一共有四个部分，首先是ejb做分布式系统，不得不说java的配置文件很坑，配了很久才配置成功。第二部分是安全，讲一些应用层面上的漏洞，比如xss和sqlinj。第三部分是接口，比如json、ajax、websocket、wsdl、restful。第四部分是“大数据专题讲座”。还有一些零零散散的组件。大作业做到最后，基本上是把一些无关的组件强行拼一块，我自己看着都恶心。&lt;/p&gt;
+&lt;p&gt;软件架构主要讲一些架构风格、设计模式、企业应用模式（martin flower的那本）、以及大数据专题讲座。总之个人感觉是跟上面那门串着讲的，我写作业也是串着的。都是一个老师的嘛。&lt;/p&gt;
+&lt;p&gt;数据挖掘，不多说了，新技能get。大作业是比赛。&lt;/p&gt;
+&lt;p&gt;企业信息系统综合设计，上课讲的还是工作流，作业没啥关系，就是三次大作业，其中一次要用到数据挖掘的东西。也不考试，真是业界良心。&lt;/p&gt;
+&lt;p&gt;小学期如愿以偿得报名了比赛，在简历上终于有比赛经历了。不过看着出去实习的租房子住，我还是住又破又烂的宿舍，心里好不爽。本来选了“服务器开光与驱魔导论”，后来给退了，通识课大三一年都修完了。&lt;/p&gt;
+&lt;p&gt;另外大二暑假我还研究过一段时间的web漏洞，不算是研究吧，只是重新玩玩。后来感觉拿不到什么像样的shell了，找到的资料都过时了。互联网这个东西迭代很快，框架什么的层出不穷，一些老的洞，比如xss和sqlinj，都由于框架和良好的编程意识而销声匿迹了。其实互联网越来越健壮，还是值得欣慰的，以前你随便找个页面，在输入框输入和后尖括号，整个页面就变形了。&lt;/p&gt;
+&lt;p&gt;后来听到这样一种说法。假设一个互联网应用的满分是一百分，很多应用刚编写出来是20分。由于绝对安全不可能达到，那么我们的目标是做到80分。这些20分的应用都存在着已知问题，但如果拥有一大堆成本上可行解决办法，就能提高到80分。安全不仅仅需要研究员，还需要大量拥有安全意识的开发者，前者只能提供初始的20分，但后者可以把20分拉到80分。但如果开发者没有安全意识，就永远还是20分。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;后来，我才想通了，慢慢来比较快。种一棵树最好的时机是十年前，其次是现在。&lt;/p&gt;
+&lt;p&gt;大三上学期过得也不顺。本来想着课少了可以多休息休息，没想到十月份胃突然就难受了，而且是一直难受。很长一段时间，都是吃不好也睡不好。于是大三的整个一年我都没做多少私事，也就是搜索和整理资料，以及做电子书。
+    
+    </summary>
+    
+      <category term="杂记" scheme="http://www.flygon.net/categories/%E6%9D%82%E8%AE%B0/"/>
     
     
   </entry>

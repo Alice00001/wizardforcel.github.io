@@ -82,61 +82,6 @@
       <div id="main" class="wrapper">
         <div id="primary" class="site-content"><div id="content" role="main">
   
-    <article id="post-php-utf-8-编码-正则匹配中文" class="post-php-utf-8-编码-正则匹配中文 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/php-utf-8-编码-正则匹配中文/">php utf-8编码 正则匹配中文</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/php-utf-8-编码-正则匹配中文/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/php-utf-8-编码-正则匹配中文/" data-id="cilkcguf7003xz0g6nvqghij1" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <p>首先unicode里面 中文区域是0x4e00-0x9fa5<br>在java或者js这种以unicode编码处理字符串的编程语言中<br><code>/^[\u4e00-\u9fa5]+$/</code>就可以判断一个字符串是否全部为中文</p>
-<p>那么php中 字符的编码根据页面而定<br>页面是gbk的 字符编码就是gbk的 utf-8也同理<br>之前有一个表达式 <code>/^[\x80-\xff]+$/</code><br>仅仅可以匹配是否含有非ascll字符<br>而汉字只是其中一个比较小的区域 不太精确</p>
-<p>由于我的页面编码是utf-8的<br>于是把js的表达式搬到php中来<br>提示PCRE不支持<code>\u</code>和其他乱七八糟的一大堆东西</p>
-<p>后来查资料了解到 php的正则有一种叫做字符组的东西<br>用<code>\x{...}</code>表示<br>于是把表达式改成<code>/^[\x{4e00}-\x{9fa5}]+$/</code><br>又提示<code>\x</code>表达式后的数字太大</p>
-<p>又查了资料 了解到可以使用修正模式”u” 让程序把后面当成unicode字符处理<br>于是改成了<code>/^[\x{4e00}-\x{9fa5}]+$/u</code> 测试成功</p>
-<p>所以php下正则匹配中文的表达式是 <code>/^[\x{4e00}-\x{9fa5}]+$/u</code><br>这个仅适用于utf-8编码</p>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/php-utf-8-编码-正则匹配中文/">
-    <time datetime="2014-07-09T03:33:52.000Z" class="entry-date">
-        7月 9 2014
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/编程/">编程</a>
-  </div>
-
-    
-    </footer>
-</article>
-
-
-
-
-
-
-  
     <article id="post-php取到的时间总是差8小时的解决方法" class="post-php取到的时间总是差8小时的解决方法 post type-post status-publish format-standard hentry">
     <!---->
 
@@ -154,7 +99,7 @@
             
             <a href="/php取到的时间总是差8小时的解决方法/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/php取到的时间总是差8小时的解决方法/" data-id="cilkcguf70041z0g6vx85v7oy" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/php取到的时间总是差8小时的解决方法/" data-id="cilkox9n2003t3wg6vtgho0du" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -206,7 +151,7 @@
             
             <a href="/jquery-读取-checkbox/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/jquery-读取-checkbox/" data-id="cilkcguer003hz0g6tapyhp34" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/jquery-读取-checkbox/" data-id="cilkox9mm00383wg6sm4w8rjo" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -269,7 +214,7 @@ var checked = document.getElementById('chk').checked;</pre>
             
             <a href="/PHP编写shell/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/PHP编写shell/" data-id="cilkcgudg001hz0g6gs4hmvzs" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/PHP编写shell/" data-id="cilkox9kw001h3wg6jmckpj7l" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -323,7 +268,7 @@ var checked = document.getElementById('chk').checked;</pre>
             
             <a href="/一些强悍的加密壳/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/一些强悍的加密壳/" data-id="cilkcgug2005bz0g6zq406uef" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/一些强悍的加密壳/" data-id="cilkox9os00573wg659m2uofn" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -380,7 +325,7 @@ var checked = document.getElementById('chk').checked;</pre>
             
             <a href="/yfs-lab/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/yfs-lab/" data-id="cilkcgufm004xz0g6xjkcuq3w" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/yfs-lab/" data-id="cilkox9od004x3wg6swobqoze" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -434,7 +379,7 @@ var checked = document.getElementById('chk').checked;</pre>
             
             <a href="/c-cpp可变参数加法/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/c-cpp可变参数加法/" data-id="cilkcgueb002az0g68fsd8zd3" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/c-cpp可变参数加法/" data-id="cilkox9m7002d3wg6syyfr7dt" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -495,7 +440,7 @@ var checked = document.getElementById('chk').checked;</pre>
             
             <a href="/cpp-检测机器大端或者小端/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/cpp-检测机器大端或者小端/" data-id="cilkcgueb002hz0g6mn8hljel" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/cpp-检测机器大端或者小端/" data-id="cilkox9m7002k3wg6au7bjfrp" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -552,7 +497,7 @@ var checked = document.getElementById('chk').checked;</pre>
             
             <a href="/c#-取三种时间/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/c#-取三种时间/" data-id="cilkcgudw0021z0g65oqgflnn" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/c#-取三种时间/" data-id="cilkox9lr001w3wg6nvn8ityv" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -611,7 +556,7 @@ var checked = document.getElementById('chk').checked;</pre>
             
             <a href="/贴吧客户端sign的算法/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/贴吧客户端sign的算法/" data-id="cilkcgui800anz0g676qrqmsc" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/贴吧客户端sign的算法/" data-id="cilkox9uv00ao3wg6nzv9db8e" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -682,6 +627,131 @@ static string MD5Encrypt(string text, Encoding enco)
 
 
   
+    <article id="post-cpp-数据结构-一个简单的栈模型" class="post-cpp-数据结构-一个简单的栈模型 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/cpp-数据结构-一个简单的栈模型/">数据结构：一个简单的栈模型</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="/cpp-数据结构-一个简单的栈模型/#comments" class="leave-reply">评论</a>
+            
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/cpp-数据结构-一个简单的栈模型/" data-id="cilkox9lr00233wg6pwb22qef" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <pre>
+//学习数据结构后的一点心得体会
+
+//stack.h文件：
+
+#pragma once
+#ifndef STACK_H
+#define STACK_H
+
+#include &lt;stdexcept&gt;
+using namespace std;
+
+template&lt;class Entry, size_t Max&gt;
+class Stack
+{
+private:
+size_t count;
+Entry data[Max];
+
+public:
+Stack() {count = 0;}
+bool empty() {return count == 0;}
+void push(const Entry &amp;e)
+{
+if(count == Max)throw exception("栈已满。");
+data[count] = e;
+count++;
+}
+void pop()
+{
+if(count == 0)throw exception("栈已空。");
+count--;
+}
+Entry top()
+{
+if(count == 0)throw exception("栈已空。");
+return data[count - 1];
+}
+
+};
+
+#endif
+
+//main.cpp文件：
+
+#include "stack.h"
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    Stack&lt;int, 100&gt; psgs;
+    int n;
+    cout &lt;&lt; "请输入游客人数：" &lt;&lt; endl;
+     cin &gt;&gt; n;
+    cout &lt;&lt; "按顺序输入乘客编号：" &lt;&lt; endl;
+    for(int i = 0; i &lt; n; i++)
+     {
+         int item;
+         cin &gt;&gt; item;
+        psgs.push(item);
+    }
+    cout &lt;&lt; "乘客下车次序是：" &lt;&lt; endl;
+    while(!psgs.empty())
+    {
+        cout &lt;&lt; psgs.top() &lt;&lt; ' ';
+        psgs.pop();
+    }
+    cout &lt;&lt; endl;
+    system("pause");
+    return 0;
+}
+</pre>
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/cpp-数据结构-一个简单的栈模型/">
+    <time datetime="2013-09-19T14:46:41.000Z" class="entry-date">
+        9月 19 2013
+    </time>
+</a>
+    
+  <span class="article-delim">&#8226;</span>
+  <div class="article-category">
+  <a class="article-category-link" href="/categories/编程/">编程</a>
+  </div>
+
+    
+  <span class="article-delim">&#8226;</span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cpp/">cpp</a></li></ul>
+
+    </footer>
+</article>
+
+
+
+
+
+
+  
   
     <nav id="pagination">
       <nav id="page-nav">
@@ -728,10 +798,6 @@ static string MD5Encrypt(string text, Encoding enco)
       <ul>
         
           <li>
-            <a href="/2016-2-28/">2016.2.28</a>
-          </li>
-        
-          <li>
             <a href="/kill-xp-and-ie8/">本站即日起拒绝XP及之前的Windows系统，和IE8及之前的IE浏览器的访问。</a>
           </li>
         
@@ -747,6 +813,10 @@ static string MD5Encrypt(string text, Encoding enco)
             <a href="/好东西-简书助手/">【好东西】简书助手</a>
           </li>
         
+          <li>
+            <a href="/使用sync-request和cheerio写爬虫/">使用sync-request和cheerio写爬虫</a>
+          </li>
+        
       </ul>
     </div>
   </aside>
@@ -756,7 +826,7 @@ static string MD5Encrypt(string text, Encoding enco)
   <aside class="widget">
     <h3 class="widget-title">Archives</h3>
     <div class="widget-content">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/02/">二月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01/">一月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">十二月 2013</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">十一月 2013</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">十月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">17</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/02/">二月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01/">一月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">十二月 2013</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">十一月 2013</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">十月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">17</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </aside>
 
@@ -765,7 +835,7 @@ static string MD5Encrypt(string text, Encoding enco)
   <aside class="widget">
     <h3 class="widget-title">Categories</h3>
     <div class="widget-content">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wordpress/">wordpress</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/公告/">公告</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/安全/">安全</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/应用/">应用</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂记/">杂记</a><span class="category-list-count">36</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a><span class="category-list-count">50</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/网站/">网站</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/贴吧/">贴吧</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/资源/">资源</a><span class="category-list-count">7</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wordpress/">wordpress</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/公告/">公告</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/安全/">安全</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/应用/">应用</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂记/">杂记</a><span class="category-list-count">36</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a><span class="category-list-count">49</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/网站/">网站</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/贴吧/">贴吧</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/资源/">资源</a><span class="category-list-count">7</span></li></ul>
     </div>
   </aside>
 

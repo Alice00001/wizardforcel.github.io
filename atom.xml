@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.flygon.net/"/>
-  <updated>2016-03-17T02:43:53.507Z</updated>
+  <updated>2016-03-17T02:56:09.397Z</updated>
   <id>http://www.flygon.net/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://www.flygon.net/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E8%A6%81%E5%9C%A8Cpp%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%8E%9F%E7%94%9F%E6%8C%87%E9%92%88/"/>
     <id>http://www.flygon.net/为什么不要在Cpp中使用原生指针/</id>
     <published>2016-03-17T02:27:07.000Z</published>
-    <updated>2016-03-17T02:43:53.507Z</updated>
+    <updated>2016-03-17T02:56:09.397Z</updated>
     
     <content type="html">&lt;p&gt;我在这里不想讨论产能问题，只想说一个事情，原生指针是非异常安全的。&lt;/p&gt;
 &lt;p&gt;比如下面这段：&lt;/p&gt;
@@ -29,7 +29,7 @@
 &lt;p&gt;很显然，如果中间的代码抛出了任何一个异常，控制流就不继续向下执行，p所指向的内存也不会被回收。相比起这个，原生指针侵入式修改对象看起来也没什么。因为这是我们可控制的，不作死就不会死；但是如果中间的代码里面调用了别人的库，异常由别人的库产生，则是我们控制不了的。&lt;/p&gt;
 &lt;p&gt;同理，C语言标准库中的一些需要关闭的函数，比如I/O，到了C++中也变得不安全。这也是避免使用C标准库的原因之一。&lt;/p&gt;
 &lt;p&gt;解决方案是使用try-finally（c#中使用using语法糖），但是c++里面没有finally，可以使用try-catch-rethrow来达到相同的效果：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;MyClass *p = new MyClass();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;try &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    // ...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;catch(Exception &amp;amp;ex)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    delete p;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    throw ex;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;MyClass *p = new MyClass();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;try &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    // ...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;catch(exception &amp;amp;ex)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    delete p;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    throw ex;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;但是这样写不麻烦吗？与之相比，标准库里面的智能指针可是简洁的多。&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;auto p = make_unique&amp;lt;MyClass&amp;gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//...&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;智能指针相当于一个RAII的包装器，它能保证析构器在对象离开作用域时一定会调用，从而回收资源。智能指针默认的回收行为是delete，如果需要使用特别的函数来回收，可以自定义回收器。&lt;/p&gt;

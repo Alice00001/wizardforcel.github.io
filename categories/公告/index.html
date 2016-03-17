@@ -99,7 +99,7 @@
             
             <a href="/kill-xp-and-ie8/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/kill-xp-and-ie8/" data-id="cilvod6o500325kg6jtf34xu7" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/kill-xp-and-ie8/" data-id="cilvx2cna0037w4g6yr5n8hhi" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -149,7 +149,7 @@
             
             <a href="/正式启动多说-关闭easy2hide/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/正式启动多说-关闭easy2hide/" data-id="cilvod6sx009a5kg68oslpfn6" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/正式启动多说-关闭easy2hide/" data-id="cilvx2csi0095w4g6nf26keex" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -201,7 +201,7 @@
             
             <a href="/本站已启动备用域名/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/本站已启动备用域名/" data-id="cilvod6sh008q5kg6zufek66g" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/本站已启动备用域名/" data-id="cilvx2cs2008ow4g6p2bn2pew" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -251,7 +251,7 @@
             
             <a href="/身体抱恙-博客不定期停更/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/身体抱恙-博客不定期停更/" data-id="cilvod6wn00at5kg6a1rs4f42" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/身体抱恙-博客不定期停更/" data-id="cilvx2csx00aaw4g6nkq7i5gg" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -465,10 +465,15 @@
         var xpOrLower = res && JSON.parse(res[1]) < 6;
         res = /MSIE (\d+\.\d+)/.exec(ua);
         var ie8OrLower = res && JSON.parse(res[1]) < 9;
-        // var fromBaiduSE = /^https?:\/\/www.baidu.com/.test(document.referrer);
-        if(xpOrLower || ie8OrLower /* || fromBaiduSE */)
+        if(xpOrLower || ie8OrLower)
         {
             alert('请不要用XP及之前的Windows系统，和IE8及之前的IE浏览器访问本站！');
+            location.href = "about:blank";
+        }
+        var fromBaiduSE = /^https?:\/\/www.baidu.com/.test(document.referrer);
+        if(fromBaiduSE)
+        {
+            alert('检测到你还在使用百度搜索，作为一个程序员，这是一种自暴自弃！\n\n做不作恶的程序员，从不用百度开始！')
             location.href = "about:blank";
         }
     })();

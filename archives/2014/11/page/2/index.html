@@ -99,7 +99,7 @@
             
             <a href="/hexo-tutor-5/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-5/" data-id="cilvod6o5002y5kg6wmuwrn3j" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-5/" data-id="cilvx2cmu002yw4g60pdawvyi" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -158,7 +158,7 @@
             
             <a href="/hexo-tutor-4/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-4/" data-id="cilvod6o5002v5kg6p3mhdh22" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-4/" data-id="cilvx2cmu0035w4g6g4o5cum3" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -217,7 +217,7 @@
             
             <a href="/hexo-tutor-3/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-3/" data-id="cilvod6o5002p5kg6m0c5u5tu" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-3/" data-id="cilvx2cmu0031w4g6fl0ksfze" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -336,7 +336,7 @@
             
             <a href="/hexo-tutor-2/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-2/" data-id="cilvod6o5002t5kg6vibztf5v" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-2/" data-id="cilvx2cmu002qw4g6eet4rmty" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -400,7 +400,7 @@
             
             <a href="/hexo-tutor-1/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-1/" data-id="cilvod6o5002n5kg6g53xbo4w" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-1/" data-id="cilvx2cmu002nw4g60hoh3lot" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -652,10 +652,15 @@
         var xpOrLower = res && JSON.parse(res[1]) < 6;
         res = /MSIE (\d+\.\d+)/.exec(ua);
         var ie8OrLower = res && JSON.parse(res[1]) < 9;
-        // var fromBaiduSE = /^https?:\/\/www.baidu.com/.test(document.referrer);
-        if(xpOrLower || ie8OrLower /* || fromBaiduSE */)
+        if(xpOrLower || ie8OrLower)
         {
             alert('请不要用XP及之前的Windows系统，和IE8及之前的IE浏览器访问本站！');
+            location.href = "about:blank";
+        }
+        var fromBaiduSE = /^https?:\/\/www.baidu.com/.test(document.referrer);
+        if(fromBaiduSE)
+        {
+            alert('检测到你还在使用百度搜索，作为一个程序员，这是一种自暴自弃！\n\n做不作恶的程序员，从不用百度开始！')
             location.href = "about:blank";
         }
     })();

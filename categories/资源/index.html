@@ -99,7 +99,7 @@
             
             <a href="/龙族-天之炽-epub电子书汇总/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/龙族-天之炽-epub电子书汇总/" data-id="cilvod6x200b85kg6m53s8ig4" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/龙族-天之炽-epub电子书汇总/" data-id="cilvx2ctd00bbw4g6z5v5z5sp" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -170,7 +170,7 @@
             
             <a href="/关于-龙哥盟·电子图书馆/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/关于-龙哥盟·电子图书馆/" data-id="cilvod6rm006i5kg615ka8htc" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/关于-龙哥盟·电子图书馆/" data-id="cilvx2cr7006gw4g61ebczwjj" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -230,7 +230,7 @@
             
             <a href="/龙族I漫画版-1-8卷全-epub格式/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/龙族I漫画版-1-8卷全-epub格式/" data-id="cilvod6wn00az5kg6kaesf0jd" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/龙族I漫画版-1-8卷全-epub格式/" data-id="cilvx2ctd00b9w4g6ggxvuesk" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -280,7 +280,7 @@
             
             <a href="/龙族II漫画版-1-11卷全-epub格式/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/龙族II漫画版-1-11卷全-epub格式/" data-id="cilvod6wn00ax5kg6pwim3r5x" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/龙族II漫画版-1-11卷全-epub格式/" data-id="cilvx2ctd00b6w4g64juwhzle" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -330,7 +330,7 @@
             
             <a href="/《超级机器人大战OG-原创世纪合集-完全事典》动漫游工作室-pdf格式/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/《超级机器人大战OG-原创世纪合集-完全事典》动漫游工作室-pdf格式/" data-id="cilvod6qr004t5kg602t2tzkk" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/《超级机器人大战OG-原创世纪合集-完全事典》动漫游工作室-pdf格式/" data-id="cilvx2cp1004yw4g6kzte49p1" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -382,7 +382,7 @@
             
             <a href="/kindle-ebooks/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/kindle-ebooks/" data-id="cilvod6p0003m5kg64orvytr8" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/kindle-ebooks/" data-id="cilvx2cna003lw4g680ja3s3m" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -439,7 +439,7 @@
             
             <a href="/college/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/college/" data-id="cilvod6np00285kg6iy8ehmc0" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/college/" data-id="cilvx2cmu0028w4g6n72tu7v5" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -690,10 +690,15 @@
         var xpOrLower = res && JSON.parse(res[1]) < 6;
         res = /MSIE (\d+\.\d+)/.exec(ua);
         var ie8OrLower = res && JSON.parse(res[1]) < 9;
-        // var fromBaiduSE = /^https?:\/\/www.baidu.com/.test(document.referrer);
-        if(xpOrLower || ie8OrLower /* || fromBaiduSE */)
+        if(xpOrLower || ie8OrLower)
         {
             alert('请不要用XP及之前的Windows系统，和IE8及之前的IE浏览器访问本站！');
+            location.href = "about:blank";
+        }
+        var fromBaiduSE = /^https?:\/\/www.baidu.com/.test(document.referrer);
+        if(fromBaiduSE)
+        {
+            alert('检测到你还在使用百度搜索，作为一个程序员，这是一种自暴自弃！\n\n做不作恶的程序员，从不用百度开始！')
             location.href = "about:blank";
         }
     })();

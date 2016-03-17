@@ -99,7 +99,7 @@
             
             <a href="/正式启动多说-关闭easy2hide/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/正式启动多说-关闭easy2hide/" data-id="cilvod6sx009a5kg68oslpfn6" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/正式启动多说-关闭easy2hide/" data-id="cilvx2csi0095w4g6nf26keex" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -151,7 +151,7 @@
             
             <a href="/Navicat-for-sqlite-11.0.10-破解补丁/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/Navicat-for-sqlite-11.0.10-破解补丁/" data-id="cilvod6mu00145kg631er6l56" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/Navicat-for-sqlite-11.0.10-破解补丁/" data-id="cilvx2clk0013w4g6pg82einw" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -202,7 +202,7 @@
             
             <a href="/xxx博客如何导出数据/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/xxx博客如何导出数据/" data-id="cilvod6qb004g5kg6vaeoq5hw" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/xxx博客如何导出数据/" data-id="cilvx2col004lw4g66gtyyty6" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -253,7 +253,7 @@
             
             <a href="/Zeal-离线API文档浏览器/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/Zeal-离线API文档浏览器/" data-id="cilvod6np001w5kg6q51ltv59" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/Zeal-离线API文档浏览器/" data-id="cilvx2cmf0022w4g69wej6vqi" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -306,7 +306,7 @@
             
             <a href="/Javascript中四种函数调用方式/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/Javascript中四种函数调用方式/" data-id="cilvod6mu00165kg6z3ah1bfx" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/Javascript中四种函数调用方式/" data-id="cilvx2cmf001qw4g6dj1uvquv" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -584,10 +584,15 @@ showmsg.call(obj);
         var xpOrLower = res && JSON.parse(res[1]) < 6;
         res = /MSIE (\d+\.\d+)/.exec(ua);
         var ie8OrLower = res && JSON.parse(res[1]) < 9;
-        // var fromBaiduSE = /^https?:\/\/www.baidu.com/.test(document.referrer);
-        if(xpOrLower || ie8OrLower /* || fromBaiduSE */)
+        if(xpOrLower || ie8OrLower)
         {
             alert('请不要用XP及之前的Windows系统，和IE8及之前的IE浏览器访问本站！');
+            location.href = "about:blank";
+        }
+        var fromBaiduSE = /^https?:\/\/www.baidu.com/.test(document.referrer);
+        if(fromBaiduSE)
+        {
+            alert('检测到你还在使用百度搜索，作为一个程序员，这是一种自暴自弃！\n\n做不作恶的程序员，从不用百度开始！')
             location.href = "about:blank";
         }
     })();

@@ -104,7 +104,7 @@
             
             <a href="/关于停用知乎账号一事/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/关于停用知乎账号一事/" data-id="cilvod6rm006k5kg61h483a2c" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/关于停用知乎账号一事/" data-id="cilvx2cr7006iw4g6i2s1rr9y" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -119,7 +119,7 @@
 <p>根据您的申请，我们会停用您的帐号。感谢您一直以来对知乎的支持。</p>
 <p>感谢您的来信。</p>
 <p>知乎团队</p>
-<p>在 2016年1月9日 下午11:24，龙 <a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#111;&#x3a;&#x35;&#54;&#x32;&#56;&#x32;&#54;&#49;&#55;&#57;&#64;&#113;&#113;&#x2e;&#x63;&#111;&#109;">&#x35;&#54;&#x32;&#56;&#x32;&#54;&#49;&#55;&#57;&#64;&#113;&#113;&#x2e;&#x63;&#111;&#109;</a> 写道：</p>
+<p>在 2016年1月9日 下午11:24，龙 <a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#x35;&#54;&#50;&#x38;&#x32;&#x36;&#x31;&#55;&#57;&#64;&#113;&#113;&#46;&#x63;&#x6f;&#x6d;">&#x35;&#54;&#50;&#x38;&#x32;&#x36;&#x31;&#55;&#57;&#64;&#113;&#113;&#46;&#x63;&#x6f;&#x6d;</a> 写道：</p>
 <blockquote>
 <p>申请停用知乎账号</p>
 </blockquote>
@@ -360,10 +360,15 @@
         var xpOrLower = res && JSON.parse(res[1]) < 6;
         res = /MSIE (\d+\.\d+)/.exec(ua);
         var ie8OrLower = res && JSON.parse(res[1]) < 9;
-        // var fromBaiduSE = /^https?:\/\/www.baidu.com/.test(document.referrer);
-        if(xpOrLower || ie8OrLower /* || fromBaiduSE */)
+        if(xpOrLower || ie8OrLower)
         {
             alert('请不要用XP及之前的Windows系统，和IE8及之前的IE浏览器访问本站！');
+            location.href = "about:blank";
+        }
+        var fromBaiduSE = /^https?:\/\/www.baidu.com/.test(document.referrer);
+        if(fromBaiduSE)
+        {
+            alert('检测到你还在使用百度搜索，作为一个程序员，这是一种自暴自弃！\n\n做不作恶的程序员，从不用百度开始！')
             location.href = "about:blank";
         }
     })();

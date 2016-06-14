@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.flygon.net/about/index.html</loc>
+    
+    <lastmod>2016-06-14T14:13:06.068Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.flygon.net/se-tools/index.html</loc>
     
     <lastmod>2016-04-24T03:56:12.410Z</lastmod>
@@ -880,13 +887,6 @@
     <loc>http://www.flygon.net/2013-12-6-%E5%B0%8F%E8%AE%B0/</loc>
     
     <lastmod>2016-03-03T07:17:17.335Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.flygon.net/about/index.html</loc>
-    
-    <lastmod>2016-03-03T07:17:17.303Z</lastmod>
     
   </url>
   

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.flygon.net/"/>
-  <updated>2016-03-31T07:18:52.220Z</updated>
+  <updated>2016-06-23T09:00:15.353Z</updated>
   <id>http://www.flygon.net/</id>
   
   <author>
@@ -14,6 +14,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lcthw-zh-complete</title>
+    <link href="http://www.flygon.net/lcthw-zh-complete/"/>
+    <id>http://www.flygon.net/lcthw-zh-complete/</id>
+    <published>2016-06-23T08:58:11.000Z</published>
+    <updated>2016-06-23T09:00:15.353Z</updated>
+    
+    <content type="html">&lt;p&gt;我看见2012年就有人说要开坑翻译这本书，当时这本书还只写了一半，那个译者也没坚持翻译完，甚至连已经翻译的部分都找不到了。于是我自己从头开始弄，三个月翻译完了。&lt;/p&gt;
+&lt;p&gt;作者的行文风格比较朴素和直白，但正是没有使用各种专业术语，使得它废话比较多也比较绕，各种代词更是不明所以。我在翻译过来之后也没有做整体的润色，但会尽量忠实于作者的意图，并用更清晰的表述转述出来。&lt;/p&gt;
+&lt;p&gt;此外，作者的“笨办法学JS”已经开始筹备，具体完成时间未知，应该需要等个几年。&lt;/p&gt;
+&lt;p&gt;链接：&lt;a href=&quot;https://github.com/wizardforcel/lcthw-zh&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/wizardforcel/lcthw-zh&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我看见2012年就有人说要开坑翻译这本书，当时这本书还只写了一半，那个译者也没坚持翻译完，甚至连已经翻译的部分都找不到了。于是我自己从头开始弄，三个月翻译完了。&lt;/p&gt;
+&lt;p&gt;作者的行文风格比较朴素和直白，但正是没有使用各种专业术语，使得它废话比较多也比较绕，各种代词更是不
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>已投反对，请各位放心</title>
@@ -740,27 +763,6 @@
     <summary type="html">
     
       &lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;百度云：&lt;a href=&quot;http://pan.baidu.com/s/1eQo8o9s&quot; target=&quot;_blank&quot; rel=&quot;ext
-    
-    </summary>
-    
-      <category term="资源" scheme="http://www.flygon.net/categories/%E8%B5%84%E6%BA%90/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>龙族II漫画版 1~11卷全 epub格式</title>
-    <link href="http://www.flygon.net/%E9%BE%99%E6%97%8FII%E6%BC%AB%E7%94%BB%E7%89%88-1-11%E5%8D%B7%E5%85%A8-epub%E6%A0%BC%E5%BC%8F/"/>
-    <id>http://www.flygon.net/龙族II漫画版-1-11卷全-epub格式/</id>
-    <published>2015-08-11T11:18:25.000Z</published>
-    <updated>2016-03-03T07:17:17.711Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;百度云：&lt;a href=&quot;http://pan.baidu.com/s/1kT8aFDd&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1kT8aFDd&lt;/a&gt;&lt;br&gt;微盘：&lt;a href=&quot;http://vdisk.weibo.com/s/p_s7SzNGo78aY&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://vdisk.weibo.com/s/p_s7SzNGo78aY&lt;/a&gt;&lt;br&gt;千易：&lt;a href=&quot;http://1000eb.com/1fbon&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://1000eb.com/1fbon&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;百度云：&lt;a href=&quot;http://pan.baidu.com/s/1kT8aFDd&quot; target=&quot;_blank&quot; rel=&quot;ext
     
     </summary>
     

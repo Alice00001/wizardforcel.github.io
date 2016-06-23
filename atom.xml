@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.flygon.net/"/>
-  <updated>2016-06-23T09:00:15.353Z</updated>
+  <updated>2016-06-23T09:01:47.568Z</updated>
   <id>http://www.flygon.net/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>lcthw-zh-complete</title>
+    <title>笨办法学C 翻译完成</title>
     <link href="http://www.flygon.net/lcthw-zh-complete/"/>
     <id>http://www.flygon.net/lcthw-zh-complete/</id>
     <published>2016-06-23T08:58:11.000Z</published>
-    <updated>2016-06-23T09:00:15.353Z</updated>
+    <updated>2016-06-23T09:01:47.568Z</updated>
     
     <content type="html">&lt;p&gt;我看见2012年就有人说要开坑翻译这本书，当时这本书还只写了一半，那个译者也没坚持翻译完，甚至连已经翻译的部分都找不到了。于是我自己从头开始弄，三个月翻译完了。&lt;/p&gt;
 &lt;p&gt;作者的行文风格比较朴素和直白，但正是没有使用各种专业术语，使得它废话比较多也比较绕，各种代词更是不明所以。我在翻译过来之后也没有做整体的润色，但会尽量忠实于作者的意图，并用更清晰的表述转述出来。&lt;/p&gt;
@@ -35,6 +35,8 @@
     
     </summary>
     
+    
+      <category term="编程" scheme="http://www.flygon.net/tags/%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   

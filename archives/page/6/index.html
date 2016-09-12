@@ -85,6 +85,63 @@
       <div id="main" class="wrapper">
         <div id="primary" class="site-content"><div id="content" role="main">
   
+    <article id="post-记一次使用eclemma的蛋疼的测试经历" class="post-记一次使用eclemma的蛋疼的测试经历 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/记一次使用eclemma的蛋疼的测试经历/">记一次使用eclemma的蛋疼的测试经历</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="/记一次使用eclemma的蛋疼的测试经历/#comments" class="leave-reply">评论</a>
+            
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/记一次使用eclemma的蛋疼的测试经历/" data-id="ciszu9b36008bf8g6jmv2u53a" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <p>软件测试第二次大作业是单元测试，最后要进行一个覆盖测试，用到插件eclemma。由于被测程序带有一个GUI界面，设计器要生成一大堆代码，主要用于创建和设置控件。其中有些代码是绑定回调的，由于我的单元测试中直接调用了回调方法，没有经过闭包（xxxListener），导致闭包里的代码都是红的。</p>
+<p>我的想法是专注于计算部分的正确性就可以，界面是设计器生成的我也没必要管它。我的用例把计算部分每个分支都覆盖了，但是由于上述原因，实际的覆盖率只有93%多一点，而作业要求是95%。</p>
+<p>于是我开始想办法能不能屏蔽掉initComponent和构造器，结果发现没这个功能。</p>
+<p>为了验证我的想法，即是不是一些其他代码干扰造成的，我找了个例子，果不其然。</p>
+<p><img src="http://www.ibm.com/developerworks/cn/java/j-lo-eclemma/fig008.jpg" alt=""></p>
+<p>上图的程序只有一个类HelloWorld，也是启动类。类里面只有一个方法main。然而由于这个类不是抽象的，所以编译器会自动生成个构造器。</p>
+<p>可以看出，main的覆盖率是100%，但是就是由于有这么一个构造器，下降到了91%。而这个启动类是没必要实例化的，插件又不提供屏蔽功能，导致数据受到严重干扰。</p>
+<p>什么垃圾插件，完全不考虑实际的需求。设计的人也是脑子有坑。</p>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/记一次使用eclemma的蛋疼的测试经历/">
+    <time datetime="2014-12-16T03:41:44.000Z" class="entry-date">
+        12月 16 2014
+    </time>
+</a>
+    
+  <span class="article-delim">&#8226;</span>
+  <div class="article-category">
+  <a class="article-category-link" href="/categories/编程/">编程</a>
+  </div>
+
+    
+    </footer>
+</article>
+
+
+
+
+
+
+  
     <article id="post-找到了点有意思的资料" class="post-找到了点有意思的资料 post type-post status-publish format-standard hentry">
     <!---->
 
@@ -102,7 +159,7 @@
             
             <a href="/找到了点有意思的资料/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/找到了点有意思的资料/" data-id="cisegor8a006v0sg6at83u2gd" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/找到了点有意思的资料/" data-id="ciszu9b2r0079f8g63yq2nki1" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -155,7 +212,7 @@
             
             <a href="/se-tools/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/se-tools/" data-id="cisegor6400360sg6ncus6uw5" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/se-tools/" data-id="ciszu9b05002zf8g6k3yyxok1" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -214,7 +271,7 @@
             
             <a href="/ABBYY-FR11-破解补丁/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/ABBYY-FR11-破解补丁/" data-id="cisegor3q000d0sg65h81s2mt" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/ABBYY-FR11-破解补丁/" data-id="ciszu9ayc0009f8g6476odjxq" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -279,7 +336,7 @@
             
             <a href="/十五句箴言-句句在理/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/十五句箴言-句句在理/" data-id="cisegor7u005x0sg682ptcs1d" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/十五句箴言-句句在理/" data-id="ciszu9b2b0063f8g6j3t4z4gd" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -335,7 +392,7 @@
             
             <a href="/我是怎么找到电子书的-IT篇/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/我是怎么找到电子书的-IT篇/" data-id="cisegor8a006x0sg62xrigrxo" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/我是怎么找到电子书的-IT篇/" data-id="ciszu9b2r006xf8g6o4y6ohou" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -390,7 +447,7 @@
             
             <a href="/吐槽一下Java的ArrayList/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/吐槽一下Java的ArrayList/" data-id="cisegor7u005z0sg67atvgbk7" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/吐槽一下Java的ArrayList/" data-id="ciszu9b1w005xf8g6e2e52fch" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -447,7 +504,7 @@ ArrayList&lt;T&gt; list = new ArrayList&lt;T&gt;(Arrays.asList(arr));
             
             <a href="/呵呵/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/呵呵/" data-id="cisegor7u00610sg6swgfx0cb" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/呵呵/" data-id="ciszu9b2b0065f8g6dokyqg5w" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -497,7 +554,7 @@ ArrayList&lt;T&gt; list = new ArrayList&lt;T&gt;(Arrays.asList(arr));
             
             <a href="/联机算法-求最大连续子序列和/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/联机算法-求最大连续子序列和/" data-id="cisegor8p007h0sg6gkaerdg0" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/联机算法-求最大连续子序列和/" data-id="ciszu9b2r007jf8g6lc28cq8x" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -562,7 +619,7 @@ cout &lt;&lt; maxsum &lt;&lt; endl;
             
             <a href="/关于Google在华遭屏蔽的临时解决方案/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/关于Google在华遭屏蔽的临时解决方案/" data-id="cisegor7e005h0sg6p1zvsphk" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/关于Google在华遭屏蔽的临时解决方案/" data-id="ciszu9b1w005bf8g6cvej1zno" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -586,57 +643,6 @@ cout &lt;&lt; maxsum &lt;&lt; endl;
   <span class="article-delim">&#8226;</span>
   <div class="article-category">
   <a class="article-category-link" href="/categories/应用/">应用</a>
-  </div>
-
-    
-    </footer>
-</article>
-
-
-
-
-
-
-  
-    <article id="post-Some-Extract-from-my-Homework" class="post-Some-Extract-from-my-Homework post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/Some-Extract-from-my-Homework/">Some Extract from my Homework</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/Some-Extract-from-my-Homework/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/Some-Extract-from-my-Homework/" data-id="cisegor43000t0sg6lkkllk62" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <p>Some of my courses are about information management and information system (IMIS). Last week, the teacher of information system engineering gave us some homework, to design a kind of certain system. Afterward, we should write our gain and thought in an essay. I wrote one and half one page of words reaily.</p>
-<p>The original version was writen in Chinese. Here I translated a paragraph: After last class, I thought what difference it was between software engineering and information system engineering, or why did ISE exist. Then I looked through some material and made a conclusion. Software engineering suits tech-insensive projects, while information system engineering suits data-insensive projects. Data-insensive projects is projects in BAT, for example. These three company have poor contribution on technology unlike Google and Microsoft, whose core is data. Baidu holds data of users’ search, Alibaba holds data of trade by sellers and buyers, and Tencent holds data of QQ users and their relation. They deal with the data through existing technology and make a profit from it. Even if you can get all of source code of theirs, you cannot set up a new company over them. Only software without data is nothing. Some first party people don’t know the theory even more than us developers. They just think code is everthing, which is compeletely wrong because data is more significant for a information system.</p>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/Some-Extract-from-my-Homework/">
-    <time datetime="2014-11-29T13:40:33.000Z" class="entry-date">
-        11月 29 2014
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/杂记/">杂记</a>
   </div>
 
     
@@ -695,6 +701,10 @@ cout &lt;&lt; maxsum &lt;&lt; endl;
       <ul>
         
           <li>
+            <a href="/sicp-python/">SICP Python 描述 翻译完成</a>
+          </li>
+        
+          <li>
             <a href="/多谈点问题少谈点主义/">多谈点问题，少谈点主义。</a>
           </li>
         
@@ -710,10 +720,6 @@ cout &lt;&lt; maxsum &lt;&lt; endl;
             <a href="/hello-es6/">Hello, ES6!</a>
           </li>
         
-          <li>
-            <a href="/vote-against-37/">已投反对，请各位放心</a>
-          </li>
-        
       </ul>
     </div>
   </aside>
@@ -723,7 +729,7 @@ cout &lt;&lt; maxsum &lt;&lt; endl;
   <aside class="widget">
     <h3 class="widget-title">Archives</h3>
     <div class="widget-content">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01/">一月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">十二月 2013</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">十一月 2013</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">十月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01/">一月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">十二月 2013</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">十一月 2013</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">十月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </aside>
 
@@ -741,7 +747,7 @@ cout &lt;&lt; maxsum &lt;&lt; endl;
   <aside class="widget">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget-content tagcloud">
-      <a href="/tags/Invoke/" style="font-size: 10px;">Invoke</a> <a href="/tags/awvs/" style="font-size: 10px;">awvs</a> <a href="/tags/cpp/" style="font-size: 20px;">cpp</a> <a href="/tags/csharp/" style="font-size: 15px;">csharp</a> <a href="/tags/html5/" style="font-size: 10px;">html5</a> <a href="/tags/safe3/" style="font-size: 10px;">safe3</a> <a href="/tags/sqlmap/" style="font-size: 15px;">sqlmap</a> <a href="/tags/sql注入/" style="font-size: 15px;">sql注入</a> <a href="/tags/xss/" style="font-size: 10px;">xss</a> <a href="/tags/多线程/" style="font-size: 15px;">多线程</a> <a href="/tags/密码/" style="font-size: 10px;">密码</a> <a href="/tags/编程/" style="font-size: 20px;">编程</a> <a href="/tags/网站/" style="font-size: 10px;">网站</a>
+      <a href="/tags/Invoke/" style="font-size: 10px;">Invoke</a> <a href="/tags/awvs/" style="font-size: 10px;">awvs</a> <a href="/tags/cpp/" style="font-size: 16.67px;">cpp</a> <a href="/tags/csharp/" style="font-size: 13.33px;">csharp</a> <a href="/tags/html5/" style="font-size: 10px;">html5</a> <a href="/tags/safe3/" style="font-size: 10px;">safe3</a> <a href="/tags/sqlmap/" style="font-size: 13.33px;">sqlmap</a> <a href="/tags/sql注入/" style="font-size: 13.33px;">sql注入</a> <a href="/tags/xss/" style="font-size: 10px;">xss</a> <a href="/tags/多线程/" style="font-size: 13.33px;">多线程</a> <a href="/tags/密码/" style="font-size: 10px;">密码</a> <a href="/tags/编程/" style="font-size: 20px;">编程</a> <a href="/tags/网站/" style="font-size: 10px;">网站</a>
     </div>
   </aside>
 

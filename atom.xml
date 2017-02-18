@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.flygon.net/"/>
-  <updated>2017-02-13T13:40:40.674Z</updated>
+  <updated>2017-02-18T04:13:38.547Z</updated>
   <id>http://www.flygon.net/</id>
   
   <author>
@@ -14,6 +14,41 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>浙江省 2017 高中信息技术改革</title>
+    <link href="http://www.flygon.net/%E6%B5%99%E6%B1%9F%E7%9C%812017%E9%AB%98%E4%B8%AD%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E6%94%B9%E9%9D%A9/"/>
+    <id>http://www.flygon.net/浙江省2017高中信息技术改革/</id>
+    <published>2017-02-18T04:06:52.000Z</published>
+    <updated>2017-02-18T04:13:38.547Z</updated>
+    
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;相关讨论：&lt;a href=&quot;https://www.zhihu.com/question/55811645&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如何评价即将开始使用的浙江省新高中信息技术教材，将围绕Python进行并增加编程相关知识点？&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;浙江省信息技术新教材，即将在2017级（2017年9月入学）高中新生中开始使用。&lt;/p&gt;
+&lt;p&gt;新教材的改动如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;《信息技术基础》：excel/access =&amp;gt; numpy/pandas/matplotlib&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;《多媒体技术应用》：取消&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;《算法与程序设计》：vb =&amp;gt; python，并添加线性结构和树的知识点&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;值得一提的是，考查形式还是笔试。想当年我读高中的时候，北京虽然还在使用 vb，但是考查形式是机试，浙江还是要学习一个。&lt;/p&gt;
+&lt;p&gt;matplotlib 这个东西，不仅仅可用于编程，对于学生学习数学也是有帮助的。&lt;/p&gt;
+&lt;p&gt;另外，各位大佬们，到时候组个团开培训班可好？&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;相关讨论：&lt;a href=&quot;https://www.zhihu.com/question/55811645&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如何评价即将开始使用的浙江省新高中信息技术教材，将围绕Python进行并增加
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>生物劝退文集整理</title>
@@ -682,47 +717,6 @@
     </summary>
     
       <category term="资源" scheme="http://www.flygon.net/categories/%E8%B5%84%E6%BA%90/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>一些扯淡</title>
-    <link href="http://www.flygon.net/%E4%B8%80%E4%BA%9B%E6%89%AF%E6%B7%A1/"/>
-    <id>http://www.flygon.net/一些扯淡/</id>
-    <published>2016-01-03T11:30:15.000Z</published>
-    <updated>2016-03-03T07:17:17.506Z</updated>
-    
-    <content type="html">&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;编程思想是依赖于范式的，特性才是依赖于语言的。牛逼的人眼里没有语言只有范式，比如函数式、过程式、面向对象等等。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;只学一门编程语言远远不够，没有任何一种语言能完全胜任你碰到的所有任务。但是除了首次学习之外，不需要专门学习编程语言，拿份参考指南边用边学就行了。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;其他行业学习编程，然后用它来解决自己行业的问题。计算机科学也学编程，但是解决的是编程过程中的问题。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;不是每个人学完编程都要走计算机科学这条路，完全可以先解决你自己的经济问题。也可以拿编程解决自己领域内的问题。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;移动开发和web开发这种搬运api的东西，边学边用或者突击完全来得及，不需要单独花时间去学。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;小厂的开发基本和独立开发者的东西差不多。大厂的规模要大一些，不过都是功能的堆砌，没啥技术复杂度。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;学历不等于能力，但是学历是个简单粗暴的门槛。没办法，天朝人太多了。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;很多公司喜欢装逼考算法或者一些基础知识，是因为工程问题没法考，尤其是一些特别依赖于开源框架的地方。大家喜欢用不同的解法，考什么对每个人来说都是冷门。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;编程思想是依赖于范式的，特性才是依赖于语言的。牛逼的人眼里没有语言只有范式，比如函数式、过程式、面向对象等等。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;只学一门编程语言远远不够，没有任何一种语言能完全胜任你碰到的所有任务。但是除了首次学习之外，不需要专门学习编程
-    
-    </summary>
-    
-      <category term="编程" scheme="http://www.flygon.net/categories/%E7%BC%96%E7%A8%8B/"/>
     
     
   </entry>

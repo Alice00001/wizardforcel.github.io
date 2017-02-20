@@ -90,7 +90,7 @@
     <link href="http://www.flygon.net/2017-%E8%A7%84%E5%88%92/"/>
     <id>http://www.flygon.net/2017-规划/</id>
     <published>2016-12-28T13:09:00.000Z</published>
-    <updated>2016-12-28T13:10:32.782Z</updated>
+    <updated>2017-02-20T02:26:39.982Z</updated>
     
     <content type="html">&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;认识 100 个妹子。&lt;/p&gt;
@@ -98,12 +98,14 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;学习二进制安全，本来今年打算弄了，后来不知道为啥就弄 Web 安全了，学了点绕过姿势。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;老夫玩逆向就是一把梭，OD、IDA、VTS，拿起键盘就是干！&lt;/p&gt;
+&lt;p&gt;老夫玩逆向就是一把梭，OD、IDA，拿起键盘就是干！&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;上面那条之后正式开始&lt;strong&gt;面向工资编程&lt;/strong&gt;。顺便思考一下知识变现的方式。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;做个小项目（不是翻译），还没想好做什么。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;弹琴。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;上 Quora 阅读和编写答案。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 </content>
@@ -629,40 +631,6 @@
   </entry>
   
   <entry>
-    <title>C++的开发效率真的那么低吗</title>
-    <link href="http://www.flygon.net/cpp%E7%9A%84%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87%E7%9C%9F%E7%9A%84%E9%82%A3%E4%B9%88%E4%BD%8E%E5%90%97/"/>
-    <id>http://www.flygon.net/cpp的开发效率真的那么低吗/</id>
-    <published>2016-01-07T11:32:14.000Z</published>
-    <updated>2016-03-03T07:17:17.380Z</updated>
-    
-    <content type="html">&lt;p&gt;前几天看到一篇&lt;a href=&quot;http://gladdy.github.io/c++/2015/07/26/NodeDemystified-pt1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;文章&lt;/a&gt;，对比Node.js和C++的，挺有意思。&lt;/p&gt;
-&lt;p&gt;大家都知道Node.js开发效率高，下面是它创建server并监听的代码：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var http = require(&amp;apos;http&amp;apos;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;http.createServer(function(req, res) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  res.writeHead(200,  &amp;#123;&amp;apos;Content-Type&amp;apos;:  &amp;apos;text/plain&amp;apos;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  res.end(&amp;apos;Hello World\n&amp;apos;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;).listen(8888);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(&amp;apos;Server running at http://127.0.0.1:8888/&amp;apos;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;可以看出，Node.js原生带有处理http请求相关的库，不像php需要apache托管，并且它的路由设置更加灵活，所以深受广大开发者欢迎。&lt;/p&gt;
-&lt;p&gt;上面那段代码用C++11重构一下，暂且就叫做Node++吧。&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;using namespace std;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;using namespace http;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;HttpServer server([&amp;amp;](HttpRequest &amp;amp;req, HttpResponce &amp;amp;res)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  map&amp;lt;string, string&amp;gt; resHdr;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  resHdr[&amp;quot;Content-Type&amp;quot;] = &amp;quot;text/plain&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  res.writeHead(200, resHdr);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  res.end(&amp;quot;Hello World\n&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;server.listen(8888);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cout &amp;lt;&amp;lt; &amp;quot;Server running at http://127.0.0.1:8888/&amp;quot; &amp;lt;&amp;lt; endl;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;...&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;由于C++11加入了lambda这一高级特性，使得两段代码在复杂度和长度上是差不多的。&lt;/p&gt;
-&lt;p&gt;我不知道现在还鼓吹C++难写难用的人是什么心态。如果其中的确有一部分难用的特性（比如兼容c语言而保留的一些特性），我不知道是什么业务逻辑逼迫你去使用那些东西。我承认有些东西很坑，但它不是C++的全部，你可以不在生产环境中使用啊。你非要什么特性都用一用，然后搞个大新闻，这样简直是为了黑而黑，有什么意思？然而比c++坑的语言有的是。js的原型链和作用域不知道坑了多少人，但丝毫不影响我们拿他表达我们的思想。php的特性坑更多，不照样是web开发的主力吗？&lt;/p&gt;
-&lt;p&gt;c++的确为了兼容c保留了很多原始的东西，这部分坑在慢慢填。我们可以看到从最开始的vector和string，到11开始的智能指针以及std::thread、std::atomic，以及std::function和lambda，还有以后即将到来的asio，多了许多替代方案。虽然填的不完整，C++标准宕机了十年，也不是一朝一夕就能赶上的，但是起码是一点一点在改变的。obj-c有arc，我们有智能指针，更好地解放初级程序员的生产力，obj-c有at宏，我们有后缀运算符，更好地使用std::string。c++早就不是十年前的那个c++了。&lt;/p&gt;
-&lt;p&gt;然而对于这样一个里程碑，国内的教材显然是保守的。别说新特性了，就默认使用vector和string这条原则，有几本教材做到了？一部分人坚持信奉c++他爹极力反对的“学c++之前先学c”，结果学了一大堆c标准库的东西，之后又需要尽可能忘掉它们。 这样教出来的人，把字符串拼接几条语句能干完的事情，用string.h写了十几条，然后还反过来跟我说字符串处理弱，我就呵呵了。&lt;/p&gt;
-&lt;p&gt;可以预见的是，在不久的将来，C++会变成具有现代编程语言特性和设施的这么一种语言。我们完全可以像写Java或者Swift一样写C++。需要注重业务逻辑的时候，使用功能充足的、封装好的标准库和三方库，完全不需要管堆中对象的释放这一回事。虽然这样会使C++的门槛大幅下降，就像现在的iOS培训班那样，但对于一门语言的发展和生态构建，必定是有利的。一些”既得利益者“可能会担心初学者入门过快，而抢了他们的饭碗。如果初学者学几个月就能赶上你，你这几年算是白学了吗？&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;前几天看到一篇&lt;a href=&quot;http://gladdy.github.io/c++/2015/07/26/NodeDemystified-pt1.html&quot;&gt;文章&lt;/a&gt;，对比Node.js和C++的，挺有意思。&lt;/p&gt;
-&lt;p&gt;大家都知道Node.js开发效率高，下面是它创建server并监听的代码：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var http = require(&amp;apos;http&amp;apos;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;http.createServer(function(req, res) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  res.writeHead(200,  &amp;#123;&amp;apos;Content-Type&amp;apos;:  &amp;apos;text/plain&amp;apos;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  res.end(&amp;apos;Hello World\n&amp;apos;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;).listen(8888);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(&amp;apos;Server running at http://127.0.0.1:8888/&amp;apos;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="编程" scheme="http://www.flygon.net/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>龙族&amp;天之炽 epub电子书汇总</title>
     <link href="http://www.flygon.net/%E9%BE%99%E6%97%8F-%E5%A4%A9%E4%B9%8B%E7%82%BD-epub%E7%94%B5%E5%AD%90%E4%B9%A6%E6%B1%87%E6%80%BB/"/>
     <id>http://www.flygon.net/龙族-天之炽-epub电子书汇总/</id>
@@ -717,6 +685,47 @@
     </summary>
     
       <category term="资源" scheme="http://www.flygon.net/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>一些扯淡</title>
+    <link href="http://www.flygon.net/%E4%B8%80%E4%BA%9B%E6%89%AF%E6%B7%A1/"/>
+    <id>http://www.flygon.net/一些扯淡/</id>
+    <published>2016-01-03T11:30:15.000Z</published>
+    <updated>2016-03-03T07:17:17.506Z</updated>
+    
+    <content type="html">&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;编程思想是依赖于范式的，特性才是依赖于语言的。牛逼的人眼里没有语言只有范式，比如函数式、过程式、面向对象等等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;只学一门编程语言远远不够，没有任何一种语言能完全胜任你碰到的所有任务。但是除了首次学习之外，不需要专门学习编程语言，拿份参考指南边用边学就行了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;其他行业学习编程，然后用它来解决自己行业的问题。计算机科学也学编程，但是解决的是编程过程中的问题。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;不是每个人学完编程都要走计算机科学这条路，完全可以先解决你自己的经济问题。也可以拿编程解决自己领域内的问题。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;移动开发和web开发这种搬运api的东西，边学边用或者突击完全来得及，不需要单独花时间去学。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;小厂的开发基本和独立开发者的东西差不多。大厂的规模要大一些，不过都是功能的堆砌，没啥技术复杂度。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;学历不等于能力，但是学历是个简单粗暴的门槛。没办法，天朝人太多了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;很多公司喜欢装逼考算法或者一些基础知识，是因为工程问题没法考，尤其是一些特别依赖于开源框架的地方。大家喜欢用不同的解法，考什么对每个人来说都是冷门。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;编程思想是依赖于范式的，特性才是依赖于语言的。牛逼的人眼里没有语言只有范式，比如函数式、过程式、面向对象等等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;只学一门编程语言远远不够，没有任何一种语言能完全胜任你碰到的所有任务。但是除了首次学习之外，不需要专门学习编程
+    
+    </summary>
+    
+      <category term="编程" scheme="http://www.flygon.net/categories/%E7%BC%96%E7%A8%8B/"/>
     
     
   </entry>

@@ -83,184 +83,6 @@
       <div id="main" class="wrapper">
         <div id="primary" class="site-content"><div id="content" role="main">
   
-    <article id="post-hexo-tutor-4" class="post-hexo-tutor-4 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/hexo-tutor-4/">Hexo 入门指南（四） - 页面、导航、边栏、底栏</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/hexo-tutor-4/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-4/" data-id="cizdhfkfm0026ccg66h7npio1" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <h2 id="页面"><a href="#页面" class="headerlink" title="页面"></a>页面</h2><p>命令行键入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page about</span><br></pre></td></tr></table></figure>
-<p>会在source/about中生成index.html。这个就叫做页面，不在文章列表显示，可以通过<a href="http://localhost/about" target="_blank" rel="external">http://localhost/about</a>浏览。</p>
-<p>页面支持文章的大部分属性，除了分类和标签。</p>
-<h2 id="导航"><a href="#导航" class="headerlink" title="导航"></a>导航</h2><p>打开主题中的设置文件，即themes\<theme_name>_config.yml（其中<theme_name>是当前主题的名字，默认为landscape，下同），找到menu:，在列表的末端添加About: 关于。刷新页面，导航栏上就出现了关于链接。</theme_name></theme_name></p>
-<h2 id="边栏"><a href="#边栏" class="headerlink" title="边栏"></a>边栏</h2><p>进入themes\<theme_name>\layout_widget目录中，创建about.ejs文件，模仿其他文件中的模版，输入以下内容：</theme_name></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (site.tags.length)&#123; %&gt;</span><br><span class="line">  &lt;div class=&quot;widget-wrap&quot;&gt;</span><br><span class="line">    &lt;h3 class=&quot;widget-title&quot;&gt;About&lt;/h3&gt;</span><br><span class="line">    &lt;div class=&quot;widget&quot;&gt;</span><br><span class="line">      邮箱：xxx@xxx.com&lt;br /&gt;</span><br><span class="line">      微博：@xxxxx</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
-<p>打开themes\<theme_name>_config.yml，找到#Sidebar，在最后面添加- about。刷新页面。</theme_name></p>
-<h2 id="底栏"><a href="#底栏" class="headerlink" title="底栏"></a>底栏</h2><p>打开themes\<theme_name>\layout_partial\footer.ejs修改。</theme_name></p>
-<h2 id="banner"><a href="#banner" class="headerlink" title="-banner-"></a>-banner-</h2><p>打开themes\<theme_name>\source\css\images，把banner.jpg换掉。</theme_name></p>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/hexo-tutor-4/">
-    <time datetime="2014-11-01T13:05:29.000Z" class="entry-date">
-        11月 1 2014
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/hexo/">hexo</a>
-  </div>
-
-    
-    </footer>
-</article>
-
-
-
-
-
-
-  
-    <article id="post-hexo-tutor-3" class="post-hexo-tutor-3 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/hexo-tutor-3/">Hexo 入门指南（三） - 文章 &amp; 草稿</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/hexo-tutor-3/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-3/" data-id="cizdhfkfo002bccg6bq6wiofh" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <h2 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h2><p>命令行中输入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &quot;new article&quot;</span><br></pre></td></tr></table></figure>
-<p>之后在source/_posts目录下面，多了一个new-article.md的文件。</p>
-<p>打开之后我们会看到：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: new article</span><br><span class="line">date: 2014-11-01 20:10:33</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>文件的开头是属性，采用统一的yaml格式，用三条短横线分隔。下面是文章正文。</p>
-<p>文章的正文支持markdown格式，建议你先学习一下它的语法。markdown不像html似的一大堆标签，很简单，只有几个符号。</p>
-<p>新建、删除或修改文章后，不需要重启hexo server，刷新一下即可预览。</p>
-<h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><p>文章可以拥有如下属性：</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Setting</td>
-<td>Description</td>
-<td>Default</td>
-</tr>
-<tr>
-<td>layout</td>
-<td>Layout</td>
-<td>post或page</td>
-</tr>
-<tr>
-<td>title</td>
-<td>文章的标题</td>
-</tr>
-<tr>
-<td>date</td>
-<td>创建日期</td>
-<td>文件的创建日期</td>
-</tr>
-<tr>
-<td>updated</td>
-<td>修改日期</td>
-<td>文件的修改日期</td>
-</tr>
-<tr>
-<td>comments</td>
-<td>是否开启评论</td>
-<td>true</td>
-</tr>
-<tr>
-<td>tags</td>
-<td>标签</td>
-</tr>
-<tr>
-<td>categories</td>
-<td>分类</td>
-</tr>
-<tr>
-<td>permalink</td>
-<td>url中的名字</td>
-<td>文件名</td>
-</tr>
-</tbody>
-</table>
-<p>动态博客中通过发布文章页面设置的各种属性，在hexo里要这样设置。</p>
-<h2 id="分类和标签"><a href="#分类和标签" class="headerlink" title="分类和标签"></a>分类和标签</h2><p>例如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">categories:</span><br><span class="line">- 日记</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">- node.js</span><br></pre></td></tr></table></figure>
-<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>同wordpress一样，
-        
-          <p class="article-more-link">
-            <a href="/hexo-tutor-3/#more" class="more-link">更多内容 <span class="meta-nav">→</span></a>
-          </p>
-        
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/hexo-tutor-3/">
-    <time datetime="2014-11-01T12:43:24.000Z" class="entry-date">
-        11月 1 2014
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/hexo/">hexo</a>
-  </div>
-
-    
-    </footer>
-</article>
-
-
-
-
-
-
-  
     <article id="post-hexo-tutor-2" class="post-hexo-tutor-2 post type-post status-publish format-standard hentry">
     <!---->
 
@@ -278,7 +100,7 @@
             
             <a href="/hexo-tutor-2/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-2/" data-id="cizdhfkfn0029ccg6qayi67zj" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-2/" data-id="cizgyokgk002pbsg67ck4ocq4" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -342,7 +164,7 @@
             
             <a href="/hexo-tutor-1/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-1/" data-id="cizdhfkfi0023ccg6tebkf52d" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/hexo-tutor-1/" data-id="cizgyokfh0024bsg66jbqv0x9" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -424,7 +246,7 @@
             
             <a href="/正式启动多说-关闭easy2hide/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/正式启动多说-关闭easy2hide/" data-id="cizdhfkkv0076ccg6xge3jeca" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/正式启动多说-关闭easy2hide/" data-id="cizgyoklc0073bsg6gdbloq5c" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -476,7 +298,7 @@
             
             <a href="/Navicat-for-sqlite-11.0.10-破解补丁/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/Navicat-for-sqlite-11.0.10-破解补丁/" data-id="cizdhfkeb000nccg6e64atsal" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/Navicat-for-sqlite-11.0.10-破解补丁/" data-id="cizgyoke5000rbsg6urlz8617" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -527,7 +349,7 @@
             
             <a href="/xxx博客如何导出数据/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/xxx博客如何导出数据/" data-id="cizdhfkik0045ccg6c3t96k1t" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/xxx博客如何导出数据/" data-id="cizgyokjm0049bsg6wyh05bt7" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -578,7 +400,7 @@
             
             <a href="/Zeal-离线API文档浏览器/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/Zeal-离线API文档浏览器/" data-id="cizdhfkex001dccg61rh010yd" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/Zeal-离线API文档浏览器/" data-id="cizgyokek001kbsg6bbslaa1j" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -631,7 +453,7 @@
             
             <a href="/Javascript中四种函数调用方式/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/Javascript中四种函数调用方式/" data-id="cizdhfkec000pccg6xewlrqk0" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/Javascript中四种函数调用方式/" data-id="cizgyokdp000kbsg6byllldn3" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -745,7 +567,7 @@ showmsg.call(obj);
             
             <a href="/miui-for-nexus7-一代/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/miui-for-nexus7-一代/" data-id="cizdhfkhb0034ccg6u7ehxed3" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/miui-for-nexus7-一代/" data-id="cizgyokh0002rbsg62802wtuk" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -773,6 +595,106 @@ showmsg.call(obj);
   <span class="article-delim">&#8226;</span>
   <div class="article-category">
   <a class="article-category-link" href="/categories/应用/">应用</a>
+  </div>
+
+    
+    </footer>
+</article>
+
+
+
+
+
+
+  
+    <article id="post-本站已启动备用域名" class="post-本站已启动备用域名 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/本站已启动备用域名/">本站已启动备用域名【flygon.org】</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="/本站已启动备用域名/#comments" class="leave-reply">评论</a>
+            
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/本站已启动备用域名/" data-id="cizgyoklc0075bsg6zqzad61i" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <p>近几个月内可能有备案计划，届时备用域名不停止解析。</p>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/本站已启动备用域名/">
+    <time datetime="2014-09-14T07:40:31.000Z" class="entry-date">
+        9月 14 2014
+    </time>
+</a>
+    
+  <span class="article-delim">&#8226;</span>
+  <div class="article-category">
+  <a class="article-category-link" href="/categories/公告/">公告</a>
+  </div>
+
+    
+    </footer>
+</article>
+
+
+
+
+
+
+  
+    <article id="post-我已经没有再开一个坑的精力了" class="post-我已经没有再开一个坑的精力了 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/我已经没有再开一个坑的精力了/">我已经没有再开一个坑的精力了。。</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="/我已经没有再开一个坑的精力了/#comments" class="leave-reply">评论</a>
+            
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/我已经没有再开一个坑的精力了/" data-id="cizgyoklc006fbsg6hx07euvz" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <p>那么 WizardUI 两年后再见吧～</p>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/我已经没有再开一个坑的精力了/">
+    <time datetime="2014-09-07T15:13:02.000Z" class="entry-date">
+        9月 7 2014
+    </time>
+</a>
+    
+  <span class="article-delim">&#8226;</span>
+  <div class="article-category">
+  <a class="article-category-link" href="/categories/杂记/">杂记</a>
   </div>
 
     
@@ -847,7 +769,7 @@ showmsg.call(obj);
           </li>
         
           <li>
-            <a href="/多谈点问题少谈点主义/">多谈点问题，少谈点主义。</a>
+            <a href="/历史的车轮滚滚向前/">历史的车轮滚滚向前</a>
           </li>
         
       </ul>
@@ -859,7 +781,7 @@ showmsg.call(obj);
   <aside class="widget">
     <h3 class="widget-title">Archives</h3>
     <div class="widget-content">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01/">一月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">十二月 2013</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">十一月 2013</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">十月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01/">一月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">十二月 2013</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">十一月 2013</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">十月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </aside>
 
@@ -868,7 +790,7 @@ showmsg.call(obj);
   <aside class="widget">
     <h3 class="widget-title">Categories</h3>
     <div class="widget-content">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wordpress/">wordpress</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/公告/">公告</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/安全/">安全</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/应用/">应用</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂记/">杂记</a><span class="category-list-count">36</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a><span class="category-list-count">46</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/网站/">网站</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/资源/">资源</a><span class="category-list-count">5</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wordpress/">wordpress</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/公告/">公告</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/安全/">安全</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/应用/">应用</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂记/">杂记</a><span class="category-list-count">36</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a><span class="category-list-count">45</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/网站/">网站</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/资源/">资源</a><span class="category-list-count">5</span></li></ul>
     </div>
   </aside>
 
@@ -877,7 +799,7 @@ showmsg.call(obj);
   <aside class="widget">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget-content tagcloud">
-      <a href="/tags/Invoke/" style="font-size: 10px;">Invoke</a> <a href="/tags/awvs/" style="font-size: 10px;">awvs</a> <a href="/tags/cpp/" style="font-size: 16.67px;">cpp</a> <a href="/tags/csharp/" style="font-size: 13.33px;">csharp</a> <a href="/tags/html5/" style="font-size: 10px;">html5</a> <a href="/tags/safe3/" style="font-size: 10px;">safe3</a> <a href="/tags/sqlmap/" style="font-size: 13.33px;">sqlmap</a> <a href="/tags/sql注入/" style="font-size: 13.33px;">sql注入</a> <a href="/tags/xss/" style="font-size: 10px;">xss</a> <a href="/tags/多线程/" style="font-size: 13.33px;">多线程</a> <a href="/tags/密码/" style="font-size: 10px;">密码</a> <a href="/tags/生物劝退/" style="font-size: 10px;">生物劝退</a> <a href="/tags/编程/" style="font-size: 20px;">编程</a> <a href="/tags/网站/" style="font-size: 10px;">网站</a>
+      <a href="/tags/Invoke/" style="font-size: 10px;">Invoke</a> <a href="/tags/awvs/" style="font-size: 10px;">awvs</a> <a href="/tags/cpp/" style="font-size: 20px;">cpp</a> <a href="/tags/csharp/" style="font-size: 15px;">csharp</a> <a href="/tags/html5/" style="font-size: 10px;">html5</a> <a href="/tags/safe3/" style="font-size: 10px;">safe3</a> <a href="/tags/sqlmap/" style="font-size: 15px;">sqlmap</a> <a href="/tags/sql注入/" style="font-size: 15px;">sql注入</a> <a href="/tags/xss/" style="font-size: 10px;">xss</a> <a href="/tags/多线程/" style="font-size: 15px;">多线程</a> <a href="/tags/密码/" style="font-size: 10px;">密码</a> <a href="/tags/生物劝退/" style="font-size: 10px;">生物劝退</a> <a href="/tags/编程/" style="font-size: 20px;">编程</a> <a href="/tags/网站/" style="font-size: 10px;">网站</a>
     </div>
   </aside>
 
@@ -892,19 +814,15 @@ showmsg.call(obj);
 <li><a href='http://tieba.baidu.com/f?kw=%CE%AA%B0%AE%C8%EB%C3%DF'>百度为爱入眠吧</a></li>
 <li><a href="http://www.714.hk/">梦殇国际</a></li>
 <li><a href="http://cuican.name/">璀璨</a></li>
-<li><a href="http://www.jsgblog.com">旧时光博客</a></li>
-<li><a href="http://baidu.tiebalu.com/">贴吧录</a></li>
 <li><a href="http://papwin.com/">潘岸平的部落格</a></li>
 <li><a href='http://fivekuai.com/'>Five贴吧</a></li>
-<li><a href="http://www.icebaidu.com">冷熊猫</a></li>
 <li><a href="http://www.giuem.com/">Giuem</a></li>
 <li><a href="http://www.woaiye.com/">我爱夜</a></li>
-<li><a href='http://www.changwei.me/'>昌维</a></li>
 <li><a href="http://moelove.info/">MoeLove</a></li>
 <li><a href='http://xiaohudie.net/'>小蝴蝶</a></li>
 <li><a href='http://smallfeng.cn/'>小丰阁</a></li>
 <li><a href='https://blog.dangge.moe/'>dangge's blog</a></li>
-<li><a href='https://www.wczf.net/'>微尘逐风</a></li>
+<li><a href='http://www.wczf.net/'>微尘逐风</a></li>
 
 <!-- -->
 
@@ -918,11 +836,9 @@ showmsg.call(obj);
 
 <li><a href="http://www.geekzu.cn/">极客族</a></li>
 <li><a href="http://hardrain980.com">骤雨</a></li>
-<li><a href='http://www.syana.moe/'>q6q64399's blog</a></li>
 <li><a href='http://www.82cat.com/'>不二's blog</a></li>
 <li><a href="http://lolil.lofter.com/">庭园</a></li>
-<li><a href="http://aikongke.com/">爱控客</a></li>
-<li><a href="http://www.sunweihu.com/">墨涩颓废网</a></li>
+<li><a href="http://www.sunweihu.com/">墨涩网</a></li>
 <li><a href='http://lvycf.com'>HDL's blog</a></li>
 <li><a href='http://www.farquer.cn/'>farquer's blog</a></li>
 <!-- link end -->

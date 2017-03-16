@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.flygon.net/about/index.html</loc>
+    
+    <lastmod>2017-03-16T10:04:55.238Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.flygon.net/donors/index.html</loc>
     
     <lastmod>2017-03-10T11:26:38.618Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://www.flygon.net/%E6%B5%99%E6%B1%9F%E7%9C%812017%E9%AB%98%E4%B8%AD%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E6%94%B9%E9%9D%A9/</loc>
     
     <lastmod>2017-02-18T04:13:38.547Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.flygon.net/about/index.html</loc>
-    
-    <lastmod>2017-02-15T08:44:36.655Z</lastmod>
     
   </url>
   

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.flygon.net/"/>
-  <updated>2017-02-18T04:13:38.547Z</updated>
+  <updated>2017-03-17T07:42:43.417Z</updated>
   <id>http://www.flygon.net/</id>
   
   <author>
@@ -14,6 +14,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>做博客一定要以 D 哥为榜样</title>
+    <link href="http://www.flygon.net/%E5%81%9A%E5%8D%9A%E5%AE%A2%E4%B8%80%E5%AE%9A%E8%A6%81%E4%BB%A5D%E5%93%A5%E4%B8%BA%E6%A6%9C%E6%A0%B7/"/>
+    <id>http://www.flygon.net/做博客一定要以D哥为榜样/</id>
+    <published>2017-03-17T07:34:56.000Z</published>
+    <updated>2017-03-17T07:42:43.417Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://blog.csdn.net/dl88250&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/dl88250&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;D（88250），Hacpai 站长。&lt;/p&gt;
+&lt;p&gt;虽然他现在的博客迁到 b3 了，但是原来那个依然很壮观。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/118142-5f445e95c888b695.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;人世间最痛苦的事情就是&lt;/p&gt;
+&lt;p&gt;大神早在十年前超越了你&lt;/p&gt;
+&lt;p&gt;而你却希望过了三五年也能跟大神一样&lt;/p&gt;
+&lt;p&gt;我已经不知道说什么了&lt;/p&gt;
+&lt;p&gt;:joy::joy::joy:&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://blog.csdn.net/dl88250&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/dl88250&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;D（88250），Hacpai 站长。&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="杂记" scheme="http://www.flygon.net/categories/%E6%9D%82%E8%AE%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>浙江省 2017 高中信息技术改革</title>
@@ -700,31 +731,6 @@
 &lt;/blockquote&gt;
 &lt;p&gt;最近国家在鼓吹“大众创业”，其实目的很明显，一是产业结构升级的过程中需要大量新兴产业，而创业又是发展新兴产业的最快方法；二是国家需要解决就业问题，创业公司能够提供大量的就业岗位。但是无论是创业者，还是投资人，都对它持否定态度，道理也很简单。国家需要新兴产业，实际上是从一大堆创业公司里选出最后活下来的，至于那些失败的，对不起，就当是历史的炮灰了。对于国家来说总体是有利的，但对于每个人来说，要足够幸运才能成为那1%。&lt;/p&gt;
 &lt;p&gt;对于“大众创业”，大家的认识是很清醒的，但对于“应试教育”，我看了一下，大家褒贬不一。其实这两者的本质是一样的。
-    
-    </summary>
-    
-      <category term="编程" scheme="http://www.flygon.net/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>关于培训班的事情</title>
-    <link href="http://www.flygon.net/%E5%85%B3%E4%BA%8E%E5%9F%B9%E8%AE%AD%E7%8F%AD%E7%9A%84%E4%BA%8B%E6%83%85/"/>
-    <id>http://www.flygon.net/关于培训班的事情/</id>
-    <published>2016-01-03T11:26:16.000Z</published>
-    <updated>2016-03-03T07:17:17.555Z</updated>
-    
-    <content type="html">&lt;p&gt;有句话很残酷，但它的确是真理：如果一个人不能通过自学而达到从业水平，那就不适合it行业。如果你不把它当成兴趣，只是当成赚钱的工作，那也不适合it行业。&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;我非常不看好培训班的人，除非你能向我证明你对技术的渴望和一颗geek的心。每个程序员都是魔术师，把枯燥无味的代码变成丰富多彩的软件。每个程序员，都有一个改变世界的梦想，能改变多少就改变多少，哪怕只能改变周围的一点，也好过不去改变。&lt;/p&gt;
-&lt;p&gt;去培训机构至少说明一点，就是要么你没有自学能力，要么你没有自控能力。学习技术，看教程或文档是最快的方式，因为比起视频信息熵非常小。选择视频这种方式，无非就是你脑容量不够，接收速率需要慢一些。或者无非就是你希望有个人手把手教你。但是你以后要学的东西非常多，到一定层次之后，你要学的东西就没有人能够手把手教你了，只能靠你自己摸索。没有自学能力是致命的，就不适合干计算机这行。&lt;/p&gt;
-&lt;p&gt;没有自控能力，是因为培训班放的视频，你在网上一些mooc也能找到。而网上的东西更新及时，有可能比培训班的东西更科学合理、错误更少。你去培训班无非就是想找个人看着你学，因为你自己喜欢偷懒，学不下去。或者你自己不想做大量的练习，懒得自己找活干。世界上不缺需求，只缺发现需求的眼睛。你自己想不出来，也不去网上搜索，不去认真挑选，怎么可能有呢。&lt;/p&gt;
-&lt;p&gt;总之，这个逻辑是这样：不是培训班出不了人才，而是能自学的人都不会去培训班。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;有句话很残酷，但它的确是真理：如果一个人不能通过自学而达到从业水平，那就不适合it行业。如果你不把它当成兴趣，只是当成赚钱的工作，那也不适合it行业。
     
     </summary>
     

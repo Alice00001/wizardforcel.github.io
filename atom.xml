@@ -121,24 +121,39 @@
     <link href="http://www.flygon.net/2017-%E8%A7%84%E5%88%92/"/>
     <id>http://www.flygon.net/2017-规划/</id>
     <published>2016-12-28T13:09:00.000Z</published>
-    <updated>2017-02-20T02:26:39.982Z</updated>
+    <updated>2017-03-22T06:40:08.781Z</updated>
     
     <content type="html">&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;认识 100 个妹子。&lt;/p&gt;
 &lt;p&gt;之前经过试验，平均投 10 次简历就能得到一个 offer，对于程序员来说，想要脱单的话，我掐指一算，差不多就是这个数值&lt;code&gt;x10&lt;/code&gt;，所以是 100 个。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;学习二进制安全，本来今年打算弄了，后来不知道为啥就弄 Web 安全了，学了点绕过姿势。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;安全方面：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;翻译完成《Web Hacking 101》&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;看完看雪的绿书&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;出一套安卓逆向的教程&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;老夫玩逆向就是一把梭，OD、IDA，拿起键盘就是干！&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;做个小项目（不是翻译），还没想好做什么。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;利用空闲时间编写几个自绘控件。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;弹琴。&lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;&lt;p&gt;英语&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;上 Quora 阅读和编写答案。&lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;&lt;p&gt;练习听力，争取不带字幕听懂美剧。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;我知道以上这些规划很可能不会在一年之内完成，如果是这样那就明年继续。大家猜一猜我能完成几个呢？&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -147,7 +162,7 @@
 &lt;li&gt;&lt;p&gt;认识 100 个妹子。&lt;/p&gt;
 &lt;p&gt;之前经过试验，平均投 10 次简历就能得到一个 offer，对于程序员来说，想要脱单的话，我掐指一算，差不多就是这个数值&lt;code&gt;x10&lt;/code&gt;，所以是 100 个。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;学习二进
+&lt;li&gt;&lt;p&gt;安全方面
     
     </summary>
     

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.flygon.net/"/>
-  <updated>2017-03-24T03:20:04.144Z</updated>
+  <updated>2017-03-30T08:10:39.261Z</updated>
   <id>http://www.flygon.net/</id>
   
   <author>
@@ -14,6 +14,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于国内厂商的国际版杀毒软件</title>
+    <link href="http://www.flygon.net/%E5%9B%BD%E5%86%85%E5%8E%82%E5%95%86%E7%9A%84%E5%9B%BD%E9%99%85%E7%89%88%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6/"/>
+    <id>http://www.flygon.net/国内厂商的国际版杀毒软件/</id>
+    <published>2017-03-30T08:00:31.000Z</published>
+    <updated>2017-03-30T08:10:39.261Z</updated>
+    
+    <content type="html">&lt;p&gt;很多国内软件公司的杀毒软件都分为国内版和国际版，这二者有什么区别呢？&lt;/p&gt;
+&lt;p&gt;首先，这两个的团队是不一样的。国际版的团队大多收购，国内版为自研。例如百度杀毒的国际版就是原超级巡警的团队做的，而国内版是自己另起炉灶。&lt;/p&gt;
+&lt;p&gt;其次，由于国外良好的用户环境和监管，国际版的软件体验良好，没有流氓或者窃取隐私的行为。&lt;/p&gt;
+&lt;p&gt;然而它们都是免费的。所以推荐大家使用这些国际版的杀软。不用国内版的软件，也算是为净化国内的互联网环境出了一份力。如果你之前拉黑了国内版的证书也没有关系，二者的证书是不一样的。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.pcfaster.com/zhtw/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Baidu PC Faster（百度安全卫士国际版）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://antivirus.baidu.com/zh/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Baidu Antivirus（百度杀毒软件国际版）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.pcmgr-global.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Tencent PC Manager（腾讯电脑管家国际版）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.360totalsecurity.com/zh-cn/features/360-total-security/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;360 Total Security（360 安全卫士国际版）&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;很多国内软件公司的杀毒软件都分为国内版和国际版，这二者有什么区别呢？&lt;/p&gt;
+&lt;p&gt;首先，这两个的团队是不一样的。国际版的团队大多收购，国内版为自研。例如百度杀毒的国际版就是原超级巡警的团队做的，而国内版是自己另起炉灶。&lt;/p&gt;
+&lt;p&gt;其次，由于国外良好的用户环境和监管，国
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>互联网安全观察</title>
@@ -699,47 +729,6 @@
     </summary>
     
       <category term="资源" scheme="http://www.flygon.net/categories/%E8%B5%84%E6%BA%90/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>一些扯淡</title>
-    <link href="http://www.flygon.net/%E4%B8%80%E4%BA%9B%E6%89%AF%E6%B7%A1/"/>
-    <id>http://www.flygon.net/一些扯淡/</id>
-    <published>2016-01-03T11:30:15.000Z</published>
-    <updated>2016-03-03T07:17:17.506Z</updated>
-    
-    <content type="html">&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;编程思想是依赖于范式的，特性才是依赖于语言的。牛逼的人眼里没有语言只有范式，比如函数式、过程式、面向对象等等。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;只学一门编程语言远远不够，没有任何一种语言能完全胜任你碰到的所有任务。但是除了首次学习之外，不需要专门学习编程语言，拿份参考指南边用边学就行了。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;其他行业学习编程，然后用它来解决自己行业的问题。计算机科学也学编程，但是解决的是编程过程中的问题。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;不是每个人学完编程都要走计算机科学这条路，完全可以先解决你自己的经济问题。也可以拿编程解决自己领域内的问题。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;移动开发和web开发这种搬运api的东西，边学边用或者突击完全来得及，不需要单独花时间去学。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;小厂的开发基本和独立开发者的东西差不多。大厂的规模要大一些，不过都是功能的堆砌，没啥技术复杂度。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;学历不等于能力，但是学历是个简单粗暴的门槛。没办法，天朝人太多了。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;很多公司喜欢装逼考算法或者一些基础知识，是因为工程问题没法考，尤其是一些特别依赖于开源框架的地方。大家喜欢用不同的解法，考什么对每个人来说都是冷门。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;编程思想是依赖于范式的，特性才是依赖于语言的。牛逼的人眼里没有语言只有范式，比如函数式、过程式、面向对象等等。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;只学一门编程语言远远不够，没有任何一种语言能完全胜任你碰到的所有任务。但是除了首次学习之外，不需要专门学习编程
-    
-    </summary>
-    
-      <category term="编程" scheme="http://www.flygon.net/categories/%E7%BC%96%E7%A8%8B/"/>
     
     
   </entry>

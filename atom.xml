@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.flygon.net/"/>
-  <updated>2017-04-01T13:34:17.796Z</updated>
+  <updated>2017-04-24T12:03:29.682Z</updated>
   <id>http://www.flygon.net/</id>
   
   <author>
@@ -14,6 +14,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>安卓控件备忘录</title>
+    <link href="http://www.flygon.net/%E5%AE%89%E5%8D%93%E6%8E%A7%E4%BB%B6%E5%A4%87%E5%BF%98%E5%BD%95/"/>
+    <id>http://www.flygon.net/安卓控件备忘录/</id>
+    <published>2017-04-24T11:50:44.000Z</published>
+    <updated>2017-04-24T12:03:29.682Z</updated>
+    
+    <content type="html">&lt;p&gt;现在是 2017 年，材质设计规范在国内基本得到普及。除了一些公司仍然使用 IOS 的设计稿，来加大程序员的工作量之外，基本都接受了这个设计风格。&lt;/p&gt;
+&lt;p&gt;我接触安卓应用开发的机会不多，2014 年和 2015 年分别做过两款应用。但是那个时候，如果想把应用做得漂亮，就要自己自定义出大部分控件，没有现成的控件可用。而现在，谷歌官方不仅推出了材质设计规范，更是在扩展库中推出了与之配套的多种控件，缓解开发者的工作量。&lt;/p&gt;
+&lt;p&gt;我在阅读这个设计规范时，遇到的最大问题就是，如何省时省力来实现其中的效果。查阅了大量教程之后，我发现，只要使用谷歌官方提供的控件，并且在合适的地方使用它们，就基本上能满足设计规范。也就是说，我们不用查阅一堆繁文缛节，只要记住一个一个的控件，拼凑它们，实际上就可以了。&lt;/p&gt;
+&lt;p&gt;所以，我打算写几个备忘性质的文档，记录一些热门官方控件的使用方法，算是便于自己随时翻阅，大家也可以参考。这个系列会看我心情不定期更新，并涵盖安卓应用的核心控件。&lt;/p&gt;
+&lt;p&gt;就这样。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;现在是 2017 年，材质设计规范在国内基本得到普及。除了一些公司仍然使用 IOS 的设计稿，来加大程序员的工作量之外，基本都接受了这个设计风格。&lt;/p&gt;
+&lt;p&gt;我接触安卓应用开发的机会不多，2014 年和 2015 年分别做过两款应用。但是那个时候，如果想把应用做得漂亮，
+    
+    </summary>
+    
+      <category term="编程" scheme="http://www.flygon.net/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>膜拜 @hhh0578 大神</title>
@@ -662,35 +688,6 @@
     </summary>
     
       <category term="杂记" scheme="http://www.flygon.net/categories/%E6%9D%82%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>给计算机大一新生的建议给计算机大一新生的建议</title>
-    <link href="http://www.flygon.net/%E7%BB%99%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%A4%A7%E4%B8%80%E6%96%B0%E7%94%9F%E7%9A%84%E5%BB%BA%E8%AE%AE%E7%BB%99%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%A4%A7%E4%B8%80%E6%96%B0%E7%94%9F%E7%9A%84%E5%BB%BA%E8%AE%AE/"/>
-    <id>http://www.flygon.net/给计算机大一新生的建议给计算机大一新生的建议/</id>
-    <published>2016-01-08T11:34:29.000Z</published>
-    <updated>2016-03-03T07:17:17.668Z</updated>
-    
-    <content type="html">&lt;p&gt;1. 核心课 （数据结构算法、组原、os、编译、网络（tcp/ip、http部分））一定要弄懂。最好写相关的项目，比如写个parser或者内核什么的都是极好的。&lt;/p&gt;
-&lt;p&gt;2. 不要追新的技术，而是追业界普遍使用的技术。比如你追了c#，却发现业界不少由c#转java的；你追了xamarin，也说发现人家还是用java+as开发应用。其实业界还是喜欢久经考验的稳定技术。语言学精一个，了解多个。每种类型的框架（比如前端css，前端js，后端orm，后端mvc，模板引擎）先学一个，其他的需要了边学边用。&lt;/p&gt;
-&lt;p&gt;3. 早点去leetcode刷题，国内公司特别爱装逼考算法，不少都是原题，切记。&lt;/p&gt;
-&lt;p&gt;4. 注重面向对象，注重架构方面的东西，特别是设计模式，不仅仅是为了可维护性。你以后代码可能是给别人提供支持的，你写的接口很难用的话，天天会被人问候祖宗。&lt;/p&gt;
-&lt;p&gt;5. 技术问题学会抛弃百度，使用goole，使用github，使用stackoverflow。学会使用bash和git，特别是后者，备份恢复的时候你就明白了。&lt;/p&gt;
-&lt;p&gt;6. 英语达到能阅读原版文档的水平。&lt;/p&gt;
-&lt;p&gt;7. 多写代码，有些东西做的多了才能从理性认识向感性飞跃。但不是让你写一万行hello world，也不是让你写一大堆app。你每学一个新的知识，都写个相关的demo出来。你想想你自己写了个http server，虽然实际业务中用不到，面试的时候这么说，然后解释一下自己怎么做的，是不是很爽。&lt;/p&gt;
-&lt;p&gt;8. 看书之前先去豆瓣看书评，不要看国产的一些烂书。多看最佳实践，比如effective系列。你一个学生没啥项目经验，又不看别人的最佳实践，写出来的代码能用？&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;1. 核心课 （数据结构算法、组原、os、编译、网络（tcp/ip、http部分））一定要弄懂。最好写相关的项目，比如写个parser或者内核什么的都是极好的。&lt;/p&gt;
-&lt;p&gt;2. 不要追新的技术，而是追业界普遍使用的技术。比如你追了c#，却发现业界不少由c#转java的；
-    
-    </summary>
-    
-      <category term="编程" scheme="http://www.flygon.net/categories/%E7%BC%96%E7%A8%8B/"/>
     
     
   </entry>

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.flygon.net/"/>
-  <updated>2017-05-03T17:02:42.252Z</updated>
+  <updated>2017-08-26T08:03:10.844Z</updated>
   <id>http://www.flygon.net/</id>
   
   <author>
@@ -14,6 +14,223 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2016 年捐赠名单</title>
+    <link href="http://www.flygon.net/2016-donors/"/>
+    <id>http://www.flygon.net/2016-donors/</id>
+    <published>2017-08-26T08:02:15.000Z</published>
+    <updated>2017-08-26T08:03:10.844Z</updated>
+    
+    <content type="html">&lt;p&gt;感谢以下童鞋的捐助，你们的慷慨是我继续的动力：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;dornor&lt;/th&gt;
+&lt;th&gt;date&lt;/th&gt;
+&lt;th&gt;value&lt;/th&gt;
+&lt;th&gt;project&lt;/th&gt;
+&lt;th&gt;site&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Cytosine&lt;/td&gt;
+&lt;td&gt;2016.12.31&lt;/td&gt;
+&lt;td&gt;20.17&lt;/td&gt;
+&lt;td&gt;其它&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;郭燕芳&lt;/td&gt;
+&lt;td&gt;2016.12.29&lt;/td&gt;
+&lt;td&gt;6.66&lt;/td&gt;
+&lt;td&gt;其它&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;飞飞&lt;/td&gt;
+&lt;td&gt;2016.12.14&lt;/td&gt;
+&lt;td&gt;10.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;心城白首&lt;/td&gt;
+&lt;td&gt;2016.12.07&lt;/td&gt;
+&lt;td&gt;10.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;佳鸣&lt;/td&gt;
+&lt;td&gt;2016.11.27&lt;/td&gt;
+&lt;td&gt;20.00&lt;/td&gt;
+&lt;td&gt;Kali&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;朋林&lt;/td&gt;
+&lt;td&gt;2016.11.25&lt;/td&gt;
+&lt;td&gt;5.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;看云&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;伯_安&lt;/td&gt;
+&lt;td&gt;2016.11.22&lt;/td&gt;
+&lt;td&gt;1.00&lt;/td&gt;
+&lt;td&gt;Atom 飞行手册&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;李贯忠&lt;/td&gt;
+&lt;td&gt;2016.11.17&lt;/td&gt;
+&lt;td&gt;1.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;夜神无月&lt;/td&gt;
+&lt;td&gt;2016.11.15&lt;/td&gt;
+&lt;td&gt;50.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;胡博&lt;/td&gt;
+&lt;td&gt;2016.10.24&lt;/td&gt;
+&lt;td&gt;8.88&lt;/td&gt;
+&lt;td&gt;操作系统思考&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;小明&lt;/td&gt;
+&lt;td&gt;2016.10.17&lt;/td&gt;
+&lt;td&gt;3.21&lt;/td&gt;
+&lt;td&gt;操作系统思考&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;kyblogdoc&lt;/td&gt;
+&lt;td&gt;2016.10.12&lt;/td&gt;
+&lt;td&gt;5.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;看云&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;denFunction&lt;/td&gt;
+&lt;td&gt;2016.10.07&lt;/td&gt;
+&lt;td&gt;2.00&lt;/td&gt;
+&lt;td&gt;Kali Linux 秘籍&lt;/td&gt;
+&lt;td&gt;简书&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;清华川薄&lt;/td&gt;
+&lt;td&gt;2016.09.18&lt;/td&gt;
+&lt;td&gt;6.00&lt;/td&gt;
+&lt;td&gt;笨办法学 C&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;海彦&lt;/td&gt;
+&lt;td&gt;2016.09.13&lt;/td&gt;
+&lt;td&gt;5.00&lt;/td&gt;
+&lt;td&gt;SICP Python 中文版&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;张三&lt;/td&gt;
+&lt;td&gt;2016.09.12&lt;/td&gt;
+&lt;td&gt;20.00&lt;/td&gt;
+&lt;td&gt;SICP Python 中文版&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;斌&lt;/td&gt;
+&lt;td&gt;2016.08.12&lt;/td&gt;
+&lt;td&gt;20.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Michael翔&lt;/td&gt;
+&lt;td&gt;2016.07.15&lt;/td&gt;
+&lt;td&gt;1.88&lt;/td&gt;
+&lt;td&gt;操作系统思考&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;justjavac&lt;/td&gt;
+&lt;td&gt;2016.07.12&lt;/td&gt;
+&lt;td&gt;50.00&lt;/td&gt;
+&lt;td&gt;操作系统思考&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;jxdwinter&lt;/td&gt;
+&lt;td&gt;2016.06.26&lt;/td&gt;
+&lt;td&gt;6.00&lt;/td&gt;
+&lt;td&gt;笨办法学 C&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;贾晓辉@悠云.com&lt;/td&gt;
+&lt;td&gt;2016.06.25&lt;/td&gt;
+&lt;td&gt;20.00&lt;/td&gt;
+&lt;td&gt;笨办法学 C&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Mr.Moon&lt;/td&gt;
+&lt;td&gt;2016.06.25&lt;/td&gt;
+&lt;td&gt;2.00&lt;/td&gt;
+&lt;td&gt;笨办法学 C&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;???&lt;/td&gt;
+&lt;td&gt;2016.02.24&lt;/td&gt;
+&lt;td&gt;2.00&lt;/td&gt;
+&lt;td&gt;Django 中文文档&lt;/td&gt;
+&lt;td&gt;简书&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gecko&lt;/td&gt;
+&lt;td&gt;2016.02.26&lt;/td&gt;
+&lt;td&gt;5.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;看云&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;枯哒哒&lt;/td&gt;
+&lt;td&gt;2016.02.24&lt;/td&gt;
+&lt;td&gt;5.00&lt;/td&gt;
+&lt;td&gt;其它&lt;/td&gt;
+&lt;td&gt;简书&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;感谢以下童鞋的捐助，你们的慷慨是我继续的动力：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;dornor&lt;/th&gt;
+&lt;th&gt;date&lt;/th&gt;
+&lt;th&gt;value&lt;/th&gt;
+&lt;th&gt;project&lt;/th&gt;
+&lt;th&gt;site&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thea
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>分享一下最近看的东西</title>
@@ -671,37 +888,6 @@
     </summary>
     
       <category term="编程" scheme="http://www.flygon.net/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>2016 新的展望</title>
-    <link href="http://www.flygon.net/2016-%E6%96%B0%E7%9A%84%E5%B1%95%E6%9C%9B/"/>
-    <id>http://www.flygon.net/2016-新的展望/</id>
-    <published>2016-01-09T11:35:34.000Z</published>
-    <updated>2016-03-03T07:17:17.349Z</updated>
-    
-    <content type="html">&lt;ul&gt;
-&lt;li&gt;首先就是翻译几个项目的文档。目前计划是orm2，ejs，nw.js（明明是中国人写的干嘛不提供中文文档），intelij。前面这些都是短小精悍的。还有一个备选项，c++（cplusplus.com），这个的参考手册实在是太长，我就挑常用类翻译好了。其实我觉得一定有必要翻译c++文档，特别是c++11新出来的util，比如时间、复数、随机数、原子和线程、正则，因为有助于推广新的标准。现在vs2015对11的标准支持已经相当不错了，就是国内的教程上面还差点。c++已经有了并发、容器、text、io、fs（tr2）、网络（tr2），还差个进程就能召唤神龙了。&lt;/li&gt;
-&lt;li&gt;然后打算写一篇web开发的教程，初步拟定用flask，原因是配置简单，框架较小又能满足全部要求。这个想法是受&lt;a href=&quot;http://lutaf.com/148.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;5天学会一种 web 开发框架&lt;/a&gt;的启发，非IT人士需要实现的想法其实也挺多的，特别是他们可以结合自身领域设计出那个领域的应用，但是，由于他们不懂编程，无法专注于业务逻辑，也免不了和计算机底层打交道的麻烦，所以我就按照web开发的六要素（router，req handler，模板，orm，util，部署）来讲解web开发中抽象的、共性的部分，让他们以后迁移到其他框架时也得心应手。这个如果由于上面那条而没有时间，就拖到明年。&lt;/li&gt;
-&lt;li&gt;接下来就是重新捡起来逆向，我以前是玩逆向的，不过那时候玩的是win32，顶多再加上点msil。现在呢，移动应用这么火，对移动应用的逆向分析也变得火了起来。整天搞开发有些无聊，玩玩逆向可以爽一下。&lt;/li&gt;
-&lt;li&gt;毕业之后回到北京，也有时间和条件练琴了，希望空闲时间能弹弹琴。&lt;/li&gt;
-&lt;li&gt;毕业设计之后，我决定不再碰任何数据分析/挖掘的东西。数据这个岗位，就算以后没有培训班，也有大量统计学的人来竞争，更何况薪资比不上开发（其实也差不多），还要学一大堆数学相关的东西。总之这是个坑，早弃早超生。&lt;/li&gt;
-&lt;li&gt;再有就是戒掉知乎，给前面的安排腾出时间。&lt;/li&gt;
-&lt;li&gt;再有就是把身体养好。我现在的功率大概是以前的50%吧。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;学了四年，最大的感受就是，开发绝对是个保命的技能，是硬通货。你可以说他很low，但是你如果学了编程，学2~3门语言就可以把oo这块通吃了，然后又因为oo是大流，你在哪儿都能找到工作。你可以研究底层啊，图形啊，这类高深的东西，但它们的应用在所有互联网公司里占不到1%。创业公司，也就是需要技术岗来开发一些应用，别的高科技它用不到。你可以研究别的，但是开发这种保命的东西，绝对不可以丢弃。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;首先就是翻译几个项目的文档。目前计划是orm2，ejs，nw.js（明明是中国人写的干嘛不提供中文文档），intelij。前面这些都是短小精悍的。还有一个备选项，c++（cplusplus.com），这个的参考手册实在是太长，我就挑常用类翻译好了。其实我觉得一定
-    
-    </summary>
-    
-      <category term="杂记" scheme="http://www.flygon.net/categories/%E6%9D%82%E8%AE%B0/"/>
     
     
   </entry>

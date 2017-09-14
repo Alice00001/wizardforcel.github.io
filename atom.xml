@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.flygon.net/"/>
-  <updated>2017-04-01T13:34:17.796Z</updated>
+  <updated>2017-09-14T03:11:59.384Z</updated>
   <id>http://www.flygon.net/</id>
   
   <author>
@@ -14,6 +14,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sublime text 3 3143 license</title>
+    <link href="http://www.flygon.net/sublime-text-3-3143-license/"/>
+    <id>http://www.flygon.net/sublime-text-3-3143-license/</id>
+    <published>2017-09-14T03:11:15.000Z</published>
+    <updated>2017-09-14T03:11:59.384Z</updated>
+    
+    <content type="html">&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;—– BEGIN LICENSE —–&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;TwitterInc&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;200 User License&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;EA7E-890007&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1D77F72E 390CDD93 4DCBA022 FAF60790&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;61AA12C0 A37081C5 D0316412 4584D136&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;94D7F7D4 95BC8C1C 527DA828 560BB037&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;D1EDDD8C AE7B379F 50C9D69D B35179EF&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2FE898C4 8E4277A8 555CE714 E1FB0E43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;D5D52613 C3D12E98 BC49967F 7652EED2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9D2D2E61 67610860 6D338B72 5CF95C69&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;E36B85CC 84991F19 7575D828 470A92AB&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;—— END LICENSE ——&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>膜拜 @hhh0578 大神</title>
@@ -848,37 +867,6 @@
     </summary>
     
       <category term="编程" scheme="http://www.flygon.net/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>2016 新的展望</title>
-    <link href="http://www.flygon.net/2016-%E6%96%B0%E7%9A%84%E5%B1%95%E6%9C%9B/"/>
-    <id>http://www.flygon.net/2016-新的展望/</id>
-    <published>2016-01-09T11:35:34.000Z</published>
-    <updated>2016-03-03T07:17:17.349Z</updated>
-    
-    <content type="html">&lt;ul&gt;
-&lt;li&gt;首先就是翻译几个项目的文档。目前计划是orm2，ejs，nw.js（明明是中国人写的干嘛不提供中文文档），intelij。前面这些都是短小精悍的。还有一个备选项，c++（cplusplus.com），这个的参考手册实在是太长，我就挑常用类翻译好了。其实我觉得一定有必要翻译c++文档，特别是c++11新出来的util，比如时间、复数、随机数、原子和线程、正则，因为有助于推广新的标准。现在vs2015对11的标准支持已经相当不错了，就是国内的教程上面还差点。c++已经有了并发、容器、text、io、fs（tr2）、网络（tr2），还差个进程就能召唤神龙了。&lt;/li&gt;
-&lt;li&gt;然后打算写一篇web开发的教程，初步拟定用flask，原因是配置简单，框架较小又能满足全部要求。这个想法是受&lt;a href=&quot;http://lutaf.com/148.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;5天学会一种 web 开发框架&lt;/a&gt;的启发，非IT人士需要实现的想法其实也挺多的，特别是他们可以结合自身领域设计出那个领域的应用，但是，由于他们不懂编程，无法专注于业务逻辑，也免不了和计算机底层打交道的麻烦，所以我就按照web开发的六要素（router，req handler，模板，orm，util，部署）来讲解web开发中抽象的、共性的部分，让他们以后迁移到其他框架时也得心应手。这个如果由于上面那条而没有时间，就拖到明年。&lt;/li&gt;
-&lt;li&gt;接下来就是重新捡起来逆向，我以前是玩逆向的，不过那时候玩的是win32，顶多再加上点msil。现在呢，移动应用这么火，对移动应用的逆向分析也变得火了起来。整天搞开发有些无聊，玩玩逆向可以爽一下。&lt;/li&gt;
-&lt;li&gt;毕业之后回到北京，也有时间和条件练琴了，希望空闲时间能弹弹琴。&lt;/li&gt;
-&lt;li&gt;毕业设计之后，我决定不再碰任何数据分析/挖掘的东西。数据这个岗位，就算以后没有培训班，也有大量统计学的人来竞争，更何况薪资比不上开发（其实也差不多），还要学一大堆数学相关的东西。总之这是个坑，早弃早超生。&lt;/li&gt;
-&lt;li&gt;再有就是戒掉知乎，给前面的安排腾出时间。&lt;/li&gt;
-&lt;li&gt;再有就是把身体养好。我现在的功率大概是以前的50%吧。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;学了四年，最大的感受就是，开发绝对是个保命的技能，是硬通货。你可以说他很low，但是你如果学了编程，学2~3门语言就可以把oo这块通吃了，然后又因为oo是大流，你在哪儿都能找到工作。你可以研究底层啊，图形啊，这类高深的东西，但它们的应用在所有互联网公司里占不到1%。创业公司，也就是需要技术岗来开发一些应用，别的高科技它用不到。你可以研究别的，但是开发这种保命的东西，绝对不可以丢弃。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;首先就是翻译几个项目的文档。目前计划是orm2，ejs，nw.js（明明是中国人写的干嘛不提供中文文档），intelij。前面这些都是短小精悍的。还有一个备选项，c++（cplusplus.com），这个的参考手册实在是太长，我就挑常用类翻译好了。其实我觉得一定
-    
-    </summary>
-    
-      <category term="杂记" scheme="http://www.flygon.net/categories/%E6%9D%82%E8%AE%B0/"/>
     
     
   </entry>

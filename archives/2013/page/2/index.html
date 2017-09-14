@@ -83,294 +83,6 @@
       <div id="main" class="wrapper">
         <div id="primary" class="site-content"><div id="content" role="main">
   
-    <article id="post-c#-取三种时间" class="post-c#-取三种时间 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/c#-取三种时间/">c#取三种时间</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/c#-取三种时间/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/c#-取三种时间/" data-id="cj7jvs7wf001hx8g60rtw85y5" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <p>1.标准时间</p>
-<p>标准时间是指1970年1月1日到现在所过去的秒数 又叫时间戳 常用于网站的验证</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">TimeSpan ts = DateTime.Now - new DateTime(1970, 1, 1, 8, 0, 0);</span><br><span class="line">string stamp = Convert.ToInt32(ts.TotalSeconds).ToString();</span><br></pre></td></tr></table></figure>
-        
-          <p class="article-more-link">
-            <a href="/c#-取三种时间/#more" class="more-link">更多内容 <span class="meta-nav">→</span></a>
-          </p>
-        
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/c#-取三种时间/">
-    <time datetime="2013-09-30T08:08:38.000Z" class="entry-date">
-        9月 30 2013
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/编程/">编程</a>
-  </div>
-
-    
-  <span class="article-delim">&#8226;</span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/csharp/">csharp</a></li></ul>
-
-    </footer>
-</article>
-
-
-
-
-
-
-  
-    <article id="post-cpp-数据结构-一个简单的栈模型" class="post-cpp-数据结构-一个简单的栈模型 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/cpp-数据结构-一个简单的栈模型/">数据结构：一个简单的栈模型</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/cpp-数据结构-一个简单的栈模型/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/cpp-数据结构-一个简单的栈模型/" data-id="cj7jvs7wp001rx8g64ezx034k" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <pre>
-//学习数据结构后的一点心得体会
-
-//stack.h文件：
-
-#pragma once
-#ifndef STACK_H
-#define STACK_H
-
-#include &lt;stdexcept&gt;
-using namespace std;
-
-template&lt;class Entry, size_t Max&gt;
-class Stack
-{
-private:
-size_t count;
-Entry data[Max];
-
-public:
-Stack() {count = 0;}
-bool empty() {return count == 0;}
-void push(const Entry &amp;e)
-{
-if(count == Max)throw exception("栈已满。");
-data[count] = e;
-count++;
-}
-void pop()
-{
-if(count == 0)throw exception("栈已空。");
-count--;
-}
-Entry top()
-{
-if(count == 0)throw exception("栈已空。");
-return data[count - 1];
-}
-
-};
-
-#endif
-
-//main.cpp文件：
-
-#include "stack.h"
-
-#include &lt;iostream&gt;
-using namespace std;
-
-int main()
-{
-    Stack&lt;int, 100&gt; psgs;
-    int n;
-    cout &lt;&lt; "请输入游客人数：" &lt;&lt; endl;
-     cin &gt;&gt; n;
-    cout &lt;&lt; "按顺序输入乘客编号：" &lt;&lt; endl;
-    for(int i = 0; i &lt; n; i++)
-     {
-         int item;
-         cin &gt;&gt; item;
-        psgs.push(item);
-    }
-    cout &lt;&lt; "乘客下车次序是：" &lt;&lt; endl;
-    while(!psgs.empty())
-    {
-        cout &lt;&lt; psgs.top() &lt;&lt; ' ';
-        psgs.pop();
-    }
-    cout &lt;&lt; endl;
-    system("pause");
-    return 0;
-}
-</pre>
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/cpp-数据结构-一个简单的栈模型/">
-    <time datetime="2013-09-19T14:46:41.000Z" class="entry-date">
-        9月 19 2013
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/编程/">编程</a>
-  </div>
-
-    
-  <span class="article-delim">&#8226;</span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cpp/">cpp</a></li></ul>
-
-    </footer>
-</article>
-
-
-
-
-
-
-  
-    <article id="post-以后还是多写点原创的内容吧" class="post-以后还是多写点原创的内容吧 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/以后还是多写点原创的内容吧/">以后还是多写点原创的内容吧。。。</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/以后还是多写点原创的内容吧/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/以后还是多写点原创的内容吧/" data-id="cj7jvs845005dx8g6qg3gky0c" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <p>博客不知不觉中建了四个月</p>
-<p>我记着那天是学院歌咏比赛 我记得有一个班唱着“写代码 写代码 一行程序七个bug”</p>
-<p>当天我就弄好了博客</p>
-<p>毕竟我是搞这行的 不写点原创真的对不起郭嘉对不起社会了。。</p>
-<p>本人小菜 大牛勿喷</p>
-<p>体育课1000米跑的成绩较历史同期相比无任何变化 累死人 匿了。。</p>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/以后还是多写点原创的内容吧/">
-    <time datetime="2013-09-18T05:05:57.000Z" class="entry-date">
-        9月 18 2013
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/杂记/">杂记</a>
-  </div>
-
-    
-    </footer>
-</article>
-
-
-
-
-
-
-  
-    <article id="post-世界上有10种人-一种懂二进制-另外一种不懂" class="post-世界上有10种人-一种懂二进制-另外一种不懂 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/世界上有10种人-一种懂二进制-另外一种不懂/">世界上有10种人 一种懂二进制 另外一种不懂</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/世界上有10种人-一种懂二进制-另外一种不懂/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/世界上有10种人-一种懂二进制-另外一种不懂/" data-id="cj7jvs83c004vx8g6ce6u6m4q" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/世界上有10种人-一种懂二进制-另外一种不懂/">
-    <time datetime="2013-09-15T11:55:02.000Z" class="entry-date">
-        9月 15 2013
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/编程/">编程</a>
-  </div>
-
-    
-    </footer>
-</article>
-
-
-
-
-
-
-  
     <article id="post-关于-string-nops-为什么是-1" class="post-关于-string-nops-为什么是-1 post type-post status-publish format-standard hentry">
     <!---->
 
@@ -388,7 +100,7 @@ int main()
             
             <a href="/关于-string-nops-为什么是-1/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/关于-string-nops-为什么是-1/" data-id="cj7jvs84i005px8g6zikjezv5" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/关于-string-nops-为什么是-1/" data-id="cj7jwgbxo005448g6mz7yb1ni" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -426,56 +138,6 @@ int main()
 
 
   
-    <article id="post-感觉Mega老喷帅爆了" class="post-感觉Mega老喷帅爆了 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/感觉Mega老喷帅爆了/">感觉Mega老喷帅爆了~</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/感觉Mega老喷帅爆了/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/感觉Mega老喷帅爆了/" data-id="cj7jvs8680071x8g6k0vttd1n" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <p><img src="http://ww2.sinaimg.cn/large/841aea59jw1e8lsq5rxclj20af066mxe.jpg" alt=""></p>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/感觉Mega老喷帅爆了/">
-    <time datetime="2013-09-14T02:02:35.000Z" class="entry-date">
-        9月 14 2013
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/杂记/">杂记</a>
-  </div>
-
-    
-    </footer>
-</article>
-
-
-
-
-
-
-  
     <article id="post-百尺竿头更进一步" class="post-百尺竿头更进一步 post type-post status-publish format-standard hentry">
     <!---->
 
@@ -493,7 +155,7 @@ int main()
             
             <a href="/百尺竿头更进一步/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/百尺竿头更进一步/" data-id="cj7jvs871007ox8g6wt34h8yz" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/百尺竿头更进一步/" data-id="cj7jwgbyh006k48g6a5au2j2u" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -543,7 +205,7 @@ int main()
             
             <a href="/说说Win7的Aero效果/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/说说Win7的Aero效果/" data-id="cj7jvs87n0083x8g6z2n21rcm" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/说说Win7的Aero效果/" data-id="cj7jwgbzx007348g6m2n505vc" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -600,7 +262,7 @@ int main()
             
             <a href="/c#-多线程Invoke示例/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/c#-多线程Invoke示例/" data-id="cj7jvs7wk001mx8g6fv76ow0b" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/c#-多线程Invoke示例/" data-id="cj7jwgbt7001n48g6my22x57c" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -653,7 +315,7 @@ int main()
             
             <a href="/TwentyEleven暗色系主题实现透明/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/TwentyEleven暗色系主题实现透明/" data-id="cj7jvs7w9001dx8g64m8bctdk" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/TwentyEleven暗色系主题实现透明/" data-id="cj7jwgbt1001g48g6a9e54asl" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -691,10 +353,119 @@ int main()
 
 
   
+    <article id="post-对于多线程编程的几点个人见解" class="post-对于多线程编程的几点个人见解 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/对于多线程编程的几点个人见解/">对于多线程编程的几点个人见解</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="/对于多线程编程的几点个人见解/#comments" class="leave-reply">评论</a>
+            
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/对于多线程编程的几点个人见解/" data-id="cj7jwgby3005y48g62jj7dttk" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <p>（部分来源于《深入理解计算机系统》一书）</p>
+<p>1.线程有两种状态：聚合态和分离态。聚合态线程拥有一个句柄可被控制，分离态线程虽然可以正常运行，但不可以通过句柄控制。</p>
+<p>2.线程刚刚创建出来是聚合态的，在运行中关闭句柄可以转化为分离态，且不可逆。<br>
+        
+          <p class="article-more-link">
+            <a href="/对于多线程编程的几点个人见解/#more" class="more-link">更多内容 <span class="meta-nav">→</span></a>
+          </p>
+        
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/对于多线程编程的几点个人见解/">
+    <time datetime="2013-08-29T05:02:01.000Z" class="entry-date">
+        8月 29 2013
+    </time>
+</a>
+    
+  <span class="article-delim">&#8226;</span>
+  <div class="article-category">
+  <a class="article-category-link" href="/categories/编程/">编程</a>
+  </div>
+
+    
+  <span class="article-delim">&#8226;</span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/多线程/">多线程</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/编程/">编程</a></li></ul>
+
+    </footer>
+</article>
+
+
+
+
+
+
+  
+    <article id="post-每一个地方-都是战场-绝望的人们-所向无敌" class="post-每一个地方-都是战场-绝望的人们-所向无敌 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/每一个地方-都是战场-绝望的人们-所向无敌/">每一个地方，都是战场。绝望的人们，所向无敌。</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="/每一个地方-都是战场-绝望的人们-所向无敌/#comments" class="leave-reply">评论</a>
+            
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/每一个地方-都是战场-绝望的人们-所向无敌/" data-id="cj7jwgbyd006g48g6uwlbic0s" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <p><img src="http://ww2.sinaimg.cn/large/841aea59jw1e8xsnqz08bj21kw16h7wh.jpg" alt=""></p>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/每一个地方-都是战场-绝望的人们-所向无敌/">
+    <time datetime="2013-08-16T01:51:15.000Z" class="entry-date">
+        8月 16 2013
+    </time>
+</a>
+    
+  <span class="article-delim">&#8226;</span>
+  <div class="article-category">
+  <a class="article-category-link" href="/categories/杂记/">杂记</a>
+  </div>
+
+    
+    </footer>
+</article>
+
+
+
+
+
+
+  
   
     <nav id="pagination">
       <nav id="page-nav">
-        <a class="extend prev" rel="prev" href="/archives/2013/">&laquo; 上一页</a><a class="page-number" href="/archives/2013/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/2013/page/3/">3</a><a class="extend next" rel="next" href="/archives/2013/page/3/">下一页 &raquo;</a>
+        <a class="extend prev" rel="prev" href="/archives/2013/">&laquo; 上一页</a><a class="page-number" href="/archives/2013/">1</a><span class="page-number current">2</span>
       </nav>
     </nav>
   
@@ -765,7 +536,7 @@ int main()
   <aside class="widget">
     <h3 class="widget-title">Archives</h3>
     <div class="widget-content">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01/">一月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">十二月 2013</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">十一月 2013</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">十月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01/">一月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">十二月 2013</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">十一月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">十月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </aside>
 
@@ -774,7 +545,7 @@ int main()
   <aside class="widget">
     <h3 class="widget-title">Categories</h3>
     <div class="widget-content">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wordpress/">wordpress</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/公告/">公告</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/安全/">安全</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/应用/">应用</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂记/">杂记</a><span class="category-list-count">37</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a><span class="category-list-count">45</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/网站/">网站</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/资源/">资源</a><span class="category-list-count">5</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/wordpress/">wordpress</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/公告/">公告</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/安全/">安全</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/工具/">工具</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/应用/">应用</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂记/">杂记</a><span class="category-list-count">27</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a><span class="category-list-count">44</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/网站/">网站</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/资源/">资源</a><span class="category-list-count">5</span></li></ul>
     </div>
   </aside>
 

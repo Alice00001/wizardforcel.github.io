@@ -83,7 +83,7 @@
       <div id="main" class="wrapper">
         <div id="primary" class="site-content"><div id="content" role="main">
   
-    <article id="post-雷锋哥" class="post-雷锋哥 post type-post status-publish format-standard hentry">
+    <article id="post-c#-多线程Invoke示例" class="post-c#-多线程Invoke示例 post type-post status-publish format-standard hentry">
     <!---->
 
       <header class="entry-header">
@@ -91,349 +91,30 @@
         
   
     <h1 class="entry-title">
-      <a class="article-title" href="/雷锋哥/">643</a>
+      <a class="article-title" href="/c#-多线程Invoke示例/">C#多线程Invoke示例</a>
     </h1>
   
 
         
         <div class="comments-link">
             
-            <a href="/雷锋哥/#comments" class="leave-reply">评论</a>
+            <a href="/c#-多线程Invoke示例/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/雷锋哥/" data-id="cj7jvs882008hx8g6qs43zq1d" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/c#-多线程Invoke示例/" data-id="cj7jwgbt7001n48g6my22x57c" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
     <div class="entry-content">
       
-        <p>雷锋哥，我知道你做好事从不留名，你那200多张做好事的照片都是碰巧路过的摄影师给你拍的，你的锦旗都是群众们自发人肉你并送到你的部队的，你当兵不到一年，一个月工资6块，一年捐的200是你省出来的，你用当年售价一毛二，折合现在三十块钱一切的电池打着手电看书是为了给国家省电……这些我们都不说啥了，可是这汽车轱辘挡泥板里面真没螺丝啊，你拿个大板手拧个毛啊！</p>
-<p><img src="http://ww2.sinaimg.cn/large/841aea59jw1ebi51o24s6j208x064aaa.jpg" alt=""></p>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">public void DoWork()</span><br><span class="line">&#123;</span><br><span class="line">    //错误示例：</span><br><span class="line">    textbox1.text = &quot;Hello&quot;;</span><br><span class="line"></span><br><span class="line">    //正确示例：</span><br><span class="line">    textbox1.Invoke((str) =&gt; textbox1.text = str, new Object[]&#123; &quot;Hello&quot; &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">private void button1_Click(object sender, EventArgs e)</span><br><span class="line">&#123;</span><br><span class="line">    //...</span><br><span class="line">    Thread tr = new Thread(new ThreadStart(DoWork));</span><br><span class="line">    tr.Start();</span><br><span class="line">    //...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div><!-- .entry-content -->
 
     <footer class="entry-meta">
-    <a href="/雷锋哥/">
-    <time datetime="2013-12-13T07:30:33.000Z" class="entry-date">
-        12月 13 2013
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/杂记/">杂记</a>
-  </div>
-
-    
-    </footer>
-</article>
-
-
-
-
-
-
-  
-    <article id="post-万恶的应试教育" class="post-万恶的应试教育 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/万恶的应试教育/">641</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/万恶的应试教育/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/万恶的应试教育/" data-id="cj7jvs83i004xx8g6ccedh2hl" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <p>万恶的应试教育搞得我以前连个博客都整不利索= =</p>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/万恶的应试教育/">
-    <time datetime="2013-12-12T14:54:43.000Z" class="entry-date">
-        12月 12 2013
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/杂记/">杂记</a>
-  </div>
-
-    
-    </footer>
-</article>
-
-
-
-
-
-
-  
-    <article id="post-c-cpp可变参数加法" class="post-c-cpp可变参数加法 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/c-cpp可变参数加法/">[c/c++]可变参数加法</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/c-cpp可变参数加法/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/c-cpp可变参数加法/" data-id="cj7jvs7wm001ox8g6i8ut1oru" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <p>p.s. 无聊研究了一下这个</p>
-<p>函数声明：</p>
-<pre>int add(int count, ...);</pre>
-
-<p>调用范例：</p>
-<pre>add(5, 1, 2, 3, 4, 5);</pre>
-
-<p>代码如下：<br>
-        
-          <p class="article-more-link">
-            <a href="/c-cpp可变参数加法/#more" class="more-link">更多内容 <span class="meta-nav">→</span></a>
-          </p>
-        
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/c-cpp可变参数加法/">
-    <time datetime="2013-12-06T11:05:56.000Z" class="entry-date">
-        12月 6 2013
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/编程/">编程</a>
-  </div>
-
-    
-    </footer>
-</article>
-
-
-
-
-
-
-  
-    <article id="post-2013-12-6-小记" class="post-2013-12-6-小记 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/2013-12-6-小记/">[2013.12.6]小记</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/2013-12-6-小记/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/2013-12-6-小记/" data-id="cj7jvs7te0000x8g6qerezyyz" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <p>其实我的博客一开始就不是开着玩的，是想给我写过的那些工具一个独立的消息发布平台。我觉得我做的作品（实际上是任何人做的任意一个作品）不应该是一个孤立的东西，它要有一个完整的体系，开发测试产品运营美工，包括宣传，而且在这个信息呈指数爆炸式增长的时代中，宣传尤为重要。</p>
-<p>我同时认为，我的博客以及苍海国际也不应该一个孤立的体系，所以我下大力气弄了微博，并以此作为宣传通道。现在微博的访问量很好，但是博客反而就没什么人读了，因为一是我的最新动态访问我的微博就能知道，本来微博这种碎片化的信息就更受人欢迎；二是考虑到收录问题（谁都想让自己的文章能尽快让别人看见），一般技术型文章就直接发csdn。</p>
-<p>毕竟市场和用户这个大方向还是最主要的，我一直忽视了贴吧方面的宣传。在将来我会在完善这个综合体系的同时，加大这方面的力度，虽然官方一直在打压，但我们从未被超越。</p>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/2013-12-6-小记/">
-    <time datetime="2013-12-06T08:39:14.000Z" class="entry-date">
-        12月 6 2013
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/杂记/">杂记</a>
-  </div>
-
-    
-    </footer>
-</article>
-
-
-
-
-
-
-  
-    <article id="post-厌倦了" class="post-厌倦了 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/厌倦了/">厌倦了。。。</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/厌倦了/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/厌倦了/" data-id="cj7jvs8540061x8g6ltv6y08l" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <p>时过境迁 山河永寂</p>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/厌倦了/">
-    <time datetime="2013-11-25T02:41:07.000Z" class="entry-date">
-        11月 25 2013
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/杂记/">杂记</a>
-  </div>
-
-    
-    </footer>
-</article>
-
-
-
-
-
-
-  
-    <article id="post-简约不简单" class="post-简约不简单 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/简约不简单/">简约不简单</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/简约不简单/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/简约不简单/" data-id="cj7jvs875007sx8g6ivj3r1oa" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <p>Brief, but not simple.</p>
-<p>p.s. 把背景音乐全删了只留了一首《深谷幽兰》，遮天一周年吧刊的背景音乐。不知道为什么听起来很有感触。</p>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/简约不简单/">
-    <time datetime="2013-11-23T05:45:59.000Z" class="entry-date">
-        11月 23 2013
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/杂记/">杂记</a>
-  </div>
-
-    
-    </footer>
-</article>
-
-
-
-
-
-
-  
-    <article id="post-cpp-检测机器大端或者小端" class="post-cpp-检测机器大端或者小端 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/cpp-检测机器大端或者小端/">[cpp]检测机器大端或者小端</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/cpp-检测机器大端或者小端/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/cpp-检测机器大端或者小端/" data-id="cj7jvs7wy001xx8g647kdphgz" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <p>今天在csdn上看到的 自己改进了一下发出来<br>小端输出1 大端输出0<br>
-        
-          <p class="article-more-link">
-            <a href="/cpp-检测机器大端或者小端/#more" class="more-link">更多内容 <span class="meta-nav">→</span></a>
-          </p>
-        
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/cpp-检测机器大端或者小端/">
-    <time datetime="2013-11-13T09:11:02.000Z" class="entry-date">
-        11月 13 2013
+    <a href="/c#-多线程Invoke示例/">
+    <time datetime="2013-09-03T09:05:58.000Z" class="entry-date">
+        9月 3 2013
     </time>
 </a>
     
@@ -444,7 +125,7 @@
 
     
   <span class="article-delim">&#8226;</span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cpp/">cpp</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Invoke/">Invoke</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/csharp/">csharp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/多线程/">多线程</a></li></ul>
 
     </footer>
 </article>
@@ -455,7 +136,7 @@
 
 
   
-    <article id="post-这个博客会一直坚持下去-不为什么" class="post-这个博客会一直坚持下去-不为什么 post type-post status-publish format-standard hentry">
+    <article id="post-TwentyEleven暗色系主题实现透明" class="post-TwentyEleven暗色系主题实现透明 post type-post status-publish format-standard hentry">
     <!---->
 
       <header class="entry-header">
@@ -463,37 +144,41 @@
         
   
     <h1 class="entry-title">
-      <a class="article-title" href="/这个博客会一直坚持下去-不为什么/">这个博客会一直坚持下去 不为什么</a>
+      <a class="article-title" href="/TwentyEleven暗色系主题实现透明/">TwentyEleven暗色系主题实现透明</a>
     </h1>
   
 
         
         <div class="comments-link">
             
-            <a href="/这个博客会一直坚持下去-不为什么/#comments" class="leave-reply">评论</a>
+            <a href="/TwentyEleven暗色系主题实现透明/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/这个博客会一直坚持下去-不为什么/" data-id="cj7jvs87w008bx8g6kri26dur" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/TwentyEleven暗色系主题实现透明/" data-id="cj7jwgbt1001g48g6a9e54asl" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
     <div class="entry-content">
       
-        <p>我不是为了钱 所以这个博客会一直坚持下去</p>
-<p>如果哪一天真的停机了 那是我真的玩不动了</p>
+        <p>1.找到 /wp-content/themes/twentyeleven/colors/dark.css</p>
+<p>2.第13行左右(#page background)改为<br>  background: rgba(15,15,15,0.5);</p>
+<p>3.第57行左右(#branding border-top)改为<br>  border-top: 2px solid rgba(10, 10, 10, 0);</p>
+<p>4.第82行左右(#access background)改为<br>  background: -webkit-linear-gradient(rgba(56, 56, 56, 0), rgba(39, 39, 39, 1));</p>
+<p>5.第587行左右(#site-generator background)改为<br>  background: rgba(6, 6, 6, 0);</p>
+<p>6.保存 如果安装了缓存插件请先更新缓存 然后就能看到了 其实大家可以用chrome的开发工具调整css看效果 很方便的</p>
 
       
     </div><!-- .entry-content -->
 
     <footer class="entry-meta">
-    <a href="/这个博客会一直坚持下去-不为什么/">
-    <time datetime="2013-11-13T03:49:38.000Z" class="entry-date">
-        11月 13 2013
+    <a href="/TwentyEleven暗色系主题实现透明/">
+    <time datetime="2013-08-30T00:45:36.000Z" class="entry-date">
+        8月 30 2013
     </time>
 </a>
     
   <span class="article-delim">&#8226;</span>
   <div class="article-category">
-  <a class="article-category-link" href="/categories/杂记/">杂记</a>
+  <a class="article-category-link" href="/categories/wordpress/">wordpress</a>
   </div>
 
     
@@ -506,7 +191,7 @@
 
 
   
-    <article id="post-做博客的思考" class="post-做博客的思考 post type-post status-publish format-standard hentry">
+    <article id="post-对于多线程编程的几点个人见解" class="post-对于多线程编程的几点个人见解 post type-post status-publish format-standard hentry">
     <!---->
 
       <header class="entry-header">
@@ -514,98 +199,98 @@
         
   
     <h1 class="entry-title">
-      <a class="article-title" href="/做博客的思考/">512</a>
+      <a class="article-title" href="/对于多线程编程的几点个人见解/">对于多线程编程的几点个人见解</a>
     </h1>
   
 
         
         <div class="comments-link">
             
-            <a href="/做博客的思考/#comments" class="leave-reply">评论</a>
+            <a href="/对于多线程编程的几点个人见解/#comments" class="leave-reply">评论</a>
             
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/做博客的思考/" data-id="cj7jvs84b005jx8g6cobgj2mg" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/对于多线程编程的几点个人见解/" data-id="cj7jwgby3005y48g62jj7dttk" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
     <div class="entry-content">
       
-        <p>思考了半天 我做博客不是为了做博客 而是为了推广自己的机器 如果继续做优化的话 可能要把内容换成更热门的资源或者游戏之类了 这样就本末倒置了…其实做什么事都是一个方法论的问题 而做博客的方法论就是不要急 唉</p>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/做博客的思考/">
-    <time datetime="2013-11-09T03:26:50.000Z" class="entry-date">
-        11月 9 2013
-    </time>
-</a>
-    
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/杂记/">杂记</a>
-  </div>
-
-    
-    </footer>
-</article>
-
-
-
-
-
-
-  
-    <article id="post-sec-如何设计自己的密码" class="post-sec-如何设计自己的密码 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/sec-如何设计自己的密码/">[转]如何设计自己的密码</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="/sec-如何设计自己的密码/#comments" class="leave-reply">评论</a>
-            
-            <a href="javascript:void(0);" data-url="http://www.flygon.net/sec-如何设计自己的密码/" data-id="cj7jvs80t003ox8g6c7fljafa" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <p>来源：<a href="http://www.douban.com/note/191459733/">http://www.douban.com/note/191459733/</a></p>
-<p>号称国内最大技术社区的CSDN以身作则给大家上了一堂网站用户信息安全的课，顺便也给如今在网上活动的几乎每个人敲了下警钟。<br>举个例子：黑客拿到一份用户密码表（以后必定还会有），然后不幸的是你的邮箱密码与某网站密码是一样的，于是邮箱开放了；顺便，以相同邮箱相同密码注册的其它网站几乎一概沦陷。这只是单纯考虑人力，若考虑暴力破解和社会工程学，则相似邮箱、相似密码通通都会有问题。<br>这种情况，你只能寄望于用户密码表中账号数量比较多，没人注意你的账号。就好像每个战场上的士兵只能寄望于特定的概率一样。<br>问题会有多严重？可以这样想象：假如你的网上支付工具被盗，这是一种；假如你的XX相册被盗，这是一种；再有就是某个你比较喜欢的网站账号被盗，意味着上面的个人信息很可能再也找不回来，这又是一种。</p>
-<p>闲话不多说了，现在考虑下如何设计自己的密码。<br>
+        <p>（部分来源于《深入理解计算机系统》一书）</p>
+<p>1.线程有两种状态：聚合态和分离态。聚合态线程拥有一个句柄可被控制，分离态线程虽然可以正常运行，但不可以通过句柄控制。</p>
+<p>2.线程刚刚创建出来是聚合态的，在运行中关闭句柄可以转化为分离态，且不可逆。<br>
         
           <p class="article-more-link">
-            <a href="/sec-如何设计自己的密码/#more" class="more-link">更多内容 <span class="meta-nav">→</span></a>
+            <a href="/对于多线程编程的几点个人见解/#more" class="more-link">更多内容 <span class="meta-nav">→</span></a>
           </p>
         
       
     </div><!-- .entry-content -->
 
     <footer class="entry-meta">
-    <a href="/sec-如何设计自己的密码/">
-    <time datetime="2013-10-02T07:24:32.000Z" class="entry-date">
-        10月 2 2013
+    <a href="/对于多线程编程的几点个人见解/">
+    <time datetime="2013-08-29T05:02:01.000Z" class="entry-date">
+        8月 29 2013
     </time>
 </a>
     
   <span class="article-delim">&#8226;</span>
   <div class="article-category">
-  <a class="article-category-link" href="/categories/安全/">安全</a>
+  <a class="article-category-link" href="/categories/编程/">编程</a>
   </div>
 
     
   <span class="article-delim">&#8226;</span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/密码/">密码</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/多线程/">多线程</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/编程/">编程</a></li></ul>
 
+    </footer>
+</article>
+
+
+
+
+
+
+  
+    <article id="post-每一个地方-都是战场-绝望的人们-所向无敌" class="post-每一个地方-都是战场-绝望的人们-所向无敌 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/每一个地方-都是战场-绝望的人们-所向无敌/">每一个地方，都是战场。绝望的人们，所向无敌。</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="/每一个地方-都是战场-绝望的人们-所向无敌/#comments" class="leave-reply">评论</a>
+            
+            <a href="javascript:void(0);" data-url="http://www.flygon.net/每一个地方-都是战场-绝望的人们-所向无敌/" data-id="cj7jwgbyd006g48g6uwlbic0s" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <p><img src="http://ww2.sinaimg.cn/large/841aea59jw1e8xsnqz08bj21kw16h7wh.jpg" alt=""></p>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/每一个地方-都是战场-绝望的人们-所向无敌/">
+    <time datetime="2013-08-16T01:51:15.000Z" class="entry-date">
+        8月 16 2013
+    </time>
+</a>
+    
+  <span class="article-delim">&#8226;</span>
+  <div class="article-category">
+  <a class="article-category-link" href="/categories/杂记/">杂记</a>
+  </div>
+
+    
     </footer>
 </article>
 
@@ -618,7 +303,7 @@
   
     <nav id="pagination">
       <nav id="page-nav">
-        <a class="extend prev" rel="prev" href="/page/11/">&laquo; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/13/">下一页 &raquo;</a>
+        <a class="extend prev" rel="prev" href="/page/11/">&laquo; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span>
       </nav>
     </nav>
   
@@ -689,7 +374,7 @@
   <aside class="widget">
     <h3 class="widget-title">Archives</h3>
     <div class="widget-content">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01/">一月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">十二月 2013</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">十一月 2013</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">十月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">六月 2013</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01/">一月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">十二月 2013</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">十一月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">十月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </aside>
 
@@ -698,7 +383,7 @@
   <aside class="widget">
     <h3 class="widget-title">Categories</h3>
     <div class="widget-content">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/wordpress/">wordpress</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/公告/">公告</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/安全/">安全</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/应用/">应用</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂记/">杂记</a><span class="category-list-count">37</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a><span class="category-list-count">45</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/网站/">网站</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/资源/">资源</a><span class="category-list-count">5</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/wordpress/">wordpress</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/公告/">公告</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/安全/">安全</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/工具/">工具</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/应用/">应用</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂记/">杂记</a><span class="category-list-count">27</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a><span class="category-list-count">44</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/网站/">网站</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/资源/">资源</a><span class="category-list-count">5</span></li></ul>
     </div>
   </aside>
 

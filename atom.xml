@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.flygon.net/"/>
-  <updated>2017-10-21T08:31:58.397Z</updated>
+  <updated>2017-12-02T04:03:46.114Z</updated>
   <id>http://www.flygon.net/</id>
   
   <author>
@@ -14,6 +14,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018 规划</title>
+    <link href="http://www.flygon.net/2018-%E8%A7%84%E5%88%92/"/>
+    <id>http://www.flygon.net/2018-规划/</id>
+    <published>2017-12-02T04:02:56.000Z</published>
+    <updated>2017-12-02T04:03:46.114Z</updated>
+    
+    <content type="html">&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;搞 Quant&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;打 Kaggle&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;翻译一些技术相关的&lt;em&gt;有意思的&lt;/em&gt;教程&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;没了&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;搞 Quant&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;打 Kaggle&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;翻译一些技术相关的&lt;em&gt;有意思的&lt;/em&gt;教程&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;没了&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>传说中的南邮 SS 嗅探算法</title>
@@ -844,39 +882,6 @@
     </summary>
     
       <category term="应用" scheme="http://www.flygon.net/categories/%E5%BA%94%E7%94%A8/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>使用sync-request和cheerio写爬虫</title>
-    <link href="http://www.flygon.net/%E4%BD%BF%E7%94%A8sync-request%E5%92%8Ccheerio%E5%86%99%E7%88%AC%E8%99%AB/"/>
-    <id>http://www.flygon.net/使用sync-request和cheerio写爬虫/</id>
-    <published>2016-01-22T11:38:27.000Z</published>
-    <updated>2016-03-03T07:17:17.537Z</updated>
-    
-    <content type="html">&lt;p&gt;node.js自带的http模块是异步获取网页内容的，不过我们可以到npm上去搜索同步的http模块。sync-request就是其中一种。&lt;/p&gt;
-&lt;p&gt;首先，安装sync-request包：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install sync-request&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;它的使用方法是：&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var request = require(&amp;apos;sync-request&amp;apos;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var html = request(method, url, options).getBody().toString();&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;然后我们需要一个解析html树的工具。jsdom可以用，但是它实在是太大，我们可以用cheerio，它提供了类似jquery的api，更加便捷。&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install cheerio&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;之后：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var cheerio = require(&amp;apos;cheerio&amp;apos;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var $ = cheerio.load(html);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;下面是抓取菜鸟教程（runoob.com）单部教程的一个例子：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var cheerio = require(&amp;apos;cheerio&amp;apos;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var request = require(&amp;apos;sync-request&amp;apos;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var fs = require(&amp;apos;fs&amp;apos;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var ofile = fs.openSync(&amp;apos;out.html&amp;apos;, &amp;apos;w&amp;apos;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var url = &amp;apos;http://www.runoob.com/html/html-tutorial.html&amp;apos;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var html = request(&amp;apos;GET&amp;apos;, url).getBody().toString();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var toc = getToc(html);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;for(var i in toc) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	var url = toc[i];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	console.log(&amp;apos;page: &amp;apos; + url);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	html = request(&amp;apos;GET&amp;apos;, url).getBody().toString();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	var content = getContent(html);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	fs.writeSync(ofile, content, null, &amp;apos;utf-8&amp;apos;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fs.closeSync(ofile);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(&amp;apos;Done..&amp;apos;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;function getToc(html)  &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	var $ = cheerio.load(html);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	var $list = $(&amp;apos;#leftcolumn&amp;apos;).find(&amp;apos;a&amp;apos;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	var res = [];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	for(var i = 0; i &amp;lt; $list.length; i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		var url = $list.eq(i).attr(&amp;apos;href&amp;apos;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		res.push(&amp;apos;http://www.runoob.com/&amp;apos; + url);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	return res;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;function getContent(html) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	var $ = cheerio.load(html);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	var content = $(&amp;apos;#content&amp;apos;).html();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	return content;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;node.js自带的http模块是异步获取网页内容的，不过我们可以到npm上去搜索同步的http模块。sync-request就是其中一种。&lt;/p&gt;
-&lt;p&gt;首先，安装sync-request包：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install sync-request&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;它的使用方法是：
-    
-    </summary>
-    
-      <category term="编程" scheme="http://www.flygon.net/categories/%E7%BC%96%E7%A8%8B/"/>
     
     
   </entry>

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.flygon.net/"/>
-  <updated>2017-12-02T04:03:46.114Z</updated>
+  <updated>2017-12-09T06:40:35.372Z</updated>
   <id>http://www.flygon.net/</id>
   
   <author>
@@ -14,6 +14,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSDN 重复文件上传限制的解决办法</title>
+    <link href="http://www.flygon.net/CSDN-%E9%87%8D%E5%A4%8D%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E9%99%90%E5%88%B6%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+    <id>http://www.flygon.net/CSDN-重复文件上传限制的解决办法/</id>
+    <published>2017-12-09T06:39:40.000Z</published>
+    <updated>2017-12-09T06:40:35.372Z</updated>
+    
+    <content type="html">&lt;p&gt;CSDN 最近限制了重复文件。如果有人已经上传了某个文件，再次上传会失败：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/841aea59gy1fmai6vf6idj20td07ggll.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;有的时候打了压缩包还是没用，那么，可以试试添加个注释。&lt;/p&gt;
+&lt;p&gt;比如说，我这里有个压缩包。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;文件: C:\Users\asus\Desktop\《SciPy and NumPy》中文精要.7z&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;大小: 1353887 字节&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;修改时间: 2017年12月9日, 14:30:01&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;MD5: E8597649E8EBA0797237CF82C03A843C&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;SHA1: 60CBCC9F43E56F1DE8EC0178066807850E415083&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CRC32: 2B058995&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;给它加点注释，就用当前日期和时间好了，这个肯定没有人会和你重复。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/841aea59gy1fmai762l09j20rm0h23zs.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;文件: C:\Users\asus\Desktop\《SciPy and NumPy》中文精要.7z&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;大小: 1353904 字节&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;修改时间: 2017年12月9日, 14:32:02&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;MD5: ECCB7BF037BFCFDC435285B249F265FD&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;SHA1: A1ECDA73375F5AFABD1AD0479195EB499D5B7270&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CRC32: F91C16EC&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;校验值就完全变了，系统会把它看成不同的文件。&lt;/p&gt;
+&lt;p&gt;此外，这个方式也能躲过根据校验值的文件屏蔽。如果文件过大压缩过程较慢，可以设置为&lt;code&gt;Store&lt;/code&gt;方式。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;CSDN 最近限制了重复文件。如果有人已经上传了某个文件，再次上传会失败：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/841aea59gy1fmai6vf6idj20td07ggll.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;有
+    
+    </summary>
+    
+      <category term="应用" scheme="http://www.flygon.net/categories/%E5%BA%94%E7%94%A8/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>2018 规划</title>
@@ -845,44 +877,6 @@
     
     
       <category term="html5" scheme="http://www.flygon.net/tags/html5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【好东西】简书助手</title>
-    <link href="http://www.flygon.net/%E5%A5%BD%E4%B8%9C%E8%A5%BF-%E7%AE%80%E4%B9%A6%E5%8A%A9%E6%89%8B/"/>
-    <id>http://www.flygon.net/好东西-简书助手/</id>
-    <published>2016-01-27T11:39:47.000Z</published>
-    <updated>2016-03-03T07:17:17.598Z</updated>
-    
-    <content type="html">&lt;p&gt;爬取简书的文章，并生成EPUB格式。&lt;/p&gt;
-&lt;h2 id=&quot;用法&quot;&gt;&lt;a href=&quot;#用法&quot; class=&quot;headerlink&quot; title=&quot;用法&quot;&gt;&lt;/a&gt;用法&lt;/h2&gt;&lt;p&gt;首先到官网下载并安装node.js。&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git clone https://github.com/wizardforcel/jianhelper.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cd jianhelper&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;node jianhelper url [start [end]]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;url：支持三种类型&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/users/{id}&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/users/{id}&lt;/a&gt; 用户&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/notebooks/{id}&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/notebooks/{id}&lt;/a&gt; 文集&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/collection/{id}&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/collection/{id}&lt;/a&gt; 专题&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;start：起始页，默认为第一页&lt;/p&gt;
-&lt;p&gt;end：终止页，默认为最后一页&lt;/p&gt;
-&lt;h2 id=&quot;TODO&quot;&gt;&lt;a href=&quot;#TODO&quot; class=&quot;headerlink&quot; title=&quot;TODO&quot;&gt;&lt;/a&gt;TODO&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;添加标题、封面&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;协议&quot;&gt;&lt;a href=&quot;#协议&quot; class=&quot;headerlink&quot; title=&quot;协议&quot;&gt;&lt;/a&gt;协议&lt;/h2&gt;&lt;p&gt;MIT-LICENSE&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;爬取简书的文章，并生成EPUB格式。&lt;/p&gt;
-&lt;h2 id=&quot;用法&quot;&gt;&lt;a href=&quot;#用法&quot; class=&quot;headerlink&quot; title=&quot;用法&quot;&gt;&lt;/a&gt;用法&lt;/h2&gt;&lt;p&gt;首先到官网下载并安装node.js。&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git clone https://github.com/wizardforcel/jianhelper.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cd jianhelper&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;node jianhelper url [start [end]]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="应用" scheme="http://www.flygon.net/categories/%E5%BA%94%E7%94%A8/"/>
-    
     
   </entry>
   

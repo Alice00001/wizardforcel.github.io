@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.flygon.net/about/index.html</loc>
+    <loc>http://www.flygon.net/donors/index.html</loc>
     
-    <lastmod>2018-05-17T04:25:30.803Z</lastmod>
+    <lastmod>2018-05-21T16:04:20.669Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.flygon.net/donors/index.html</loc>
+    <loc>http://www.flygon.net/2016-donors/index.html</loc>
     
-    <lastmod>2018-04-20T13:56:33.760Z</lastmod>
+    <lastmod>2018-05-21T15:59:21.236Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.flygon.net/about/index.html</loc>
+    
+    <lastmod>2018-05-17T04:25:30.803Z</lastmod>
     
   </url>
   
@@ -23,7 +30,7 @@
   </url>
   
   <url>
-    <loc>http://www.flygon.net/2017-donors/</loc>
+    <loc>http://www.flygon.net/2017-donors/index.html</loc>
     
     <lastmod>2018-01-02T12:08:29.871Z</lastmod>
     
@@ -75,13 +82,6 @@
     <loc>http://www.flygon.net/sublime-text-3-3143-license/</loc>
     
     <lastmod>2017-09-14T03:11:59.384Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.flygon.net/2016-donors/</loc>
-    
-    <lastmod>2017-08-26T08:05:56.202Z</lastmod>
     
   </url>
   
